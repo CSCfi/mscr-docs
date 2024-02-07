@@ -6,10 +6,10 @@ theme:
     - navigation.tabs.sticky    
     - navigation.sections
 nav:
-  - 'Metadata schema and crosswalk registry': 'mscr.md'
-    - Deployment: 'mscr-deployment.md'
+  - 'Metadata schema and crosswalk registry':
+    - 'Deployment': 'mscr-deployment.md'
     - API:
       - 'Getting started': 'api-getting-started.md'
       - 'Usage guide': 'api-usage-guide.md'
-  - 'Vocabulary service': 'voc.md'
+  - 'Vocabulary service':
     - Deployment: 'voc-deployment.md'
