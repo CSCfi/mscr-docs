@@ -1,3 +1,8 @@
 site_name: MSCR docs
 theme:
   name: material
+nav:
+  - Introduction: index.md
+  - API:
+    - Getting starter: api-getting-started.md
+    - Usage guide: api-usage-guide.md
