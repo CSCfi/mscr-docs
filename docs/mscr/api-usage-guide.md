@@ -52,10 +52,10 @@ Register a PDF description of a schema. This content has not been published anyw
 * Send the data to the API. We are using and endpoint (`https://mscr-test.rahtiapp.fi/datamodel-api/v2/schemaFull`) that allows for both metadata and content to be uploaded at the same time. This endpoint requires data to be sent as form data. There must be two forms fields: metadata and file.     
     ```bash 
     curl  -X PUT \
-  'https://mscr-test.rahtiapp.fi/datamodel-api/v2/schemaFull' \
-  --header 'Authorization: Bearer <REPLACE WITH API TOKEN>' \
-  --form 'metadata="<REPLACE WITH JSON STRING OF THE METADATA>"' \
-  --form 'file=@<REPLACE WITH PATH TO FILE>'
+    'https://mscr-test.rahtiapp.fi/datamodel-api/v2/schemaFull' \
+    --header 'Authorization: Bearer <REPLACE WITH API TOKEN>' \
+    --form 'metadata="<REPLACE WITH JSON STRING OF THE METADATA>"' \
+    --form 'file=@<REPLACE WITH PATH TO FILE>'
     ```
 
 ### Add JSON Schema
@@ -197,9 +197,9 @@ Add a draft JSON schema to registry just for testing. The schema should be regis
 
     ```bash
     curl  -X PUT \
-  'https://mscr-test.rahtiapp.fi/datamodel-api/v2/schema/<REPLACE WITH THE PID OF THE SCHEMA>/upload' \
-  --header 'Authorization: Bearer <REPLACE WITH API TOKEN>' \
-  --form 'file=@<REPLACE WITH PATH TO FILE>'
+    'https://mscr-test.rahtiapp.fi/datamodel-api/v2/schema/<REPLACE WITH THE PID OF THE SCHEMA>/upload' \
+    --header 'Authorization: Bearer <REPLACE WITH API TOKEN>' \
+    --form 'file=@<REPLACE WITH PATH TO FILE>'
     ```
 
 * Prepare updated metadata
