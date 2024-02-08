@@ -1,4 +1,17 @@
 site_name: MSCR docs
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format  
 theme:
   name: material
   features:
@@ -7,9 +20,10 @@ theme:
     - navigation.sections
 nav:
   - 'Metadata schema and crosswalk registry':
+    - Introduction: index.md
     - 'Deployment': 'mscr-deployment.md'
     - API:
-      - 'Getting started': 'api-getting-started.md'
-      - 'Usage guide': 'api-usage-guide.md'
+      - 'Getting started': 'mscr/api-getting-started.md'
+      - 'Usage guide': 'mscr/api-usage-guide.md'
   - 'Vocabulary service':
     - Deployment: 'voc-deployment.md'
