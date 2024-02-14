@@ -27,3 +27,6 @@ nav:
       - 'Usage guide': 'mscr/api-usage-guide.md'
   - 'Vocabulary service':
     - Deployment: 'voc-deployment.md'
+  - 'Group management':
+    - 'Getting started': groups/getting-started.md
+    - 'Usage guide': groups/usage-guide.md
