@@ -25,6 +25,7 @@ nav:
     - API:
       - 'Getting started': 'mscr/api-getting-started.md'
       - 'Usage guide': 'mscr/api-usage-guide.md'
+    - 'Release notes': 'mscr/release-notes.md'
   - 'Vocabulary service':
     - Deployment: 'voc-deployment.md'
   - 'Group management':
