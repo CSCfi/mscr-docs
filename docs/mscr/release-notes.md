@@ -11,7 +11,7 @@
 
 ##### Version 0.5.1
 - Restrict schema formats (current supported formats are JSON, CSV and SKOSRDF) for crosswalk creation.
-- Implement responsive Mui grid to metadata and files and added Action menu.
-- Crosswalk version info view.
+- Implemented responsive MUI grid to metadata and files and added Action menu.
+- Implemented Crosswalk version info view.
 - Minor bug fixes and UI Style Updates.
 - Updated Group Management application where users can create API tokens.
