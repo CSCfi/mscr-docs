@@ -1,7 +1,7 @@
 # Release notes
 
 
-##### Version 0.5.0-beta
+#### 0.5.0-beta December 5, 2023
 
 - Authentication using EOSC AAI
 - Registering and Uploading MetaData Schemas in XML, JSON, XSD and PDF Formats.
@@ -9,7 +9,7 @@
 - Search and browse for registered schemas and crosswalks.
 - Initial version of Croswalk editor with simple mapping.
 
-##### Version 0.5.1
+#### 0.5.1 February 21, 2024
 - Restrict schema formats (current supported formats are JSON, CSV and SKOSRDF) for crosswalk creation.
 - Implemented responsive MUI grid to metadata and files and added Action menu.
 - Implemented Crosswalk version info view.
