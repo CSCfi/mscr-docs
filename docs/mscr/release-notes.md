@@ -1,10 +1,17 @@
 # Release notes
 
 
-##### Version 1.0.0-beta
+##### Version 0.5.0-beta
 
 - Authentication using EOSC AAI
 - Registering and Uploading MetaData Schemas in XML, JSON, XSD and PDF Formats.
 - Registring Crosswalks in JSON, PDF and XSLT formats.
 - Search and browse for registered schemas and crosswalks.
 - Initial version of Croswalk editor with simple mapping.
+
+##### Version 0.5.1
+- Restrict schema formats (current supported formats are JSON, CSV and SKOSRDF) for crosswalk creation.
+- Implement responsive Mui grid to metadata and files and added Action menu.
+- Crosswalk version info view.
+- Minor bug fixes and UI Style Updates.
+- Updated Group Management application where users can create API tokens.
