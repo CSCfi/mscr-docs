@@ -15,3 +15,11 @@
 - Implemented Crosswalk version info view.
 - Minor bug fixes and UI Style Updates.
 - Updated Group Management application where users can create API tokens.
+
+#### 0.5.2 March 5, 2024
+- Uniform view for schema and crosswalk metadata and files tabs.
+- Editing schema metadata.
+- Removed language selector from content creation dialogs. Deafult language is english.
+- Downloading files from schema and crosswalk metadata tab.
+- RDFS and SHACL format support for crosswalk creation.
+- Minor bug fixes and UI updates.
