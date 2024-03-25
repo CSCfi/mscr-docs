@@ -23,3 +23,14 @@
 - Downloading files from schema and crosswalk metadata tab.
 - RDFS and SHACL format support for crosswalk creation.
 - Minor bug fixes and UI updates.
+
+#### 0.5.3 March 19, 2024
+- Added resolvable handle PIDs for MSCR Contents.
+- Added endpoint for exporting vocabulary as JSON Schema enum.
+- Add SKOS export to crosswalks that are between vocabularies.
+- Added Tree Visualization for schemas.
+- Schema Deletion.
+- Improved content creation and editing rights managements for group workspace.
+- Minor bug fixes and UI improvements
+
+
