@@ -13,6 +13,7 @@ MSCR allows registered users and communities to create, register and version sch
 ### Login
 To be able to create and register contents in MSCR,user needs to login with proper credentials. MSCR using EOSC AAI and currently supports Google and Orcid as means of authentication. The current test version of MSCR deployment can be found at https://mscr-test.rahtiapp.fi.
 
+![MSCR Home ](../mscr/mscr-images/schema-list.png)
 
 
 ### Registering Schema
