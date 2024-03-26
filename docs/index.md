@@ -17,16 +17,16 @@ To be able to create and register contents in MSCR,user needs to login with prop
 
 
 ### Registering Schema
-![Register A Schema ](../mscr/mscr-images/register-schema.png)
+![Register Schema](register-schema.png)
+
 ### Schema Detail View
 If you click on the registered schema from the schema list, it will navigate to schema metadata and visualization view. This view have three tabs containing schema metadata, schema visualization and schema version history.
 #### Schema Metadata 
-![Schema Metadata ](../mscr/mscr-images/schema-metadata.png)
+![Schema MetaData](schema-metadata.png)
 #### Schema Visulaization
-![Schema Visualization ](../mscr/mscr-images/schema-visualization.png)
+![Schema Visualization](schema-visualization.png)
 #### Schema Version History
-![Schema Visualization ](../mscr/mscr-images/version-history.png)
-
+![Schema Version History](version-history.png)
 ### Registering Crosswalks
 ![Register A Crosswalk](<Register Crosswalk.png>)
 
