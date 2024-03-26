@@ -10,11 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout main
-        uses: actions/checkout@v2
-      - run: pip3 install mkdocs-glightbox    
+        uses: actions/checkout@v2  
       - name: Deploy docs
         uses: mhausenblas/mkdocs-deploy-gh-pages@1.26
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CONFIG_FILE: mkdocs.yml
+          EXTRA_PACKAGES: mkdocs-glightbox
             
