@@ -29,7 +29,7 @@
 - Added endpoint for exporting vocabulary as JSON Schema enum.
 - Add SKOS export to crosswalks that are between vocabularies.
 - Added Tree Visualization for schemas.
-- Schema Deletion.
+- Schema Deletion: Schemas can be deleted if they are in Draft state.
 - Improved content creation and editing rights managements for group workspace.
 - Minor bug fixes and UI improvements
 
