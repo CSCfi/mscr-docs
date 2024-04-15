@@ -13,7 +13,7 @@ MSCR allows registered users and communities to create, register and version sch
 ### Login
 To be able to create and register contents in MSCR,user needs to login with proper credentials. MSCR using EOSC AAI and currently supports Google and Orcid as means of authentication. The current test version of MSCR deployment can be found at https://mscr-test.rahtiapp.fi.
 
-![MSCR Home ](../mscr/mscr-images/schema-list.png)
+![Alt text](mscr_home.png)
 
 
 ### Registering Schema
@@ -60,11 +60,11 @@ Users can register their existing crosswalks with MSCR can view the crosswalk in
 ### Crosswalk Editor
 MSCR offers a Crosswalk Editor where users can create mapping from the source schema to target schema and can export the generated mappings in MSCR supported formats.
 
- ![Alt text](create_crosswalk-1.png)
-
 - Select the source and target schema.
 - Add Name and Description(optional) for the Crosswalk. 
 - Click Create Crosswalk button will lead to Crosswalk Editor Page.
+
+ ![Alt text](create_crosswalk-1.png)
  
 
 #### Creating New Crosswalk
