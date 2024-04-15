@@ -48,7 +48,7 @@ MSCR allows to create and store differnent versions and variants for registeted 
 ![Schema Version History](version-history.png)
 
 ### Registering Crosswalks
-Users can register their existing crosswalks with MSCR can view the crosswalk in crosswalk editor view if the crosswalk format is supported by MSCR. For registering a crosswalk follow the following steps
+Users can register their existing crosswalks with MSCR and can view the crosswalk in crosswalk editor if the crosswalk format is supported by MSCR. For registering a crosswalk follow the following steps
 
 - Select the source schema and target schema from the dropdown list. Remember, source and target schema also need to be registered with MSCR before registering the crosswalk.
 - Add the crosswalk file in the MSCR supported formats.See more in the supported formats link.
