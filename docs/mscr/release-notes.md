@@ -33,4 +33,8 @@
 - Improved content creation and editing rights managements for group workspace.
 - Minor bug fixes and UI improvements
 
-
+#### 0.5.4 May 21, 2024
+- Added Content Versioning and navigations to different versions.
+- Clear Error messages while registering schemas.
+- Added new states for registered contents(Invalid, Deprecated).
+- UI Improvements and minor bug fixes.
