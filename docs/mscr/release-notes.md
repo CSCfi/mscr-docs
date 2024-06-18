@@ -38,3 +38,8 @@
 - Clear Error messages while registering schemas.
 - Added new states for registered contents(Invalid, Deprecated).
 - UI Improvements and minor bug fixes.
+
+#### 0.5.5 June 18, 2024
+- Added loading indicator when schema tree is being loaded
+- Added option to hide navigation panel
+- Minor bug fixes
