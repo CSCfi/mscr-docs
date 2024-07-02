@@ -43,3 +43,7 @@
 - Added loading indicator when schema tree is being loaded
 - Added option to hide navigation panel
 - Minor bug fixes
+
+#### 0.5.6 July 2, 2024
+- Added Action menu option to make MSCR copy of a schema (original schema format must be MSCR, JSON, CSV, SHACL or XSD; resulting schema format is MSCR)
+- Minor bug fixes
