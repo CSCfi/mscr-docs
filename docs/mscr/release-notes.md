@@ -47,3 +47,9 @@
 #### 0.5.6 July 2, 2024
 - Added Action menu option to make MSCR copy of a schema (original schema format must be MSCR, JSON, CSV, SHACL or XSD; resulting schema format is MSCR)
 - Minor bug fixes
+
+#### 0.5.7 July 29, 2024
+- Changed the layout and styles of the Action menu and Tab menu on the schema/crosswalk view page
+- Added an x-button for closing the form modal and the mappings modal
+- Implemented opening multiple paths in the schema tree when a node with duplicates is selected
+- Minor bug fixes
