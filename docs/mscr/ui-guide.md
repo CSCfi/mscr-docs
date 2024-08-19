@@ -61,6 +61,18 @@ MSCR allows users to create and store different versions and variants for regist
 ![Schema version history tab view](../assets/version-history.png)
 
 ### Action Menu for Schema Visulization Tab
+The basic actions available for the schema manipulation in the current MSCR UI are:
+
+* Edit Metadata
+    - Edit the metadata of the schema.
+
+* Invalidate schema
+
+* Deprecate schema
+    - Means there is new version available for the specific schema which is preferred
+* Add new revision
+* Make MSCR Copy
+
 ![Schema Action Menu](../assets/action-menu.png)
 
 
