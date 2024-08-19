@@ -25,7 +25,9 @@ theme:
 nav:
   - 'Metadata schema and crosswalk registry':
     - Introduction: index.md
-    - 'Deployment': 'mscr-deployment.md'
+    - UI Usage Guide: 'mscr/ui-guide.md'
+    - Deployment: 'mscr/mscr-deployment.md'
+    - MSCR Concepts: 'mscr/functional-overview.md'
     - API:
       - 'Getting started': 'mscr/api-getting-started.md'
       - 'Usage guide': 'mscr/api-usage-guide.md'

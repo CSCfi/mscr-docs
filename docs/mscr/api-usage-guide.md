@@ -2,8 +2,11 @@ This document describes the functionality of the MSCR API with concrete examples
 
 Prerequisites:
 
-* API key for the MSCR API (See [Getting Started](mscr-api-getting-started.md))
+* API key for the MSCR API (See [Getting Started](api-getting-started.md))
 * curl or similar tool for send HTTP request.
+
+# API Overview
+
 
 # Registering content
 
