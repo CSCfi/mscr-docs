@@ -37,3 +37,6 @@ nav:
   - 'Group management':
     - 'Getting started': groups/getting-started.md
     - 'Usage guide': groups/usage-guide.md
+  - 'Developers Guide':
+    - 'Getting started': developer/develop-guide.md
+    

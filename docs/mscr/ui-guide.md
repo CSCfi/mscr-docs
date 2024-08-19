@@ -1,10 +1,12 @@
-# MSCR Home
-
 
 ## Login
-To be able to create and register contents in MSCR, user needs to login with proper credentials. MSCR uses EOSC AAI and currently supports Google and Orcid as means of authentication. The current test version of MSCR deployment can be found at [https://mscr-test.rahtiapp.fi](https://mscr-test.rahtiapp.fi).
+To be able to create and register contents in MSCR, user needs to login with proper credentials. MSCR uses EOSC AAI and currently supports Google and Orcid as means of authentication. The current test version of MSCR deployment can be found at [MSCR Web App](https://mscr-test.rahtiapp.fi).
 
-![Schemas in personal workspace](../assets/mscr_home.png)
+
+## MSCR Home
+After login, user should be able to see user's own workspace and the groups those which the user is part of. Both personal workspace is again divided in two main page- schemas and crosswalks. Schema page contains the schemas the user or his group have registered in MSCR and same for the crosswalks.
+
+![Schemas in personal workspace](../assets/mscr-home.png)
 
 ## Schema Management in MSCR
 
@@ -43,6 +45,11 @@ You can see the schema specific details and the related files in the schema meta
 
 ![Schema metadata tab view](../assets/schema-metadata.png)
 
+To edit the schema metadata, one needs to select "edit metadata" from the schema action menu. After clicking it, fields of schema metadata will become and editable and changes need to be saved for the edit to be successful.
+
+![Edit Schema metadata](../assets/edit-metadata-schema.png)
+
+
 #### Schema Visualization
 Schema visualization tab offers a tree view structure for the registered schema. Schemas are converted to an MSCR specific format and tree view is generated from that. The view may be empty for certain formats like PDF that cannot be rendered as a tree.
 
@@ -53,9 +60,15 @@ MSCR allows users to create and store different versions and variants for regist
 
 ![Schema version history tab view](../assets/version-history.png)
 
+### Action Menu for Schema Visulization Tab
+![Schema Action Menu](../assets/action-menu.png)
+
+
 ### Creating Copy of a Schema
+![Creating MSCR Copy of Schema](../assets/mscr-copy.png)
 
 ### Creating a new revision of Schema
+![Creating Revision of Schema](../assets/register-revision.png)
 
 ### Registering Crosswalks
 Users can register their existing crosswalks with MSCR and can view the crosswalk in crosswalk editor if the crosswalk format is supported by MSCR. For registering a crosswalk follow the following steps
