@@ -24,16 +24,16 @@ Schema documentation is needed when trying to pick the rights mappings between s
 ## User Groups
 User groups are needed in order to support community driven schemas/crosswalk. MSCR tries to strike a balance between the "wild west" approach where any one can register and create content and the  exclusive, committee-driven invite-only service where additions and changes are less frequent and more planned. Groups are thought of as a feature to support the latter approach. 
 
-#### 1. Only system admins can create new groups
+- Only system admins can create new groups
 
-- No explosion of groups (if not wanted by the service owner)
-- Possibility to vet all group creation requests
-- Possibility to keep group creation as a separate process all together.
+    - No explosion of groups (if not wanted by the service owner)
+    - Possibility to vet all group creation requests
+    - Possibility to keep group creation as a separate process all together.
 
-#### 2. Groups can have their own admins and contributors 
+- Groups can have their own admins and contributors 
 
-#### 3. Groups based content can be presented differently from the personal content
-- For example group based content could labeled with "official" tag.
+- Groups based content can be presented differently from the personal content
+    - For example group based content could labeled with "official" tag.
 
 Group related information is maintained within MSCR. Users can be invited into groups with an email/username. User can belong to a more than one group, but can only be active in group at a time. This means that the UI must provide a way to select the active user group. 
 
@@ -43,20 +43,20 @@ User group can have "personal" content similarly to an individual user, which is
 
 System must support following user roles:
 
-#### System admin
-- Create and modify users and groups
-- Content related admin functions
+- System admin
+    - Create and modify users and groups
+    - Content related admin functions
 
-#### Group admin
-- Can add new group admins (if specified by the system admin)
-- Can add users to the group
-- Can remove users from the group
-- Can create API tokens for the group
+- Group admin
+    - Can add new group admins (if specified by the system admin)
+    - Can add users to the group
+    - Can remove users from the group
+    - Can create API tokens for the group
     
-#### User
-- Can register schemas and crosswalks under personal account and to all the groups involved
-- Can create new versions  of personal and groups’ schemas and crosswalks.
-- Can modify metadata and other content of the personal and groups’ schemas and crosswalks.
+- User
+    - Can register schemas and crosswalks under personal account and to all the groups involved
+    - Can create new versions  of personal and groups’ schemas and crosswalks.
+    - Can modify metadata and other content of the personal and groups’ schemas and crosswalks.
 
 ## Possible Users of MSCR
 

@@ -61,6 +61,9 @@ MSCR allows users to create and store different versions and variants for regist
 ![Schema version history tab view](../assets/version-history.png)
 
 ### Action Menu for Schema Visulization Tab
+
+![Schema Action Menu](../assets/action-menu.png)
+
 The basic actions available for the schema manipulation in the current MSCR UI are:
 
 * Edit Metadata
@@ -73,14 +76,20 @@ The basic actions available for the schema manipulation in the current MSCR UI a
 * Add new revision
 * Make MSCR Copy
 
-![Schema Action Menu](../assets/action-menu.png)
-
-
-### Creating Copy of a Schema
+### Creating MSCR Copy of a Schema
 ![Creating MSCR Copy of Schema](../assets/mscr-copy.png)
+User can create a MSCR copy of the registered schema which transform the schema into internal format used in MSCR. This is a prerequisite for schema editing. This option is available when schema format is something that is possible to process to MSCR's internal format, whih are currently CSV, XSD, JSONSCHEMA, SHACL. State of the new copy will be always "Draft" and format will be "MSCR".
+
+Creating MSCR copy is not available for schemas which are already in "MSCR" format.
 
 ### Creating a new revision of Schema
+
 ![Creating Revision of Schema](../assets/register-revision.png)
+
+It is possible to create a new revision for the registered mscr schemas. The need for creating revisions can be that user wants to do some corrections or bug fixes to some already published content. The steps are almost like registering a new schema with some differences.
+- User need to provide the schema file either as normal file upload or the URL
+- Format and State of the content cannot be edited while creating a revision. So, revisions of the schema should be if the same format as the main content.
+- Some meaningful name and description will help the user to find it easily later.
 
 ### Registering Crosswalks
 Users can register their existing crosswalks with MSCR and can view the crosswalk in crosswalk editor if the crosswalk format is supported by MSCR. For registering a crosswalk follow the following steps
