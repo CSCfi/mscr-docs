@@ -53,3 +53,12 @@
 - Added an x-button for closing the form modal and the mappings modal
 - Implemented opening multiple paths in the schema tree when a node with duplicates is selected
 - Minor bug fixes
+
+#### 0.5.8 September 11, 2024
+-  Added Support for Complex Mapping (Many to one and One to Many)in Crosswalk Editor.
+- Added Mapping Function validation.
+- New refined Mapping table for Crosswalk Editor with function and predicates for each mapping.
+- Editing data types with integration to Data Type Registry (DTR) for the leaf nodes of Schema Tree.
+- Minimized side navigation
+
+There is known issue of style bug in the New Mapping table info modals and we are trying fix it as soon as possible.

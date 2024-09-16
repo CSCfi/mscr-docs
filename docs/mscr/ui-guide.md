@@ -23,7 +23,7 @@ The basic functionalities that is available for schema management are
 How these functions can be done in UI, is described below:
 
 ### Registering Schema
-Users can register their schemas of different formats in the MSCR and it will be stored with a resolvable handle in MSCR server. These handles can be used to reference the schema stored in MSCR. User can register schema either using an URI of already published schema elsewhere or uploading a schema file to MSCR Registry
+Users can register their schemas of different formats in the MSCR and it will be stored with a resolvable handle in MSCR server. These handles can be used to reference the schema stored in MSCR. User can register schema either using an URI of already published schema elsewhere or uploading a schema file to MSCR Registry.
 
 ![Schema registering modal](../assets/register-schema.png)
 
@@ -34,6 +34,9 @@ The steps to add a schema in MSCR are as follows:
 - Add name and description(optional) for the schema.
 - Add status (Default status should be DRAFT for the registered contents)
 - Click Register button to continue.
+
+### General Error Situations while registering a schema
+If the schema registration is unsucces
 
 
 
