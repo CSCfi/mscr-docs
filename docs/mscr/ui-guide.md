@@ -36,9 +36,12 @@ The steps to add a schema in MSCR are as follows:
 - Click Register button to continue.
 
 ### General Error Situations while registering a schema
-If the schema registration is unsucces
+If the schema registration is unsuccessful, user will be prompted with the error message. The main issues currently for a failure to register the schema can be one of the following:
 
-
+ - Unsupported File Format.
+ - Parsing Error.
+ - Missing field in the Form.
+ 
 
 ### Schema Detail View
 If you click on the registered schema from the schema list, it will navigate to schema metadata and visualization view. This view has three tabs containing schema metadata, schema visualization and schema version history.
