@@ -55,7 +55,7 @@ If user have the permission to edit, you can edit vocabulary metadata or can upl
 
 ### Importing Vocubularies and Concepts using Files
 
-The tool has three ways to update dictionary information using files:
+The tool has three ways to update vocabulary information using files:
 
 ![Alt text](../assets/voc-service-screenshots/import-concepts.png)
 
@@ -75,9 +75,9 @@ Note: Do not update existing concepts in this Excel file. If you update existing
 
 Note: Do not update existing concepts in this Excel file, only add new concepts. If you update concepts that already exist in the glossary with this file, they will appear twice in the glossary.
 
-3. Select "Import concepts" from the dictionary where you want to add the concepts.
+3. Select "Import concepts" from the vocabulary where you want to add the concepts.
 
-4. Attach the desired file and click "Import concepts to the dictionary". This will open the dictionary's home page and you will see the concepts you added in the concept list.
+4. Attach the desired file and click "Import concepts to the vocabulary". This will open the vocabulary's home page and you will see the concepts you added in the concept list.
 
 #### Import existing SKOS vocabulary 
 
@@ -105,16 +105,16 @@ If you have permission to edit the glossary, the glossary and concept function b
 
 **Editing the vocabulary**. Once you have created a glossary or otherwise have permission to edit the glossary, you can add concepts to it, or make changes to the glossary after it already contains concepts. To edit the information generated during the creation phase, select "Edit vocabulary".
 
-**Updating the dictionary with a file**. You can also edit the dictionary by importing a new version as a file. To do this, select "Update dictionary with file". For more detailed instructions on updating the dictionary with a file, see page 6.1 Updating dictionary data with a file .
+**Updating the vocabulary with a file**. You can also edit the vocabulary by importing a new version as a file. To do this, select "Update vocabulary with file". For more detailed instructions on updating the vocabulary with a file, see page 6.1 Updating vocabulary data with a file .
 
-**Creating a new version of the dictionary**. You can create a new version of the dictionary by selecting "Create a new version of the dictionary".
+**Creating a new version of the vocabulary**. You can create a new version of the vocabulary by selecting "Create a new version of the vocabulary".
 
-**Changing the status of the entire vocabulary.** You can change the status of the dictionary through the editing function. First select "Edit dictionary". Select from the list which mode you want to change the dictionary to and finally press "Save". Changing the status of a glossary does not change the status of the concepts and terms included in the glossary. The status of concepts and terms must be changed separately under the Concept functions heading, under "Change concept status information".
+**Changing the status of the entire vocabulary.** You can change the status of the vocabulary through the editing function. First select "Edit vocabulary". Select from the list which mode you want to change the vocabulary to and finally press "Save". Changing the status of a glossary does not change the status of the concepts and terms included in the glossary. The status of concepts and terms must be changed separately under the Concept functions heading, under "Change concept status information".
 
-#### Deleting the dictionary
-You can delete the dictionary completely by selecting "Delete Dictionary". NOTE! You cannot delete an existing dictionary because it may have been referenced. In that case, change the dictionary status to Disabled or Replaced if the dictionary has been replaced by another dictionary.
+**Deleting the vocabulary**
+You can delete the vocabulary completely by selecting "Delete Vocabulary". NOTE! You cannot delete an existing vocabulary because it may have been referenced. In that case, change the vocabulary status to Disabled or Replaced if the vocabulary has been replaced by another vocabulary.
 
-#### Concept functions
+#### Concept actions
 
 ![Alt text](../assets/voc-service-screenshots/concept-actions.png)
 
@@ -122,10 +122,10 @@ You can delete the dictionary completely by selecting "Delete Dictionary". NOTE!
 You can add one or more concepts to the glossary by selecting "Add new concept". Adding a concept is done as described in section 3. Glossary home page#3.Glossary home page-Adding concepts to the glossary .
 
 **Importing concepts using a file**.
-You can import concepts into the dictionary using a file by selecting "Import concepts". More detailed instructions on importing concepts using a file can be found on page 5. Importing concepts using files .
+You can import concepts into the vocabulary using a file by selecting "Import concepts". More detailed instructions on importing concepts using a file can be found on page 5. Importing concepts using files .
 
 **Adding a collection of terms to the vocabulary**.
-You can add a new concept collection to the dictionary by selecting "Add new collection".
+You can add a new concept collection to the vocabulary by selecting "Add new collection".
 First, fill in the basic information for the concept collection.
 
 ![Alt text](../assets/voc-service-screenshots/add-collection.png)
@@ -151,7 +151,7 @@ Next, select concepts, terms, or both to edit the states.
 
 Select the status you want to change the items to from the list and finally press "Save".
 
-#### Subscribe to notifications about changes to dictionaries
+### Subscribe to notifications about changes to dictionaries
 
-You can subscribe to receive email notifications about changes to the dictionary by selecting "Subscribe to notifications". You can cancel your subscription by clicking the "Remove notifications" button.
+You can subscribe to receive email notifications about changes to the vocabulary by selecting "Subscribe to notifications". You can cancel your subscription by clicking the "Remove notifications" button.
 
