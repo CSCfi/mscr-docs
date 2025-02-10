@@ -48,27 +48,110 @@ Clicking the small down arrow icon in the vocabulary information and actions win
 
 If user have the permission to edit, you can edit vocabulary metadata or can upload or add cocepts for the vocabulary. The various actions which are available are:
 
-![Alt text](../assets/voc-service-screenshots/voc-actions.png)
-
-#### Vocabulary actions
-- Edit vocabulary
-- Update vocabulary with a file
-- Create new version of vocabulary
-- Remove vocabulary 
-
-![Alt text](../assets/voc-service-screenshots/concept-actions.png)
-#### Concept related actions
-- Add new concept
-- Import concepts
-- Add new collection
-- Change statuses of the cocepts
-
-You can also download the created vocabulary as a file with Download vocabulary action.
 
 
-### Cocepts and Terms Home Page
+### Concepts and Terms Home Page
 ![Alt text](../assets/voc-service-screenshots/add-concept.png)
+
 ### Importing Vocubularies and Concepts using Files
+
+The tool has three ways to update dictionary information using files:
+
 ![Alt text](../assets/voc-service-screenshots/import-concepts.png)
 
+
+Simple Concept Addition Excel for adding new concepts to an existing vocabulary,
+XML import, i.e. a file in the NTRF format for Nordic terminological data and SKOS Turtle import. 
+
+#### Adding new concepts to the vocabulary using an Excel file
+
+Follow these steps if you want to add new concepts to an existing vocabulary. The simple Excel import only import basic concept information and it cannot be used to import relationship information.
+
+Note: Do not update existing concepts in this Excel file. If you update existing concepts with this file, the concepts will appear twice in the glossary.
+
+1. Download the example Excel file for importing concepts from page 5.1 Description of the Excel file for importing concepts .
+
+2. Add the desired information to the concept import file you downloaded and save the file. Make updates to the file following the instructions in the file.
+
+Note: Do not update existing concepts in this Excel file, only add new concepts. If you update concepts that already exist in the glossary with this file, they will appear twice in the glossary.
+
+3. Select "Import concepts" from the dictionary where you want to add the concepts.
+
+4. Attach the desired file and click "Import concepts to the dictionary". This will open the dictionary's home page and you will see the concepts you added in the concept list.
+
+#### Import existing SKOS vocabulary 
+
+The SKOS file must be in Turtle format and it must contain both skos:Concept and skos:ConceptSchema resources. SKOS import handles also the relationships between concepts. 
+
+### Editing vocabulary information and deleting a vocabulary
+Open vocabulary information and functions from the selection bar
+
+![Alt text](../assets/voc-service-screenshots/actionbar.png)
+
+By clicking on the line "Vocabulary information and actions", you will see the following additional information:
+
+* Vocabulary name and description
+* Information domian the vocabulary belongs to
+* Vocabulary languages ​​and vocabulary type
+* Organization responsible for the content
+* Version information and web address, or IRI
+
+
+If you have permission to edit the glossary, the glossary and concept function buttons will also appear, which are explained in more detail in the following paragraphs.
+
+#### Vocabulary actions
+
+![Alt text](../assets/voc-service-screenshots/voc-actions.png)
+
+**Editing the vocabulary**. Once you have created a glossary or otherwise have permission to edit the glossary, you can add concepts to it, or make changes to the glossary after it already contains concepts. To edit the information generated during the creation phase, select "Edit vocabulary".
+
+**Updating the dictionary with a file**. You can also edit the dictionary by importing a new version as a file. To do this, select "Update dictionary with file". For more detailed instructions on updating the dictionary with a file, see page 6.1 Updating dictionary data with a file .
+
+**Creating a new version of the dictionary**. You can create a new version of the dictionary by selecting "Create a new version of the dictionary".
+
+**Changing the status of the entire vocabulary.** You can change the status of the dictionary through the editing function. First select "Edit dictionary". Select from the list which mode you want to change the dictionary to and finally press "Save". Changing the status of a glossary does not change the status of the concepts and terms included in the glossary. The status of concepts and terms must be changed separately under the Concept functions heading, under "Change concept status information".
+
+#### Deleting the dictionary
+You can delete the dictionary completely by selecting "Delete Dictionary". NOTE! You cannot delete an existing dictionary because it may have been referenced. In that case, change the dictionary status to Disabled or Replaced if the dictionary has been replaced by another dictionary.
+
+#### Concept functions
+
+![Alt text](../assets/voc-service-screenshots/concept-actions.png)
+
+**Adding a concept**. 
+You can add one or more concepts to the glossary by selecting "Add new concept". Adding a concept is done as described in section 3. Glossary home page#3.Glossary home page-Adding concepts to the glossary .
+
+**Importing concepts using a file**.
+You can import concepts into the dictionary using a file by selecting "Import concepts". More detailed instructions on importing concepts using a file can be found on page 5. Importing concepts using files .
+
+**Adding a collection of terms to the vocabulary**.
+You can add a new concept collection to the dictionary by selecting "Add new collection".
+First, fill in the basic information for the concept collection.
+
+![Alt text](../assets/voc-service-screenshots/add-collection.png)
+
+Select "Add concept to concept collection" to add concepts to the concept collection.
+Save your changes by selecting "Save" at the bottom of the page.
+You can also create a concept collection by importing a new version of the glossary as a file.
+
+**Changing the status information of concepts**
+
+![Alt text](../assets/voc-service-screenshots/change-concept-statuses.png)
+
+You can change the status information of concepts by selecting "Change status information of concepts". i.e. by so-called mass change.
+Note that both a concept and a term can have state information and are not dependent on each other. Therefore, when changing the states of concepts and terms, one must consider whether the information of the concepts, terms, or both is being changed. 
+Then select the initial state of the items to be changed from the selection list.
+Note! This functionality allows you to change the status of all concepts and/or terms in the glossary, for example from draft to valid. You can change the status of an individual concept from the concept's own page.
+
+![Alt text](../assets/voc-service-screenshots/change-concept-statuses2.png)
+
+Next, select concepts, terms, or both to edit the states.
+
+![Alt text](../assets/voc-service-screenshots/change-concept-statuses3.png)
+
+Select the status you want to change the items to from the list and finally press "Save".
+
+#### Subscribe to notifications about changes to dictionaries
+
+You can subscribe to receive email notifications about changes to the dictionary by selecting "Subscribe to notifications". You can cancel your subscription by clicking the "Remove notifications" button.
 
