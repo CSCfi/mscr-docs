@@ -33,7 +33,7 @@ nav:
       - 'Usage guide': 'mscr/api-usage-guide.md'
       - 'Release notes': 'mscr/release-notes.md'
   - 'Vocabulary service':
-    - Deployment: 'voc-deployment.md'
+    - 'Getting started': voc-service/getting-started.md
   - 'Group management':
     - 'Getting started': groups/getting-started.md
     - 'Usage guide': groups/usage-guide.md
