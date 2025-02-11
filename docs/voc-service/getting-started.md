@@ -43,7 +43,25 @@ Vocabulary detail page consists of vocabulary metadata and different actions lik
 Clicking the small down arrow icon in the vocabulary information and actions window will show the possible actions and details of the vocabulary. 
 
 ## Concept page
-![Alt text](../assets/voc-service-screenshots/add-concept.png)
+
+When you open a concept, you will see a list of terms for the concept below its definition.
+
+![Alt text](../assets/voc-service-screenshots/concept-view.png)
+
+Click on the name of the term (language version) to open its details.
+
+The concept sidebar displays the concept's relationship information. The sidebar displays:
+
+* Possible hierarchical super-concept of the concept.
+
+* if the concept is related to another concept.
+
+* if the concept belongs to a concept collection.
+
+You can go to view the information mentioned above by clicking on the relevant link in the sidebar.
+
+If you have permission to edit the vocabulary to which the concept belongs, you can edit the concept by clicking the "Edit concept" button.
+
 
 ## Importing concepts using Files
 
