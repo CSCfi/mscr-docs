@@ -79,7 +79,7 @@ Follow these steps if you want to add new concepts to an existing vocabulary. Th
 
 [Example Excel import file](../assets/concept_import_excel_example.xlsx)
 
-Note: Do not update existing concepts in this Excel file. If you update existing concepts with this file, the concepts will appear twice in the glossary.
+Note: Do not update existing concepts in this Excel file. If you update existing concepts with this file, the concepts will appear twice in the vocabulary.
 
 1. Download the example Excel file for importing concepts.
 
@@ -136,19 +136,19 @@ By clicking on the line "Vocabulary information and actions", you will see the f
 * Version information and web address, or IRI
 
 
-If you have permission to edit the glossary, the glossary and concept function buttons will also appear, which are explained in more detail in the following paragraphs.
+If you have permission to edit the vocabulary, the vocabulary and concept function buttons will also appear, which are explained in more detail in the following paragraphs.
 
 ### Vocabulary actions
 
 ![Alt text](../assets/voc-service-screenshots/voc-actions.png)
 
-**Editing the vocabulary**. Once you have created a glossary or otherwise have permission to edit the glossary, you can add concepts to it, or make changes to the glossary after it already contains concepts. To edit the information generated during the creation phase, select "Edit vocabulary".
+**Editing the vocabulary**. Once you have created a vocabulary or otherwise have permission to edit the vocabulary, you can add concepts to it, or make changes to the vocabulary after it already contains concepts. To edit the information generated during the creation phase, select "Edit vocabulary".
 
 **Updating the vocabulary with a file**. You can also edit the vocabulary by importing a new version as a file. To do this, select "Update vocabulary with file". For more detailed instructions on updating the vocabulary with a file, see page 6.1 Updating vocabulary data with a file .
 
 **Creating a new version of the vocabulary**. You can create a new version of the vocabulary by selecting "Create a new version of the vocabulary".
 
-**Changing the status of the entire vocabulary.** You can change the status of the vocabulary through the editing function. First select "Edit vocabulary". Select from the list which mode you want to change the vocabulary to and finally press "Save". Changing the status of a glossary does not change the status of the concepts and terms included in the glossary. The status of concepts and terms must be changed separately under the Concept functions heading, under "Change concept status information".
+**Changing the status of the entire vocabulary.** You can change the status of the vocabulary through the editing function. First select "Edit vocabulary". Select from the list which mode you want to change the vocabulary to and finally press "Save". Changing the status of a vocabulary does not change the status of the concepts and terms included in the vocabulary. The status of concepts and terms must be changed separately under the Concept functions heading, under "Change concept status information".
 
 **Deleting the vocabulary**
 You can delete the vocabulary completely by selecting "Delete Vocabulary". NOTE! You cannot delete an existing vocabulary because it may have been referenced. In that case, change the vocabulary status to Disabled or Replaced if the vocabulary has been replaced by another vocabulary.
@@ -158,7 +158,7 @@ You can delete the vocabulary completely by selecting "Delete Vocabulary". NOTE!
 ![Alt text](../assets/voc-service-screenshots/concept-actions.png)
 
 **Adding a concept**. 
-You can add one or more concepts to the glossary by selecting "Add new concept". Adding a concept is done as described in section 3. Glossary home page#3.Glossary home page-Adding concepts to the glossary .
+You can add one or more concepts to the vocabulary by selecting "Add new concept". Adding a concept is done as described in section 3. vocabulary home page#3.Glossary home page-Adding concepts to the vocabulary .
 
 **Importing concepts using a file**.
 You can import concepts into the vocabulary using a file by selecting "Import concepts". More detailed instructions on importing concepts using a file can be found on page 5. Importing concepts using files .
@@ -171,7 +171,7 @@ First, fill in the basic information for the concept collection.
 
 Select "Add concept to concept collection" to add concepts to the concept collection.
 Save your changes by selecting "Save" at the bottom of the page.
-You can also create a concept collection by importing a new version of the glossary as a file.
+You can also create a concept collection by importing a new version of the vocabulary as a file.
 
 **Changing the status information of concepts**
 
@@ -180,7 +180,7 @@ You can also create a concept collection by importing a new version of the gloss
 You can change the status information of concepts by selecting "Change status information of concepts". i.e. by so-called mass change.
 Note that both a concept and a term can have state information and are not dependent on each other. Therefore, when changing the states of concepts and terms, one must consider whether the information of the concepts, terms, or both is being changed. 
 Then select the initial state of the items to be changed from the selection list.
-Note! This functionality allows you to change the status of all concepts and/or terms in the glossary, for example from draft to valid. You can change the status of an individual concept from the concept's own page.
+Note! This functionality allows you to change the status of all concepts and/or terms in the vocabulary, for example from draft to valid. You can change the status of an individual concept from the concept's own page.
 
 ![Alt text](../assets/voc-service-screenshots/change-concept-statuses2.png)
 
