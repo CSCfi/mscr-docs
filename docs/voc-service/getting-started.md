@@ -3,7 +3,7 @@ The Vocabulary Service collects and maintains common terminological vocubularies
 
 It was a late addition to the FAIRCORE4EOSC components ​and developed based on active code base from Finnish Interoperability platform ​which is developed by the Digital and Population Data Service Agency of Finland​.It was originally built for managing terminologiesbut this particular instance is deployed and customized by the FC4E project​
 
-#### Main Features
+## Main Features
 - Graphical Interface to Create, maintain and publish vocabularies​.
 - Support for SKOS-XL model​
 - Separate status handling (VALID, DRAFT etc.) for vocabularies and concepts​
@@ -11,10 +11,8 @@ It was a late addition to the FAIRCORE4EOSC components ​and developed based on
 - Linking within and between vocabularies​
 - Resolvable PIDs for vocabularies and concepts​
 
-## Vocabulary Service User Guide
 
-
-### User Interface and Search Functions
+## Searching and browsing
 
 In the vocabulary tool home page, a list of all the vocabularies in alphabetical order is visible.By clicking on the Vocabulary name in the list, User can view its contents,Metadata and possible actions. Users can also perform faceted searcg using the filtered search box found in the right side of the home page. It is possible to limit the search for vocabularies in the sidebars in the following ways:
 
@@ -29,7 +27,7 @@ User can also search for vocubularies and concepts by typing the desired search 
 
 ![Alt text](../assets/voc-service-screenshots/search-bar.png)
 
-### Adding vocabulary
+## Adding vocabulary
 
 ![Alt text](../assets/voc-service-screenshots/create-new-voc.png)
 
@@ -37,23 +35,19 @@ User can add a new vocabulary clicking the "Add new vocabulary" button on the to
 
 Clicking the create button, user will be navigated to detail page after successful creation of vocubulary.
 
-### Vocabulary Detail Page
+## Vocabulary Detail Page
 Vocabulary detail page consists of vocabulary metadata and different actions like adding concepts or downloading or uploading concept for that vocabulary. The user needs to have editing right to be able to see all the allowed actions related to a vocabulary.
 
 ![Alt text](../assets/voc-service-screenshots/voc-detail.png)
 
 Clicking the small down arrow icon in the vocabulary information and actions window will show the possible actions and details of the vocabulary. 
 
-### Editing Vocabulary and Concept Information
-
-If user have the permission to edit, you can edit vocabulary metadata or can upload or add cocepts for the vocabulary. The various actions which are available are:
 
 
-
-### Concepts and Terms Home Page
+## Concept page
 ![Alt text](../assets/voc-service-screenshots/add-concept.png)
 
-### Importing Vocubularies and Concepts using Files
+## Importing Vocubularies and Concepts using Files
 
 The tool has three ways to update vocabulary information using files:
 
@@ -63,7 +57,7 @@ The tool has three ways to update vocabulary information using files:
 Simple Concept Addition Excel for adding new concepts to an existing vocabulary,
 XML import, i.e. a file in the NTRF format for Nordic terminological data and SKOS Turtle import. 
 
-#### Adding new concepts to the vocabulary using an Excel file
+### Adding new concepts to the vocabulary using an Excel file
 
 Follow these steps if you want to add new concepts to an existing vocabulary. The simple Excel import only import basic concept information and it cannot be used to import relationship information.
 
@@ -79,11 +73,11 @@ Note: Do not update existing concepts in this Excel file, only add new concepts.
 
 4. Attach the desired file and click "Import concepts to the vocabulary". This will open the vocabulary's home page and you will see the concepts you added in the concept list.
 
-#### Import existing SKOS vocabulary 
+### Import existing SKOS vocabulary 
 
 The SKOS file must be in Turtle format and it must contain both skos:Concept and skos:ConceptSchema resources. SKOS import handles also the relationships between concepts. 
 
-### Editing vocabulary information and deleting a vocabulary
+## Editing vocabulary information and deleting a vocabulary
 Open vocabulary information and functions from the selection bar
 
 ![Alt text](../assets/voc-service-screenshots/actionbar.png)
@@ -99,7 +93,7 @@ By clicking on the line "Vocabulary information and actions", you will see the f
 
 If you have permission to edit the glossary, the glossary and concept function buttons will also appear, which are explained in more detail in the following paragraphs.
 
-#### Vocabulary actions
+### Vocabulary actions
 
 ![Alt text](../assets/voc-service-screenshots/voc-actions.png)
 
@@ -114,7 +108,7 @@ If you have permission to edit the glossary, the glossary and concept function b
 **Deleting the vocabulary**
 You can delete the vocabulary completely by selecting "Delete Vocabulary". NOTE! You cannot delete an existing vocabulary because it may have been referenced. In that case, change the vocabulary status to Disabled or Replaced if the vocabulary has been replaced by another vocabulary.
 
-#### Concept actions
+### Concept actions
 
 ![Alt text](../assets/voc-service-screenshots/concept-actions.png)
 
@@ -151,7 +145,7 @@ Next, select concepts, terms, or both to edit the states.
 
 Select the status you want to change the items to from the list and finally press "Save".
 
-### Subscribe to notifications about changes to dictionaries
+## Subscribe to notifications about changes to dictionaries
 
 You can subscribe to receive email notifications about changes to the vocabulary by selecting "Subscribe to notifications". You can cancel your subscription by clicking the "Remove notifications" button.
 
