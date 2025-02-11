@@ -59,21 +59,50 @@ XML import, i.e. a file in the NTRF format for Nordic terminological data and SK
 
 Follow these steps if you want to add new concepts to an existing vocabulary. The simple Excel import only import basic concept information and it cannot be used to import relationship information.
 
+[Example Excel import file](../assets/concept_import_excel_example.xlsx)
+
 Note: Do not update existing concepts in this Excel file. If you update existing concepts with this file, the concepts will appear twice in the glossary.
 
-1. Download the example Excel file for importing concepts from page 5.1 Description of the Excel file for importing concepts .
+1. Download the example Excel file for importing concepts.
 
 2. Add the desired information to the concept import file you downloaded and save the file. Make updates to the file following the instructions in the file.
-
-Note: Do not update existing concepts in this Excel file, only add new concepts. If you update concepts that already exist in the glossary with this file, they will appear twice in the glossary.
 
 3. Select "Import concepts" from the vocabulary where you want to add the concepts.
 
 4. Attach the desired file and click "Import concepts to the vocabulary". This will open the vocabulary's home page and you will see the concepts you added in the concept list.
 
+### XML Import 
+
+XML import uses [NTRF model](https://nordterm.net/filer/NTRF/Ntrf.pdf). 
+
+Example: 
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<VOCABULARY>
+    <RECORD numb="c1" stat="VALID">
+        <LANG value="en">
+            <TE stat="VALID">
+                <TERM>Test recommended term</TERM>
+            </TE>
+            <SY stat="VALID">
+                <TERM>Test synonym</TERM>
+            </SY>
+            <DEF>Definition</DEF>
+        </LANG>
+    </RECORD>
+    <DIAG numb="collection-1" name="Test collection">
+        <LINK href="#c1">c1</LINK>
+    </DIAG>
+</VOCABULARY>
+``` 
+
 ### Import existing SKOS vocabulary 
 
 The SKOS file must be in Turtle format and it must contain both skos:Concept and skos:ConceptSchema resources. SKOS import handles also the relationships between concepts. 
+
+Note: 
+The SKOS import keep and use the original URI of concepts so it is up to the importer to make sure those URIs point to the correct place. 
 
 ## Editing vocabulary information and deleting a vocabulary
 Open vocabulary information and functions from the selection bar
