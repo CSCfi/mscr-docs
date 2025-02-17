@@ -12,7 +12,7 @@ MSCR allows registered users and communities to create, register and version sch
 Before diving into using Metadata Schema and Crosswalk Registry, it will be helpful the basic concepts and vocubularies used in MSCR (See [MSCR Concepts](mscr/functional-overview.md))
 
 ## MSCR Web UI
-To register contents and creating crosswalks, please go to [https://mscr-test.rahtiapp.fi](https://mscr-test.rahtiapp.fi). Current MSCR version is the test version where users can play around with different MSCR features and get the basic idea of what MSCR can provide. Its good to remember that untill the stable release version is available, all the data are subject to remove if needed. For using the web app see the basic UI guidelines [MSCR UI Guide](mscr/ui-guide.md)
+To register contents and create crosswalks, please go to [https://mscr-test.2.rahtiapp.fi/](https://mscr-test.rahtiapp.fi). Current MSCR version is the test version where users can play around with different MSCR features and get the basic idea of what MSCR can provide. Its good to remember that untill the stable release version is available, all the data are subject to remove if needed. For using the web app see the basic UI guidelines [MSCR UI Guide](mscr/ui-guide.md)
 
 ## Getting Access
 
