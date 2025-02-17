@@ -6,7 +6,7 @@ To be able to create and register contents in MSCR, user needs to login with pro
 ## MSCR Home
 After login, user should be able to see user's own workspace and the groups those which the user is part of. Both personal workspace is again divided in two main page- schemas and crosswalks. Schema page contains the schemas the user or his group have registered in MSCR and same for the crosswalks.
 
-![Schemas in personal workspace](../assets/mscr-home.png)
+![Schemas in personal workspace](../assets/mscr-home-new.png)
 
 ## Schema Management in MSCR
 
@@ -84,6 +84,7 @@ The basic actions available for the schema manipulation in the current MSCR UI a
 
 ### Creating MSCR Copy of a Schema
 ![Creating MSCR Copy of Schema](../assets/mscr-copy.png)
+mkdocs
 User can create a MSCR copy of the registered schema which transform the schema into internal format used in MSCR. This is a prerequisite for schema editing. This option is available when schema format is something that is possible to process to MSCR's internal format, whih are currently CSV, XSD, JSONSCHEMA, SHACL. State of the new copy will be always "Draft" and format will be "MSCR".
 
 Creating MSCR copy is not available for schemas which are already in "MSCR" format.
@@ -93,6 +94,7 @@ Creating MSCR copy is not available for schemas which are already in "MSCR" form
 ![Creating Revision of Schema](../assets/register-revision.png)
 
 It is possible to create a new revision for the registered mscr schemas. The need for creating revisions can be that user wants to do some corrections or bug fixes to some already published content. The steps are almost like registering a new schema with some differences.
+
 - User need to provide the schema file either as normal file upload or the URL
 - Format and State of the content cannot be edited while creating a revision. So, revisions of the schema should be if the same format as the main content.
 - Some meaningful name and description will help the user to find it easily later.
