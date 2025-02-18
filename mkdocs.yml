@@ -22,12 +22,15 @@ theme:
     - navigation.tabs  
     - navigation.tabs.sticky    
     - navigation.sections
+    - content.code.copy
 nav:
   - 'Metadata schema and crosswalk registry':
     - Introduction: index.md
     - UI Usage Guide: 'mscr/ui-guide.md'
     - Deployment: 'mscr/mscr-deployment.md'
     - MSCR Concepts: 'mscr/functional-overview.md'
+    - Schema view: 'mscr/schema-view.md'
+    - Crosswalk editor: 'mscr/crosswalk-editor.md'
     - API:
       - 'Getting started': 'mscr/api-getting-started.md'
       - 'Usage guide': 'mscr/api-usage-guide.md'
