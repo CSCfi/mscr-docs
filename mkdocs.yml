@@ -33,7 +33,7 @@ nav:
     - Crosswalk editor: 'mscr/crosswalk-editor.md'
     - API:
       - 'Getting started': 'mscr/api-getting-started.md'
-      - 'Usage guide': 'mscr/api-usage-guide.md'
+      - Usage guide: 'mscr/api-usage-guide.md'
       - 'Release notes': 'mscr/release-notes.md'
   - 'Vocabulary service':
     - 'Getting started': voc-service/getting-started.md

@@ -5,10 +5,7 @@ Prerequisites:
 * API key for the MSCR API (See [Getting Started](api-getting-started.md))
 * curl or similar tool for send HTTP request.
 
-# API Overview
-
-
-# Registering content
+## API Overview
 
 MSCR works as a registry for schemas and crosswalks (later referred to as content). 
 
@@ -294,4 +291,21 @@ Create a new revision of a published schema. The metadata of the new version can
     "sourceSchema": "urn:IAMNOTAPID:515d74db-5469-4814-b503-d2677317c5c1",
     "targetSchema": "urn:IAMNOTAPID:515d74db-5469-4814-b503-d2677317c5c1"
 }
+```
+
+
+## Data transformation
+
+MSCR API includes an endpoint for transforming documents using crosswalk. **This endpoint is meant only for testing and it is not usable for any bulk transformation of data.**
+
+`/v2/transform` endpoint takes outputMethod, crosswalk internal ID and input file as parameters and produces a transformed file according to the given crosswalk as response. 
+
+`outputMethod` values should be `xml` when target scheme format is XSD and otherwise `text`. 
+
+Example request:
+
+```
+curl  -X POST \
+'<API_BASE_URL>/datamodel-api/v2/transform' \
+--form 'inputFile=@person.xml' --form 'outputMethod=xml' --form 'crosswalkInternalID=mscr:crosswalk:ae778494-b912-4e51-9b75-82b5053ff522'
 ```
