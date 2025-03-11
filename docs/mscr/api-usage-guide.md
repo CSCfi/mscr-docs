@@ -307,5 +307,5 @@ Example request:
 ```
 curl  -X POST \
 '<API_BASE_URL>/datamodel-api/v2/transform' \
---form 'inputFile=@person.xml' --form 'outputMethod=xml' --form 'crosswalkInternalID=mscr:crosswalk:ae778494-b912-4e51-9b75-82b5053ff522'
+--header 'Authorization: Bearer <AUTH_TOKEN> --form 'inputFile=@person.xml' --form 'outputMethod=xml' --form 'crosswalkInternalID=mscr:crosswalk:ae778494-b912-4e51-9b75-82b5053ff522'
 ```
