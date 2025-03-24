@@ -1,6 +1,6 @@
 ## Generating API key
 
-- For generating API key, you need to navigate to https://mscr-test.rahtiapp.fi/groups/. This is the group management application for MSCR where users can create and manage groups. 
+- For generating API key, you need to navigate to https://mscr-release.2.rahtiapp.fi/groups/. This is the group management application for MSCR where users can create and manage groups. 
 
 ![Alt text](../assets/group_management.png)
 

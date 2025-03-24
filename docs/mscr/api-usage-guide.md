@@ -49,10 +49,10 @@ Register a PDF description of a schema. This content has not been published anyw
 
     Organization property is left empty, because the owner of the content is the current user. See separate documentation for details of the metadata fields. 
 
-* Send the data to the API. We are using and endpoint (`https://mscr-test.rahtiapp.fi/datamodel-api/v2/schemaFull`) that allows for both metadata and content to be uploaded at the same time. This endpoint requires data to be sent as form data. There must be two forms fields: metadata and file.     
+* Send the data to the API. We are using and endpoint (`https://mscr-release.2.rahtiapp.fi/datamodel-api/v2/schemaFull`) that allows for both metadata and content to be uploaded at the same time. This endpoint requires data to be sent as form data. There must be two forms fields: metadata and file.     
     ```bash 
     curl  -X PUT \
-    'https://mscr-test.rahtiapp.fi/datamodel-api/v2/schemaFull' \
+    'https://mscr-release.2.rahtiapp.fi/datamodel-api/v2/schemaFull' \
     --header 'Authorization: Bearer <REPLACE WITH API TOKEN>' \
     --form 'metadata="<REPLACE WITH JSON STRING OF THE METADATA>"' \
     --form 'file=@<REPLACE WITH PATH TO FILE>'
@@ -139,7 +139,7 @@ Add a draft JSON schema to registry just for testing. The schema should be regis
     ```bash
 
     curl  -X PUT \
-    'https://mscr-test.rahtiapp.fi/datamodel-api/v2/schemaFull' \
+    'https://mscr-release.2.rahtiapp.fi/datamodel-api/v2/schemaFull' \
     --header 'Authorization: Bearer <REPLACE WITH API TOKEN>' \
     --form 'metadata="<REPLACE WITH JSON STRING OF THE METADATA>"' \
     --form 'file=@<REPLACE WITH PATH TO FILE>'
@@ -193,11 +193,11 @@ Add a draft JSON schema to registry just for testing. The schema should be regis
 
 * Replace schema content with a new file.
 
-    In order to replace the content of an existing schema, one has to use the `https://mscr-test.rahtiapp.fi/datamodel-api/v2/schema/<pid>/upload` endpoint. The `<pid>` must be replace by the PID of the schema that is to be updated. This operation is only allowed for content in the DRAFT state. 
+    In order to replace the content of an existing schema, one has to use the `https://mscr-release.2.rahtiapp.fi/datamodel-api/v2/schema/<pid>/upload` endpoint. The `<pid>` must be replace by the PID of the schema that is to be updated. This operation is only allowed for content in the DRAFT state. 
 
     ```bash
     curl  -X PUT \
-    'https://mscr-test.rahtiapp.fi/datamodel-api/v2/schema/<REPLACE WITH THE PID OF THE SCHEMA>/upload' \
+    'https://mscr-release.2.rahtiapp.fi/datamodel-api/v2/schema/<REPLACE WITH THE PID OF THE SCHEMA>/upload' \
     --header 'Authorization: Bearer <REPLACE WITH API TOKEN>' \
     --form 'file=@<REPLACE WITH PATH TO FILE>'
     ```
@@ -213,11 +213,11 @@ Add a draft JSON schema to registry just for testing. The schema should be regis
 
 * Update schema metadata.
 
-    The metadata of a content can changed at any point regardless of the state of the content. Metadata can be update by sending a POST (as opposed to PUT when creating content) to endpoint `https://mscr-test.rahtiapp.fi/datamodel-api/v2/schema/<PID>`, where `<PID>` is the identifier of the content. The content or body of the request should contain the metadata field that need to be changed. 
+    The metadata of a content can changed at any point regardless of the state of the content. Metadata can be update by sending a POST (as opposed to PUT when creating content) to endpoint `https://mscr-release.2.rahtiapp.fi/datamodel-api/v2/schema/<PID>`, where `<PID>` is the identifier of the content. The content or body of the request should contain the metadata field that need to be changed. 
 
     ```bash
     curl  -X POST \
-    'https://mscr-test.rahtiapp.fi/datamodel-api/v2/schema/<REPLACE WITH THE PID OF THE SCHEMA>' \
+    'https://mscr-release.2.rahtiapp.fi/datamodel-api/v2/schema/<REPLACE WITH THE PID OF THE SCHEMA>' \
     --header 'Authorization: Bearer <REPLACE WITH API TOKEN>' \
     --header 'Content-Type: application/json' \
     --data-raw '{
