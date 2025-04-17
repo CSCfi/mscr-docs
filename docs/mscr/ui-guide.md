@@ -3,10 +3,57 @@
 To be able to create and register contents in MSCR, user needs to login with proper credentials. MSCR uses EOSC AAI and currently supports Google and Orcid as means of authentication. The current test version of MSCR deployment can be found at [MSCR Web App](https://mscr-release.2.rahtiapp.fi/).
 
 
+
 ## MSCR Home
 After login, user should be able to see user's own workspace and the groups those which the user is part of. Both personal workspace is again divided in two main page- schemas and crosswalks. Schema page contains the schemas the user or his group have registered in MSCR and same for the crosswalks.
 
 ![Schemas in personal workspace](../assets/mscr-home-new.png)
+
+## Contents in MSCR
+The MSCR contents can be divided into two main categories. They are, Metadata Schemas and Crosswalk(See [MSCR Concepts](mscr/functional-overview.md)).The features that MSCR provides to manage the contents are mainly registering those contents in MSCR and different functionlities to manage them. 
+
+## Content Registration 
+### Schema Registration
+Users can register their schemas of different formats in the MSCR and it will be stored with a resolvable handle in MSCR server. These handles can be used to reference the schema stored in MSCR. User can register schema either using an URI of already published schema elsewhere or uploading a schema file to MSCR Registry.
+
+![Schema registering modal](../assets/register-schema.png)
+
+The steps to add a schema in MSCR are as follows:
+
+- Provide an URI or upload a schema file
+- Select the file format for the intended schema.
+- Add Name and Description (optional) for the schema.
+- Add status (Default status should be DRAFT for the registered contents)
+- Click Register button to continue.
+
+
+##### Schema Registration with File Modal
+![Schema registering with file](../assets/mscr/register-schema-with-file.png)
+
+##### Schema Registration with URL Modal
+![Schema registering with URL](../assets/mscr/register-schema-with-url.png)
+
+If the schema registration goes successfully, the user will be navigated to schema metadata tab where all the metadata related to the regsistered schema is shown.
+
+### General Error Situations while registering a schema
+If the schema registration is unsuccessful, user will be prompted with the error message. The main issues currently for a failure to register the schema can be one of the following:
+
+ - Unsupported File Format.
+ - Parsing Error.
+ - Missing field in the Form.
+
+### Registering Crosswalks
+
+Users can register their existing crosswalks with MSCR and can view the crosswalk in crosswalk editor if the crosswalk format is supported by MSCR. For registering a crosswalk follow the following steps:
+
+- Select the source schema and target schema from the dropdown list. Remember, source and target schemas also need to be registered with MSCR and the visibility should be public before registering the crosswalk.
+- Add the crosswalk file in the MSCR supported formats. See more in the supported formats link.
+- Add name and description for the crosswalk.
+- Draft state should be selected while registering new content.
+
+![Crosswalk registration modal](../assets/register_crosswalk.png)
+
+ 
 
 ## Schema Management in MSCR
 
@@ -22,26 +69,8 @@ The basic functionalities that is available for schema management are
 
 How these functions can be done in UI, is described below:
 
-### Registering Schema
-Users can register their schemas of different formats in the MSCR and it will be stored with a resolvable handle in MSCR server. These handles can be used to reference the schema stored in MSCR. User can register schema either using an URI of already published schema elsewhere or uploading a schema file to MSCR Registry.
 
-![Schema registering modal](../assets/register-schema.png)
 
-The steps to add a schema in MSCR are as follows:
-
-- Provide an URI or upload a schema file
-- Select the file format for the intended schema.
-- Add name and description(optional) for the schema.
-- Add status (Default status should be DRAFT for the registered contents)
-- Click Register button to continue.
-
-### General Error Situations while registering a schema
-If the schema registration is unsuccessful, user will be prompted with the error message. The main issues currently for a failure to register the schema can be one of the following:
-
- - Unsupported File Format.
- - Parsing Error.
- - Missing field in the Form.
- 
 
 ### Schema Detail View
 If you click on the registered schema from the schema list, it will navigate to schema metadata and visualization view. This view has three tabs containing schema metadata, schema visualization and schema version history.
@@ -99,15 +128,6 @@ It is possible to create a new revision for the registered mscr schemas. The nee
 - Format and State of the content cannot be edited while creating a revision. So, revisions of the schema should be if the same format as the main content.
 - Some meaningful name and description will help the user to find it easily later.
 
-### Registering Crosswalks
-Users can register their existing crosswalks with MSCR and can view the crosswalk in crosswalk editor if the crosswalk format is supported by MSCR. For registering a crosswalk follow the following steps
-
-- Select the source schema and target schema from the dropdown list. Remember, source and target schemas also need to be registered with MSCR and public before registering the crosswalk.
-- Add the crosswalk file in the MSCR supported formats. See more in the supported formats link.
-- Add name and description for the crosswalk.
-- Draft state should be selected while registering new content.
-
-![Crosswalk registration modal](../assets/register_crosswalk.png)
 
 ### Crosswalk Editor
 MSCR offers a Crosswalk Editor where users can create mappings from the source schema to target schema and can export the generated mappings in MSCR supported formats.
@@ -136,7 +156,7 @@ Crosswalk editor is used to create mappings between schema fields which can be s
 ![Modal for editing mapping](../assets/edit_mapping.png)
 
 
-- After saving, list of mappings will appear below the schemas.
+- After saving, list of mappings will appear in a different tab
 ![List of mappings](../assets/mapping_list.png)
 
 
