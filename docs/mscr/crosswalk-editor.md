@@ -1,6 +1,36 @@
-## UI basics 
+The Crosswalk Editor is an integrated tool that allows users to create and edit complex mappings between two registered MSCR schemas. The crosswalk editor supports creation of mappings between any of the following schema formats: CSV, XSD, JSON Schema, RDFS, SHACL, OWL, SKOS, and ENUM. The MSCR allows users to mix-and-match different formats freely and they are all called crosswalks in the UI. Internally, crosswalks are categorised into "crosswalk", "semantic mapping" or "semantic annotation" sub-types based on the format of the source and target schemas. The rules for determining the crosswalk sub type is summarised in table X. Sub-types describe the goal or purpose of the mapping:
 
-Crosswalk actions
+- Data crosswalks: the purpose of the mappings is to transform an instance document that conforms to the source schema into another instance document that conforms to the target schema with potentially complex processing.
+
+- Semantic mappings: describes a correspondence with possible ontological commitment between two identified entities, such as vocabulary concepts, classes or properties.
+
+- Annotations: A set of mappings between "just a strings" i.e. a lexical tokens and identified semantic entities such as SKOS vocabulary concepts or OWL classes is categorised as semantic annotation.
+
+
+## Crosswalk Editor UI
+
+In the Crosswalk Editor UI, users can create mappings from the source schema to target schema using the UI Tool and can export the generated mappings in MSCR supported formats. 
+
+### Creating New Crosswalk
+To create a new crosswalk between two available schemas in MSCR, the following steps are needed:
+
+- Select the source and target schema. Again, schemas should be registered and public in MSCR. When creating a new crosswalk, only schemas that can be rendered as trees are available.
+
+- Add Name and Description(optional) for the Crosswalk. 
+
+- Click Create Crosswalk button will lead to Crosswalk Editor Page.
+
+ ![Crosswalk creation modal](../assets/mscr/create_crosswalk-1.png)
+ 
+
+
+Crosswalk editor is used to create mappings between schema fields which can be saved as new crosswalk. MSCR Crosswalk Editor offers a treeview of the selected source and target schemas where user can map the attributes between schemas and the mappings will be saved. 
+
+![Crosswalk editor view](../assets/mscr/crosswalk editor.png)
+
+## Crosswalk Actions
+
+After creating a crosswalk, the following actions are available in the action menu for crosswalk: 
 
 * Edit mappings 
 * Edit metadata 
@@ -8,11 +38,49 @@ Crosswalk actions
 * Add new revision
 * Delete draft
 
-State changes 
+### Edit Mappings 
 
-Revisions
+- To start creating mappings or editing existing mappings, please click the action menu on the top right corner of the editor window and select edit.
 
-Deleting
+
+![Finding Edit button by activating Actions button](../assets/mscr/edit_crosswalk.png)
+
+
+ - After that, user can select attributes from two schemas present in left and right tree view and after selecting attributes to map, the mapping button between the two schema trees will be enabled.
+
+
+![Button to link selected nodes](../assets/mscr/create_mapping.png)
+
+
+- After clicking the mapping icon, pop up dialog will be opened where user can add some more details about the mapping. When it is done, Save button should be clicked to save the mapping. 
+
+
+![Modal for editing mapping](../assets/mscr/edit_mapping.png)
+
+
+- After saving, list of mappings will appear in a different tab
+
+
+![List of mappings](../assets/mscr/mapping_list.png)
+
+
+### Edit Metadata
+In the crosswalk Metadata tab, the basic metadata related to that crosswalk is visible. Some of the metadata fields are editable and to edit, user need to click "Edit Metadata" menu. This will enable the editable text fields and after editing finishes, user need to click save to save the changes have been made.
+
+![Edit Crosswalk Metadata](../assets/mscr/edit-crosswalk-metadata.png)
+
+### Publish Crosswalk
+When a crosswalk is created, it is by default in draft state and not visible to others. If the user is satisfied about the crosswalk created and the mappings, it is possible to publish the crosswalk with the "Publish crosswalk" menu. Publishing a crosswalk will create a resolvable handle for the crosswalk which can be shared with others and will be visible upon searching in MSCR registry. After publishing a content, it cannot be reverted to draft state. If one needs to change something in a published crosswalk, it can be done by creating a revision of that and editing that version of crosswalk.
+
+![Publishing a Crosswalk](../assets/mscr/publish-crosswalk.png)
+
+
+### Add new revision
+
+### Delete Draft
+
+### Example of mapping creations
+
 
 
 ## Mapping details

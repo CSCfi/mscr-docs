@@ -101,8 +101,6 @@ API tokens can be created for both users and groups. Group API tokens can be use
 
 These are the files types that can be uploaded as part of the schema registration process. 
 
-#### Prioritized list of possible schema description formats:
-
 ##### CSV 
 - First one because of the simplicity. Basically list of field names. Default and only datatype is string. 
 ##### JSON Schema
@@ -123,7 +121,7 @@ Incoming schemas are validated based on their $schema property.
 - RDFS
 - CSV Schema
 
-A brief smmary of MSCR supported formats and media types are given below: 
+A brief summary of MSCR supported formats and media types are given below: 
 
 | Format      | Media Type      |   Mappable   |  Sub Type  | Notes|
 | ----------- | ----------------|--------------|------------|------|
@@ -141,21 +139,32 @@ A brief smmary of MSCR supported formats and media types are given below:
 All uploaded schemas are processed into a common SHACL based graph and visualized in a unified manner. 
 
 ## Supported crosswalk description formats
+MSCR supports four formats for registering existing crosswalks: PDF, CSV, XSLT and SSSOM (see Table below). Only one of them, SSSOM, is editable and the others are only available for download. PDF has remained a popular format for describing crosswalks up to this date. For example, DataCite has published crosswalks to Dublin Core (https://doi.org/10.14454/qn00-qx85) and schema.org (http://doi.org/10.5281/zenodo.7661399) in PDF format. The other popular way of describing correspondences is a table or a set of tables. For example, CodeMeta crosswalks (https://codemeta.github.io/crosswalk/) are a good example of simple mappings expressed as CSV files. A generic table format without any additional information does not provide any information about the meaning of columns being used so it is not usable to for automated processing and is therefore not editable in MSCR. XML stylesheets (XSLT) are of also still a common tool when it comes to applying transformations between XML documents. It is a powerful tool with mapping possibility that go far beyond the the mapping model of the MSCR. SSSOM on the other hand has a simple model with restricted and very focused feature set geared towards sharing of semantic mappings. MSCR can convert the registered SSSOM file into its internal mapping representation and therefore the SSSOM crosswalk can be edited and viewed similarly to any crosswalk created from scratch with the crosswalk editor. 
+
 
 These are files types that can be uploaded as part of the crosswalk registration process.
 
-#### Priotized list of supported crosswalk description formats:
-
-##### TXT/PDF
+#### TXT/PDF
 although not technically a structured format, text files that contain  a description of (a set of) mappings will be supported, simple data management can take place on this type of files, but they are not processed as part of the import.
-##### Simple mapping table
+#### Simple mapping table
 Converted into internal format and editable
-##### SSSOM Mapping set
+#### SSSOM Mapping set
 Converted into internal format and partly editable
-##### XSLT
+#### XSLT
 XSLT files can be registered, but they are not processed as part of the import. This means that this kind of content can be utilized as part of the transformation service and but cannot be visualized or edited using MSCR. 
-##### The rest
+#### RML
 RML- Could be converted into internal format. Source schema format must be RDF.
+
+A brief summary of MSCR supported formats and media types are given below: 
+
+| Format      | Media Type      |   Editable   |  Sub Type  |
+| ----------- | ----------------|--------------|------------|
+| `SSSOM`       | text/csv        |Yes           | Semantic Mapping|
+| `Table`       | text/csv       |  No           | |
+| `XSLT`        | text/xml       |  No           | |
+| `PDF`         | application/pdf|  No           | |
+
+
 
 ## Related content - Versions and variants
 
@@ -213,7 +222,7 @@ Variants are implicitly related content:
 * Schema variants share the same namespace
 * Crosswalk variants share the source and target schemas.
 
-![Content Versions](../assets/version_flow.png)
+![Content Versions](../assets/mscr/version_flow.png)
 
 In addition to adding a descriptive title, the schemas can be described using version label and namespace metadata. 
 
@@ -278,7 +287,7 @@ New content in DRAFT state can be created with minimal metadata. Visibility of a
 
 Registering content created within MSCR (e.g. crosswalk) means describing the content with some additional metadata and making it visible to the public. Once content status has been set to PUBLISHED it cannot be hidden any more. Published content can be moved to either INVALID (something went wrong) or DEPRECATED (still valid, but newer version preferred), which are the final statuses for content. 
 
-![status state diagram - with deleted ](../assets/state-diagram.png)
+![status state diagram - with deleted ](../assets/mscr/state-diagram.png)
 
 * If users are allowed to delete content, it could be set to REMOVED (or ARCHIVED) state and hidden from all but administrator users. 
 

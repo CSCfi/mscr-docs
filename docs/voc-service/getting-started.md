@@ -77,7 +77,7 @@ XML import, i.e. a file in the NTRF format for Nordic terminological data and SK
 
 Follow these steps if you want to add new concepts to an existing vocabulary. The simple Excel import only import basic concept information and it cannot be used to import relationship information.
 
-[Example Excel import file](../assets/concept_import_excel_example.xlsx)
+[Example Excel import file](../assets/mscr/concept_import_excel_example.xlsx)
 
 Note: Do not update existing concepts in this Excel file. If you update existing concepts with this file, the concepts will appear twice in the vocabulary.
 
