@@ -91,7 +91,7 @@ Schema visualization tab offers a tree view structure for the registered schema.
 
 ![Schema visualization tab view](../assets/mscr/schema-visualization.png)
 
-##### Different Schema Visulization of various Schema Format
+Different format schemas are visulized a bit differently in MSCR for the ease of use. To know more about various visulizations and their purpose, refer to [Schema View](./schema-view.md)
 
 #### Schema Version History
 MSCR allows users to create and store different versions and variants for registered schemas. Schema version history tab consists of all the available versions for that specific schema.
@@ -107,6 +107,8 @@ The basic actions available for the schema manipulation in the current MSCR UI a
 * Edit Metadata
     - Edit the metadata of the schema.
 
+* Edit Schema
+
 * Invalidate schema
 
 * Deprecate schema
@@ -115,8 +117,10 @@ The basic actions available for the schema manipulation in the current MSCR UI a
 * Make MSCR Copy
 
 ### Creating MSCR Copy of a Schema
+
 ![Creating MSCR Copy of Schema](../assets/mscr/mscr-copy.png)
-mkdocs
+
+
 User can create a MSCR copy of the registered schema which transform the schema into internal format used in MSCR. This is a prerequisite for schema editing. This option is available when schema format is something that is possible to process to MSCR's internal format, whih are currently CSV, XSD, JSONSCHEMA, SHACL. State of the new copy will be always "Draft" and format will be "MSCR".
 
 Creating MSCR copy is not available for schemas which are already in "MSCR" format.
