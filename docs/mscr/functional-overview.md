@@ -60,7 +60,7 @@ System must support following user roles:
 
 ## Possible Users of MSCR
 
-#### Schema Maintainer
+### Schema Maintainer
 Responsible for development of one or more schemas.
 
 - Registers up-to-date versions of the schema
@@ -68,19 +68,19 @@ Responsible for development of one or more schemas.
 - Identifies other registered schema for potential mapping candidates (to and from)
 - Uses other schemas for benchmarking and further development of their own schema
 
-#### Schema Contributor
+### Schema Contributor
 Participates in the development of one or more schemas. Has in-depth knowledge about one or more schemas. Is interested in helping others to use the schemas she/he is involved with. 
 
 - Maintains and implements mappings to other schemas
 - Comments mappings of familiar schemas
 
-#### Researchers
+### Researchers
 - Is not interested in registering schemas,
 - Might be interested in registering crosswalks
 - Utilizes crosswalks in order to integrate data from different sources for research purposes
 - Potentially complex schemas
 
-#### Data engineer/integrator (developer)
+### Data engineer/integrator (developer)
 - Searches for registered schemas crosswalks based on given requirements (Implement API that support specific schema)
 - Utilizes existing crosswalks as is
 - Creates new crosswalks that are based on existing mappings
@@ -91,7 +91,7 @@ Participates in the development of one or more schemas. Has in-depth knowledge a
 
 ## Authentication and authorization
 
-The user must be able to register/login using either the internal user database or EOSC AAI service. 
+The user must be able to register/login using either the internal user database or External AAI service.Currently MSCR is integrated with B2Access Production AAI.Integrating with a well-connected federation ensures that users can easily access the MSCR regardless of their home organisation. 
 
 ## API tokens
 
@@ -107,6 +107,7 @@ These are the files types that can be uploaded as part of the schema registratio
 - First one because of the simplicity. Basically list of field names. Default and only datatype is string. 
 ##### JSON Schema
 Incoming schemas are validated based on their $schema property. 
+
 - Only certain JSON Schema version will be supported
 - Only a subset of meta schema features might be supported for each JSON Schema version. 
 ##### XSD
@@ -121,6 +122,21 @@ Incoming schemas are validated based on their $schema property.
 ##### The rest
 - RDFS
 - CSV Schema
+
+A brief smmary of MSCR supported formats and media types are given below: 
+
+| Format      | Media Type      |   Mappable   |  Sub Type  | Notes|
+| ----------- | ----------------|--------------|------------|------|
+| `CSV`       | text/csv        |Yes           | Data Schema|File must contain only one line with fields separated by comma|
+| `XSD`       | text/xml        |Yes           | Data Schema | Not all features of XSD supported|
+| `JSON Schema`| application/json | Yes        | Data Schema |Implementation based on draft-04.No support for allOf, oneOf, anyOf or not.|
+| `RDFS`       | text/turtle        |Yes           | Data Schema |Processed as data schema (see X) so visualization requires the use of rdfs:domain and rdfs:range properties.|
+| `SHACL`       | text/turtle        |Yes           | Data Schema | Only supported  RDF format is turtle|
+| `OWL`       | text/turtle        |Yes           | Ontology | Only supported RDF format is turtle|
+| `SKOS`       | text/turtle        |Yes           | Vocabulary | Only supported RDF format is turtle|
+|`ENUM`	        |text/plain	       | Yes	| Vocabulary	|One line per term.|
+|`PDF`	        |application/pdf	       | no	| 	||
+
 
 All uploaded schemas are processed into a common SHACL based graph and visualized in a unified manner. 
 

@@ -73,9 +73,10 @@ How these functions can be done in UI, is described below:
 
 
 ### Schema Detail View
-If you click on the registered schema from the schema list, it will navigate to schema metadata and visualization view. This view has three tabs containing schema metadata, schema visualization and schema version history.
 
-#### Schema Metadata 
+After the schemas has been successfully registered, it is browsable using the MSCR schema view. Schema view is divided into three tabs. "Metadata and files" tab shows all the metadata available for the content and lists download links to the original content as well as links to the generated internal representation for CSV, XSD and JSONSchema formats. "Schema" tab shows a visualization of the schema using a tree structure. The content of the tree is dependent of the schema format. For CSV, XSD and JSONSchema the tree shows the fully materialized structure of the schema (see figure X) i.e. all the possible elements. And the last one is the "Version History" tab which is the list of the revisions created for this particular schema in the MSCR Registry.
+
+#### Schema Metadata Tab
 You can see the schema specific details and the related files in the schema metadata view. If the user has the correct rights, schema metadata is editable and changes will be saved.
 
 ![Schema metadata tab view](../assets/schema-metadata.png)
@@ -89,6 +90,8 @@ To edit the schema metadata, one needs to select "edit metadata" from the schema
 Schema visualization tab offers a tree view structure for the registered schema. Schemas are converted to an MSCR specific format and tree view is generated from that. The view may be empty for certain formats like PDF that cannot be rendered as a tree.
 
 ![Schema visualization tab view](../assets/schema-visualization.png)
+
+##### Different Schema Visulization of various Schema Format
 
 #### Schema Version History
 MSCR allows users to create and store different versions and variants for registered schemas. Schema version history tab consists of all the available versions for that specific schema.
@@ -164,5 +167,11 @@ Crosswalk editor is used to create mappings between schema fields which can be s
 
 
 
-### Search Content
+### Search Contents in MSCR
+
+MSCR provides basic search and browse functionality for all schemas and crosswalks that have their visibility set to public. This means that all content than is not in DRAFT state is findable through the search. There is a search box at the top right corner of MSCR UI, where user can type the name of the content he is searching for.
+
+![Search and Browse in MSCR](../assets/mscr/search.png)
+
+Search returns only the latest revision of the content by default. This means that if there are older revisions that might have slightly different metadata (e..g the name) it might not come up in the results. 
 

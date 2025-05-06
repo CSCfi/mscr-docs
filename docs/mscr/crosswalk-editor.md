@@ -561,5 +561,10 @@ Output a constant value that will override any other processing and values.
 
 Returns the parameter string with the leading, trailing, and repeating white spaces stripped.
 
+## Operationalization of the Crosswalks
+MSCR provides different kinds of generated artefacts for data transformation and semantic alignment scenarios. Data transformations are described as data crosswalk between data schemas and are facilitated through generated files (e.g. XSLT) that can be executed by external system to transform schema instance documents.  The semantic alignment of vocabularies and ontologies is based on exporting mappings as SKOS and SSSOM files. Generated artefacts are available for download in the UI under "Auto-generated files" list in the crosswalk's "Metadata and files" view. 
+
+### Add the generated files tab
+
 
   
