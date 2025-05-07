@@ -14,7 +14,7 @@ The MSCR contents can be divided into two main categories. They are, Metadata Sc
 
 ## Content Registration 
 ### Schema Registration
-Users can register their schemas of different formats in the MSCR and it will be stored with a resolvable handle in MSCR server. These handles can be used to reference the schema stored in MSCR. User can register schema either using an URI of already published schema elsewhere or uploading a schema file to MSCR Registry.
+Users can register their schemas of different formats in the MSCR and it will be stored with a resolvable handle in MSCR server. These handles can be used to reference the schema stored in MSCR. User can register schema either using an URI of already published schema elsewhere or uploading a schema file to MSCR Registry. To check which formats are supported in mscr, see [supported format description](./functional-overview.md/#supported-schema-description-formats)
 
 ![Schema registering modal](../assets/mscr/register-schema.png)
 
