@@ -22,5 +22,8 @@ To access MSCR Application please visit [https://mscr-release.2.rahtiapp.fi/](ht
 
 ## Support and Feedback
 
+## Terms of Use
+To know the terms of use for using MSCR service please see here
+
 
 

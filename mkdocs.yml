@@ -32,6 +32,7 @@ nav:
     - MSCR Concepts: 'mscr/functional-overview.md'
     - Schema view: 'mscr/schema-view.md'
     - Crosswalk editor: 'mscr/crosswalk-editor.md'
+    - Handling Common Error: 'mscr/handle-common-error.md'
     - API:
       - 'Getting started': 'mscr/api-getting-started.md'
       - 'Usage guide': 'mscr/api-usage-guide.md'
@@ -43,4 +44,8 @@ nav:
     - 'Usage guide': groups/usage-guide.md
   - 'Developers Guide':
     - 'Getting started': developer/develop-guide.md
+  - 'Service Policy':
+    - 'Terms of Use': terms-of-use.md
+    - 'Acceptable Use Policy': acceptable-use-policy.md
+    - 'Privacy Policy': privacy-guideline.md
     
