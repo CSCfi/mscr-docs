@@ -76,8 +76,21 @@ When a crosswalk is created, it is by default in draft state and not visible to 
 
 
 ### Add new revision
+To create a new revision of a crosswalk, user need to select the "Add new revision" option from the crosswalks action menu. Clicking the "Add New Revision" button will open a pop up dialogue. The source and target schema cannot be changed while creating a new revision for a crosswalk. Revisions of crosswalks serves the purpose if there is need to create slightly different versions of the same crosswalk.
+
+![Adding a new revision of a Crosswalk](../assets/crosswalkeditor/revision_of_crosswalk.png)
+
+You need to add a name and optional description the new revision of the crosswalk. The default format for the revision of a crosswalk is "MSCR". The created revisions can be found in the version history tab.
+
+![Revisions of a Crosswalk](../assets/crosswalkeditor/version_history_crosswalk.png)
+
+
 
 ### Delete Draft
+
+The unpublished crosswalks which are still in draft state, can be deleted by selecting the "Delete draft" option from the action menu. Once the draft is deleted, it will not be visible or searchable anymore. But, published content cannot be deleted once it has been published.
+
+![Deleting a Crosswalk](../assets/crosswalkeditor/delete_crosswalk_draft.png)
 
 ### Example of mapping creations
 
