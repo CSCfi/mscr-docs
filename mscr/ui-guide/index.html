@@ -1,0 +1,1253 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../..">
+      
+      
+        <link rel="next" href="../mscr-deployment/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.6">
+    
+    
+      
+        <title>UI Guide - MSCR docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.558e4712.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#login" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="MSCR docs" class="md-header__button md-logo" aria-label="MSCR docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MSCR docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              UI Guide
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link md-tabs__link--active">
+        Metadata schema and crosswalk registry
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../voc-service/getting-started/" class="md-tabs__link">
+        Vocabulary service
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../groups/getting-started/" class="md-tabs__link">
+        Group management
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../developer/develop-guide/" class="md-tabs__link">
+        Developers Guide
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../terms-of-use/" class="md-tabs__link">
+        Service Policy
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../interoperability-guidelines/" class="md-tabs__link">
+      Interoperability guidelines
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="MSCR docs" class="md-nav__button md-logo" aria-label="MSCR docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+
+    </a>
+    MSCR docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_1" type="checkbox" id="__nav_1" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1" tabindex="0" aria-expanded="true">
+          Metadata schema and crosswalk registry
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Metadata schema and crosswalk registry" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Metadata schema and crosswalk registry
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          UI Guide
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        UI Guide
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#login" class="md-nav__link">
+    Login
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mscr-home" class="md-nav__link">
+    MSCR Home
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contents-in-mscr" class="md-nav__link">
+    Contents in MSCR
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#content-registration" class="md-nav__link">
+    Content Registration
+  </a>
+  
+    <nav class="md-nav" aria-label="Content Registration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schema-registration" class="md-nav__link">
+    Schema Registration
+  </a>
+  
+    <nav class="md-nav" aria-label="Schema Registration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schema-registration-with-file-modal" class="md-nav__link">
+    Schema Registration with File Modal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schema-registration-with-url-modal" class="md-nav__link">
+    Schema Registration with URL Modal
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#general-error-situations-while-registering-a-schema" class="md-nav__link">
+    General Error Situations while registering a schema
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#registering-crosswalks" class="md-nav__link">
+    Registering Crosswalks
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schema-management-in-mscr" class="md-nav__link">
+    Schema Management in MSCR
+  </a>
+  
+    <nav class="md-nav" aria-label="Schema Management in MSCR">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schema-detail-view" class="md-nav__link">
+    Schema Detail View
+  </a>
+  
+    <nav class="md-nav" aria-label="Schema Detail View">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schema-metadata-tab" class="md-nav__link">
+    Schema Metadata Tab
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schema-visualization" class="md-nav__link">
+    Schema Visualization
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schema-version-history" class="md-nav__link">
+    Schema Version History
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#action-menu-for-schema-visulization-tab" class="md-nav__link">
+    Action Menu for Schema Visulization Tab
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-mscr-copy-of-a-schema" class="md-nav__link">
+    Creating MSCR Copy of a Schema
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-new-revision-of-schema" class="md-nav__link">
+    Creating a new revision of Schema
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search-contents-in-mscr" class="md-nav__link">
+    Search Contents in MSCR
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mscr-deployment/" class="md-nav__link">
+        Deployment
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../functional-overview/" class="md-nav__link">
+        MSCR Concepts
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../schema-view/" class="md-nav__link">
+        Schema view
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../crosswalk-editor/" class="md-nav__link">
+        Crosswalk editor
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../handle-common-error/" class="md-nav__link">
+        Handling Common Error
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_1_8" type="checkbox" id="__nav_1_8">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1_8" tabindex="0" aria-expanded="false">
+          API
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="API" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_8">
+          <span class="md-nav__icon md-icon"></span>
+          API
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-getting-started/" class="md-nav__link">
+        Getting started
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-usage-guide/" class="md-nav__link">
+        Usage guide
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../release-notes/" class="md-nav__link">
+        Release notes
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2" type="checkbox" id="__nav_2">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2" tabindex="0" aria-expanded="false">
+          Vocabulary service
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Vocabulary service" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Vocabulary service
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../voc-service/getting-started/" class="md-nav__link">
+        Getting started
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3" type="checkbox" id="__nav_3">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" tabindex="0" aria-expanded="false">
+          Group management
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Group management" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Group management
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../groups/getting-started/" class="md-nav__link">
+        Getting started
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../groups/usage-guide/" class="md-nav__link">
+        Usage guide
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4" type="checkbox" id="__nav_4">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4" tabindex="0" aria-expanded="false">
+          Developers Guide
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Developers Guide" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Developers Guide
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/develop-guide/" class="md-nav__link">
+        Getting started
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_5" type="checkbox" id="__nav_5">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5" tabindex="0" aria-expanded="false">
+          Service Policy
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Service Policy" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Service Policy
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../terms-of-use/" class="md-nav__link">
+        Terms of Use
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../acceptable-use-policy/" class="md-nav__link">
+        Acceptable Use Policy
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../privacy-guideline/" class="md-nav__link">
+        Privacy Policy
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interoperability-guidelines/" class="md-nav__link">
+        Interoperability guidelines
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#login" class="md-nav__link">
+    Login
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mscr-home" class="md-nav__link">
+    MSCR Home
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contents-in-mscr" class="md-nav__link">
+    Contents in MSCR
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#content-registration" class="md-nav__link">
+    Content Registration
+  </a>
+  
+    <nav class="md-nav" aria-label="Content Registration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schema-registration" class="md-nav__link">
+    Schema Registration
+  </a>
+  
+    <nav class="md-nav" aria-label="Schema Registration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schema-registration-with-file-modal" class="md-nav__link">
+    Schema Registration with File Modal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schema-registration-with-url-modal" class="md-nav__link">
+    Schema Registration with URL Modal
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#general-error-situations-while-registering-a-schema" class="md-nav__link">
+    General Error Situations while registering a schema
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#registering-crosswalks" class="md-nav__link">
+    Registering Crosswalks
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schema-management-in-mscr" class="md-nav__link">
+    Schema Management in MSCR
+  </a>
+  
+    <nav class="md-nav" aria-label="Schema Management in MSCR">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schema-detail-view" class="md-nav__link">
+    Schema Detail View
+  </a>
+  
+    <nav class="md-nav" aria-label="Schema Detail View">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schema-metadata-tab" class="md-nav__link">
+    Schema Metadata Tab
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schema-visualization" class="md-nav__link">
+    Schema Visualization
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schema-version-history" class="md-nav__link">
+    Schema Version History
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#action-menu-for-schema-visulization-tab" class="md-nav__link">
+    Action Menu for Schema Visulization Tab
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-mscr-copy-of-a-schema" class="md-nav__link">
+    Creating MSCR Copy of a Schema
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-new-revision-of-schema" class="md-nav__link">
+    Creating a new revision of Schema
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search-contents-in-mscr" class="md-nav__link">
+    Search Contents in MSCR
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>UI Guide</h1>
+
+<h2 id="login">Login</h2>
+<p>To be able to create and register contents in MSCR, user needs to login with proper credentials. MSCR uses EOSC AAI and currently supports Google and Orcid as means of authentication. The current test version of MSCR deployment can be found at <a href="https://mscr-release.2.rahtiapp.fi/">MSCR Web App</a>.</p>
+<h2 id="mscr-home">MSCR Home</h2>
+<p>After login, user should be able to see user's own workspace and the groups those which the user is part of. Both personal workspace is again divided in two main page- schemas and crosswalks. Schema page contains the schemas the user or his group have registered in MSCR and same for the crosswalks.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/mscr/mscr-home-new.png" data-desc-position="bottom"><img alt="Schemas in personal workspace" src="../../assets/mscr/mscr-home-new.png"></a></p>
+<h2 id="contents-in-mscr">Contents in MSCR</h2>
+<p>The MSCR contents can be divided into two main categories. They are, Metadata Schemas and Crosswalk(See <a href="../functional-overview/">MSCR Concepts</a>).The features that MSCR provides to manage the contents are mainly registering those contents in MSCR and different functionlities to manage them. </p>
+<h2 id="content-registration">Content Registration</h2>
+<h3 id="schema-registration">Schema Registration</h3>
+<p>Users can register their schemas of different formats in the MSCR and it will be stored with a resolvable handle in MSCR server. These handles can be used to reference the schema stored in MSCR. User can register schema either using an URI of already published schema elsewhere or uploading a schema file to MSCR Registry. To check which formats are supported in mscr, see <a href="./functional-overview.md/#supported-schema-description-formats">supported format description</a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/mscr/register-schema.png" data-desc-position="bottom"><img alt="Schema registering modal" src="../../assets/mscr/register-schema.png"></a></p>
+<p>The steps to add a schema in MSCR are as follows:</p>
+<ul>
+<li>Provide an URI or upload a schema file</li>
+<li>Select the file format for the intended schema.</li>
+<li>Add Name and Description (optional) for the schema.</li>
+<li>Add status (Default status should be DRAFT for the registered contents)</li>
+<li>Click Register button to continue.</li>
+</ul>
+<h5 id="schema-registration-with-file-modal">Schema Registration with File Modal</h5>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/mscr/register-schema-with-file.png" data-desc-position="bottom"><img alt="Schema registering with file" src="../../assets/mscr/register-schema-with-file.png"></a></p>
+<h5 id="schema-registration-with-url-modal">Schema Registration with URL Modal</h5>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/mscr/register-schema-with-url.png" data-desc-position="bottom"><img alt="Schema registering with URL" src="../../assets/mscr/register-schema-with-url.png"></a></p>
+<p>If the schema registration goes successfully, the user will be navigated to schema metadata tab where all the metadata related to the regsistered schema is shown.</p>
+<h3 id="general-error-situations-while-registering-a-schema">General Error Situations while registering a schema</h3>
+<p>If the schema registration is unsuccessful, user will be prompted with the error message. The main issues currently for a failure to register the schema can be one of the following:</p>
+<ul>
+<li>Unsupported File Format.</li>
+<li>Parsing Error.</li>
+<li>Missing field in the Form.</li>
+</ul>
+<h3 id="registering-crosswalks">Registering Crosswalks</h3>
+<p>Users can register their existing crosswalks with MSCR and can view the crosswalk in crosswalk editor if the crosswalk format is supported by MSCR. For registering a crosswalk follow the following steps:</p>
+<ul>
+<li>Select the source schema and target schema from the dropdown list. Remember, source and target schemas also need to be registered with MSCR and the visibility should be public before registering the crosswalk.</li>
+<li>Add the crosswalk file in the MSCR supported formats. See more in the supported formats link.</li>
+<li>Add name and description for the crosswalk.</li>
+<li>Draft state should be selected while registering new content.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/mscr/register_crosswalk.png" data-desc-position="bottom"><img alt="Crosswalk registration modal" src="../../assets/mscr/register_crosswalk.png"></a></p>
+<h2 id="schema-management-in-mscr">Schema Management in MSCR</h2>
+<p>The basic functionalities that is available for schema management are</p>
+<ul>
+<li>Registering own Schemas or schemas hosted elsewhere by URL as draft.</li>
+<li>Visulizing the Schema with a schema tree (exception PDF schemas)</li>
+<li>Creating revisions of Schema</li>
+<li>Creating MSCR Copy of the Schema</li>
+<li>Deleting the Schema</li>
+<li>Publishing the schema.</li>
+<li>Type Editing for the schema properties</li>
+</ul>
+<p>How these functions can be done in UI, is described below:</p>
+<h3 id="schema-detail-view">Schema Detail View</h3>
+<p>After the schemas has been successfully registered, it is browsable using the MSCR schema view. Schema view is divided into three tabs. "Metadata and files" tab shows all the metadata available for the content and lists download links to the original content as well as links to the generated internal representation for CSV, XSD and JSONSchema formats. "Schema" tab shows a visualization of the schema using a tree structure. The content of the tree is dependent of the schema format. For CSV, XSD and JSONSchema the tree shows the fully materialized structure of the schema (see figure X) i.e. all the possible elements. And the last one is the "Version History" tab which is the list of the revisions created for this particular schema in the MSCR Registry.</p>
+<h4 id="schema-metadata-tab">Schema Metadata Tab</h4>
+<p>You can see the schema specific details and the related files in the schema metadata view. If the user has the correct rights, schema metadata is editable and changes will be saved.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/mscr/schema-metadata.png" data-desc-position="bottom"><img alt="Schema metadata tab view" src="../../assets/mscr/schema-metadata.png"></a></p>
+<p>To edit the schema metadata, one needs to select "edit metadata" from the schema action menu. After clicking it, fields of schema metadata will become and editable and changes need to be saved for the edit to be successful.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/mscr/edit-metadata-schema.png" data-desc-position="bottom"><img alt="Edit Schema metadata" src="../../assets/mscr/edit-metadata-schema.png"></a></p>
+<h4 id="schema-visualization">Schema Visualization</h4>
+<p>Schema visualization tab offers a tree view structure for the registered schema. Schemas are converted to an MSCR specific format and tree view is generated from that. The view may be empty for certain formats like PDF that cannot be rendered as a tree.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/mscr/schema-visualization.png" data-desc-position="bottom"><img alt="Schema visualization tab view" src="../../assets/mscr/schema-visualization.png"></a></p>
+<p>Different format schemas are visulized a bit differently in MSCR for the ease of use. To know more about various visulizations and their purpose, refer to <a href="../schema-view/">Schema View</a></p>
+<h4 id="schema-version-history">Schema Version History</h4>
+<p>MSCR allows users to create and store different versions and variants for registered schemas. Schema version history tab consists of all the available versions for that specific schema.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/mscr/version-history.png" data-desc-position="bottom"><img alt="Schema version history tab view" src="../../assets/mscr/version-history.png"></a></p>
+<h3 id="action-menu-for-schema-visulization-tab">Action Menu for Schema Visulization Tab</h3>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/mscr/action-menu.png" data-desc-position="bottom"><img alt="Schema Action Menu" src="../../assets/mscr/action-menu.png"></a></p>
+<p>The basic actions available for the schema manipulation in the current MSCR UI are:</p>
+<ul>
+<li>
+<p>Edit Metadata</p>
+<ul>
+<li>Edit the metadata of the schema.</li>
+</ul>
+</li>
+<li>
+<p>Edit Schema</p>
+</li>
+<li>
+<p>Invalidate schema</p>
+</li>
+<li>
+<p>Deprecate schema</p>
+<ul>
+<li>Means there is new version available for the specific schema which is preferred</li>
+</ul>
+</li>
+<li>Add new revision</li>
+<li>Make MSCR Copy</li>
+</ul>
+<h3 id="creating-mscr-copy-of-a-schema">Creating MSCR Copy of a Schema</h3>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/mscr/mscr-copy.png" data-desc-position="bottom"><img alt="Creating MSCR Copy of Schema" src="../../assets/mscr/mscr-copy.png"></a></p>
+<p>User can create a MSCR copy of the registered schema which transform the schema into internal format used in MSCR. This is a prerequisite for schema editing. This option is available when schema format is something that is possible to process to MSCR's internal format, whih are currently CSV, XSD, JSONSCHEMA, SHACL. State of the new copy will be always "Draft" and format will be "MSCR".</p>
+<p>Creating MSCR copy is not available for schemas which are already in "MSCR" format.</p>
+<h3 id="creating-a-new-revision-of-schema">Creating a new revision of Schema</h3>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/mscr/register-revision.png" data-desc-position="bottom"><img alt="Creating Revision of Schema" src="../../assets/mscr/register-revision.png"></a></p>
+<p>It is possible to create a new revision for the registered mscr schemas. The need for creating revisions can be that user wants to do some corrections or bug fixes to some already published content. The steps are almost like registering a new schema with some differences.</p>
+<ul>
+<li>User need to provide the schema file either as normal file upload or the URL</li>
+<li>Format and State of the content cannot be edited while creating a revision. So, revisions of the schema should be if the same format as the main content.</li>
+<li>Some meaningful name and description will help the user to find it easily later.</li>
+</ul>
+<h3 id="search-contents-in-mscr">Search Contents in MSCR</h3>
+<p>MSCR provides basic search and browse functionality for all schemas and crosswalks that have their visibility set to public. This means that all content than is not in DRAFT state is findable through the search. There is a search box at the top right corner of MSCR UI, where user can type the name of the content he is searching for.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/mscr/search.png" data-desc-position="bottom"><img alt="Search and Browse in MSCR" src="../../assets/mscr/search.png"></a></p>
+<p>Search returns only the latest revision of the content by default. This means that if there are older revisions that might have slightly different metadata (e..g the name) it might not come up in the results. </p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "content.code.copy"], "search": "../../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.51d95adb.min.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

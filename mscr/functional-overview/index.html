@@ -1,0 +1,2237 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../mscr-deployment/">
+      
+      
+        <link rel="next" href="../schema-view/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.6">
+    
+    
+      
+        <title>MSCR Concepts - MSCR docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.558e4712.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#content-registration" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="MSCR docs" class="md-header__button md-logo" aria-label="MSCR docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MSCR docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              MSCR Concepts
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link md-tabs__link--active">
+        Metadata schema and crosswalk registry
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../voc-service/getting-started/" class="md-tabs__link">
+        Vocabulary service
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../groups/getting-started/" class="md-tabs__link">
+        Group management
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../developer/develop-guide/" class="md-tabs__link">
+        Developers Guide
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../terms-of-use/" class="md-tabs__link">
+        Service Policy
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../interoperability-guidelines/" class="md-tabs__link">
+      Interoperability guidelines
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="MSCR docs" class="md-nav__button md-logo" aria-label="MSCR docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+
+    </a>
+    MSCR docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_1" type="checkbox" id="__nav_1" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1" tabindex="0" aria-expanded="true">
+          Metadata schema and crosswalk registry
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Metadata schema and crosswalk registry" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Metadata schema and crosswalk registry
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ui-guide/" class="md-nav__link">
+        UI Guide
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mscr-deployment/" class="md-nav__link">
+        Deployment
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          MSCR Concepts
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        MSCR Concepts
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#content-registration" class="md-nav__link">
+    Content registration
+  </a>
+  
+    <nav class="md-nav" aria-label="Content registration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-vocabulary-related-to-mscr-content" class="md-nav__link">
+    Basic vocabulary related to MSCR content:
+  </a>
+  
+    <nav class="md-nav" aria-label="Basic vocabulary related to MSCR content:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#different-levels-of-registered-content" class="md-nav__link">
+    Different levels of registered content
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-groups" class="md-nav__link">
+    User Groups
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-roles" class="md-nav__link">
+    User Roles
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#possible-users-of-mscr" class="md-nav__link">
+    Possible Users of MSCR
+  </a>
+  
+    <nav class="md-nav" aria-label="Possible Users of MSCR">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schema-maintainer" class="md-nav__link">
+    Schema Maintainer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schema-contributor" class="md-nav__link">
+    Schema Contributor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#researchers" class="md-nav__link">
+    Researchers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-engineerintegrator-developer" class="md-nav__link">
+    Data engineer/integrator (developer)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authentication-and-authorization" class="md-nav__link">
+    Authentication and authorization
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api-tokens" class="md-nav__link">
+    API tokens
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supported-schema-description-formats" class="md-nav__link">
+    Supported schema description formats
+  </a>
+  
+    <nav class="md-nav" aria-label="Supported schema description formats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#csv" class="md-nav__link">
+    CSV
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#json-schema" class="md-nav__link">
+    JSON Schema
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xsd" class="md-nav__link">
+    XSD
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skos-rdf" class="md-nav__link">
+    SKOS RDF
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shacl" class="md-nav__link">
+    SHACL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#owl" class="md-nav__link">
+    OWL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-rest" class="md-nav__link">
+    The rest
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supported-crosswalk-description-formats" class="md-nav__link">
+    Supported crosswalk description formats
+  </a>
+  
+    <nav class="md-nav" aria-label="Supported crosswalk description formats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#txtpdf" class="md-nav__link">
+    TXT/PDF
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simple-mapping-table" class="md-nav__link">
+    Simple mapping table
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sssom-mapping-set" class="md-nav__link">
+    SSSOM Mapping set
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xslt" class="md-nav__link">
+    XSLT
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rml" class="md-nav__link">
+    RML
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related-content-versions-and-variants" class="md-nav__link">
+    Related content - Versions and variants
+  </a>
+  
+    <nav class="md-nav" aria-label="Related content - Versions and variants">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#open-questions" class="md-nav__link">
+    Open questions:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#versioning-in-ui" class="md-nav__link">
+    Versioning in UI
+  </a>
+  
+    <nav class="md-nav" aria-label="Versioning in UI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-a-new-version" class="md-nav__link">
+    Add a new version
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-a-mscr-copy" class="md-nav__link">
+    Create a MSCR copy
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#content-status-and-visibility" class="md-nav__link">
+    Content status and visibility
+  </a>
+  
+    <nav class="md-nav" aria-label="Content status and visibility">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#statusvisibility-in-the-api" class="md-nav__link">
+    Status/visibility in the API
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#statusvisibility-in-the-ui" class="md-nav__link">
+    Status/visibility in the UI
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#content-structure" class="md-nav__link">
+    Content structure
+  </a>
+  
+    <nav class="md-nav" aria-label="Content structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#structural-schema-vs-vocabulary-schema" class="md-nav__link">
+    Structural schema vs. vocabulary schema
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schemas" class="md-nav__link">
+    Schemas
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mappings" class="md-nav__link">
+    Mappings
+  </a>
+  
+    <nav class="md-nav" aria-label="Mappings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#implementation-of-the-content-structure" class="md-nav__link">
+    Implementation of the content structure
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schema-namespaces" class="md-nav__link">
+    Schema namespaces
+  </a>
+  
+    <nav class="md-nav" aria-label="Schema namespaces">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mappings-between-different-type-of-schemas" class="md-nav__link">
+    Mappings between different type of schemas
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notifications" class="md-nav__link">
+    Notifications
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pid-management" class="md-nav__link">
+    PID management
+  </a>
+  
+    <nav class="md-nav" aria-label="PID management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hosted-contents" class="md-nav__link">
+    Hosted Contents
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#referenced-content" class="md-nav__link">
+    Referenced content
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schema-editing" class="md-nav__link">
+    Schema editing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#internal-data-model" class="md-nav__link">
+    Internal data model
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#faceted-search" class="md-nav__link">
+    Faceted search
+  </a>
+  
+    <nav class="md-nav" aria-label="Faceted search">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#search-parameters" class="md-nav__link">
+    Search Parameters:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../schema-view/" class="md-nav__link">
+        Schema view
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../crosswalk-editor/" class="md-nav__link">
+        Crosswalk editor
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../handle-common-error/" class="md-nav__link">
+        Handling Common Error
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_1_8" type="checkbox" id="__nav_1_8">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1_8" tabindex="0" aria-expanded="false">
+          API
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="API" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_8">
+          <span class="md-nav__icon md-icon"></span>
+          API
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-getting-started/" class="md-nav__link">
+        Getting started
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-usage-guide/" class="md-nav__link">
+        Usage guide
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../release-notes/" class="md-nav__link">
+        Release notes
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2" type="checkbox" id="__nav_2">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2" tabindex="0" aria-expanded="false">
+          Vocabulary service
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Vocabulary service" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Vocabulary service
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../voc-service/getting-started/" class="md-nav__link">
+        Getting started
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3" type="checkbox" id="__nav_3">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" tabindex="0" aria-expanded="false">
+          Group management
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Group management" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Group management
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../groups/getting-started/" class="md-nav__link">
+        Getting started
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../groups/usage-guide/" class="md-nav__link">
+        Usage guide
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4" type="checkbox" id="__nav_4">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4" tabindex="0" aria-expanded="false">
+          Developers Guide
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Developers Guide" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Developers Guide
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/develop-guide/" class="md-nav__link">
+        Getting started
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_5" type="checkbox" id="__nav_5">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5" tabindex="0" aria-expanded="false">
+          Service Policy
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Service Policy" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Service Policy
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../terms-of-use/" class="md-nav__link">
+        Terms of Use
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../acceptable-use-policy/" class="md-nav__link">
+        Acceptable Use Policy
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../privacy-guideline/" class="md-nav__link">
+        Privacy Policy
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interoperability-guidelines/" class="md-nav__link">
+        Interoperability guidelines
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#content-registration" class="md-nav__link">
+    Content registration
+  </a>
+  
+    <nav class="md-nav" aria-label="Content registration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-vocabulary-related-to-mscr-content" class="md-nav__link">
+    Basic vocabulary related to MSCR content:
+  </a>
+  
+    <nav class="md-nav" aria-label="Basic vocabulary related to MSCR content:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#different-levels-of-registered-content" class="md-nav__link">
+    Different levels of registered content
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-groups" class="md-nav__link">
+    User Groups
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-roles" class="md-nav__link">
+    User Roles
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#possible-users-of-mscr" class="md-nav__link">
+    Possible Users of MSCR
+  </a>
+  
+    <nav class="md-nav" aria-label="Possible Users of MSCR">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schema-maintainer" class="md-nav__link">
+    Schema Maintainer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schema-contributor" class="md-nav__link">
+    Schema Contributor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#researchers" class="md-nav__link">
+    Researchers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-engineerintegrator-developer" class="md-nav__link">
+    Data engineer/integrator (developer)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authentication-and-authorization" class="md-nav__link">
+    Authentication and authorization
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api-tokens" class="md-nav__link">
+    API tokens
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supported-schema-description-formats" class="md-nav__link">
+    Supported schema description formats
+  </a>
+  
+    <nav class="md-nav" aria-label="Supported schema description formats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#csv" class="md-nav__link">
+    CSV
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#json-schema" class="md-nav__link">
+    JSON Schema
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xsd" class="md-nav__link">
+    XSD
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skos-rdf" class="md-nav__link">
+    SKOS RDF
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shacl" class="md-nav__link">
+    SHACL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#owl" class="md-nav__link">
+    OWL
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-rest" class="md-nav__link">
+    The rest
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supported-crosswalk-description-formats" class="md-nav__link">
+    Supported crosswalk description formats
+  </a>
+  
+    <nav class="md-nav" aria-label="Supported crosswalk description formats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#txtpdf" class="md-nav__link">
+    TXT/PDF
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#simple-mapping-table" class="md-nav__link">
+    Simple mapping table
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sssom-mapping-set" class="md-nav__link">
+    SSSOM Mapping set
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xslt" class="md-nav__link">
+    XSLT
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rml" class="md-nav__link">
+    RML
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related-content-versions-and-variants" class="md-nav__link">
+    Related content - Versions and variants
+  </a>
+  
+    <nav class="md-nav" aria-label="Related content - Versions and variants">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#open-questions" class="md-nav__link">
+    Open questions:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#versioning-in-ui" class="md-nav__link">
+    Versioning in UI
+  </a>
+  
+    <nav class="md-nav" aria-label="Versioning in UI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-a-new-version" class="md-nav__link">
+    Add a new version
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-a-mscr-copy" class="md-nav__link">
+    Create a MSCR copy
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#content-status-and-visibility" class="md-nav__link">
+    Content status and visibility
+  </a>
+  
+    <nav class="md-nav" aria-label="Content status and visibility">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#statusvisibility-in-the-api" class="md-nav__link">
+    Status/visibility in the API
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#statusvisibility-in-the-ui" class="md-nav__link">
+    Status/visibility in the UI
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#content-structure" class="md-nav__link">
+    Content structure
+  </a>
+  
+    <nav class="md-nav" aria-label="Content structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#structural-schema-vs-vocabulary-schema" class="md-nav__link">
+    Structural schema vs. vocabulary schema
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schemas" class="md-nav__link">
+    Schemas
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mappings" class="md-nav__link">
+    Mappings
+  </a>
+  
+    <nav class="md-nav" aria-label="Mappings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#implementation-of-the-content-structure" class="md-nav__link">
+    Implementation of the content structure
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schema-namespaces" class="md-nav__link">
+    Schema namespaces
+  </a>
+  
+    <nav class="md-nav" aria-label="Schema namespaces">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mappings-between-different-type-of-schemas" class="md-nav__link">
+    Mappings between different type of schemas
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notifications" class="md-nav__link">
+    Notifications
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pid-management" class="md-nav__link">
+    PID management
+  </a>
+  
+    <nav class="md-nav" aria-label="PID management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hosted-contents" class="md-nav__link">
+    Hosted Contents
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#referenced-content" class="md-nav__link">
+    Referenced content
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schema-editing" class="md-nav__link">
+    Schema editing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#internal-data-model" class="md-nav__link">
+    Internal data model
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#faceted-search" class="md-nav__link">
+    Faceted search
+  </a>
+  
+    <nav class="md-nav" aria-label="Faceted search">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#search-parameters" class="md-nav__link">
+    Search Parameters:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>MSCR Concepts</h1>
+
+<h2 id="content-registration">Content registration</h2>
+<h3 id="basic-vocabulary-related-to-mscr-content">Basic vocabulary related to MSCR content:</h3>
+<ul>
+<li>Registration: Because MSCR is a registry, every added piece of content is registered, hence registration refers to an act of adding a new schema/crosswalk record to the registry (by any means necessary!)</li>
+<li>Referenced schema/crosswalk = Registration of a schema/crosswalk record in MSCR that contain only metadata about the target. Included in the metadata MUST be a link to the downloadable/machine readable version of the schema/crosswalk. There must also always be a reference to an external entity (machine readable or not), otherwise what are we registering.</li>
+<li>Hosted schema/crosswalk = Registration of a schema/crosswalk that includes also uploading of a file (or files?) that specify the schema. Note! Hosted and referenced schemas/crosswalks can have different metadata requirements.</li>
+</ul>
+<p>There needs to a clear distinction between hosted and referenced content. With hosted content, MSCR is the primary source of all the data related to the schema/crosswalk and all changes to both the metadata and to the actual content are tracked and stored in the MSCR by registered users of the the MSCR. Referenced content on the other hand can only be used as it is and changes can only be made to the metadata, because if any changes are made to the content itself, it is effectively transformed into a hosted content. This is due to the fact that the source system, or the system where the content is (was) maintained has no record of the changes made within the MSCR.</p>
+<h4 id="different-levels-of-registered-content">Different levels of registered content</h4>
+<p>Users should be able to register schemas and crosswalks with different types of content. In the context of MSCR, we can classify the content based on the level of structured data for interoperability they provide.</p>
+<ul>
+<li>
+<p>At the lowest level is the document based registration. It is perfectly ok to register a schema/crosswalk that is only meant for humans. The downside is of course, that if one wants to create a crosswalk in MSCR from or to this kind of schema, they need to build the whole presentation model themselves from scratch.</p>
+</li>
+<li>
+<p>On the next level we have the structural data formats with sprinkles of semantics, such as JSON Schema. This kind of description provides a syntax and possible data type information for the concrete documents to be exchanged.</p>
+</li>
+<li>
+<p>Finally, an ontology-based schema description offers a way to present the schema with ontological commitments to shared datatype definitions, vocabularies and ontologies. In the best case, schema registration in the MSCR contains information from all of the levels.</p>
+</li>
+</ul>
+<p>Schema documentation is needed when trying to pick the rights mappings between schemas and since MSCR is focusing on mapping physical models, structural descriptions of both source and target schema are required as part of the mapping data. Finally, ontological information can be used to guide the user and automate some of the steps of the crosswalk creation.</p>
+<h2 id="user-groups">User Groups</h2>
+<p>User groups are needed in order to support community driven schemas/crosswalk. MSCR tries to strike a balance between the "wild west" approach where any one can register and create content and the  exclusive, committee-driven invite-only service where additions and changes are less frequent and more planned. Groups are thought of as a feature to support the latter approach. </p>
+<ul>
+<li>
+<p>Only system admins can create new groups</p>
+<ul>
+<li>No explosion of groups (if not wanted by the service owner)</li>
+<li>Possibility to vet all group creation requests</li>
+<li>Possibility to keep group creation as a separate process all together.</li>
+</ul>
+</li>
+<li>
+<p>Groups can have their own admins and contributors </p>
+</li>
+<li>
+<p>Groups based content can be presented differently from the personal content</p>
+<ul>
+<li>For example group based content could labeled with "official" tag.</li>
+</ul>
+</li>
+</ul>
+<p>Group related information is maintained within MSCR. Users can be invited into groups with an email/username. User can belong to a more than one group, but can only be active in group at a time. This means that the UI must provide a way to select the active user group. </p>
+<p>User group can have "personal" content similarly to an individual user, which is not available to the public, but accessible by all the members of the group. </p>
+<h2 id="user-roles">User Roles</h2>
+<p>System must support following user roles:</p>
+<ul>
+<li>
+<p>System admin</p>
+<ul>
+<li>Create and modify users and groups</li>
+<li>Content related admin functions</li>
+</ul>
+</li>
+<li>
+<p>Group admin</p>
+<ul>
+<li>Can add new group admins (if specified by the system admin)</li>
+<li>Can add users to the group</li>
+<li>Can remove users from the group</li>
+<li>Can create API tokens for the group</li>
+</ul>
+</li>
+<li>
+<p>User</p>
+<ul>
+<li>Can register schemas and crosswalks under personal account and to all the groups involved</li>
+<li>Can create new versions  of personal and groups’ schemas and crosswalks.</li>
+<li>Can modify metadata and other content of the personal and groups’ schemas and crosswalks.</li>
+</ul>
+</li>
+</ul>
+<h2 id="possible-users-of-mscr">Possible Users of MSCR</h2>
+<h3 id="schema-maintainer">Schema Maintainer</h3>
+<p>Responsible for development of one or more schemas.</p>
+<ul>
+<li>Registers up-to-date versions of the schema</li>
+<li>Is responsible for the correctness of the schema’s metadata</li>
+<li>Identifies other registered schema for potential mapping candidates (to and from)</li>
+<li>Uses other schemas for benchmarking and further development of their own schema</li>
+</ul>
+<h3 id="schema-contributor">Schema Contributor</h3>
+<p>Participates in the development of one or more schemas. Has in-depth knowledge about one or more schemas. Is interested in helping others to use the schemas she/he is involved with. </p>
+<ul>
+<li>Maintains and implements mappings to other schemas</li>
+<li>Comments mappings of familiar schemas</li>
+</ul>
+<h3 id="researchers">Researchers</h3>
+<ul>
+<li>Is not interested in registering schemas,</li>
+<li>Might be interested in registering crosswalks</li>
+<li>Utilizes crosswalks in order to integrate data from different sources for research purposes</li>
+<li>Potentially complex schemas</li>
+</ul>
+<h3 id="data-engineerintegrator-developer">Data engineer/integrator (developer)</h3>
+<ul>
+<li>Searches for registered schemas crosswalks based on given requirements (Implement API that support specific schema)</li>
+<li>Utilizes existing crosswalks as is</li>
+<li>Creates new crosswalks that are based on existing mappings</li>
+<li>Creates ad hoc crosswalks to custom internal schemas</li>
+<li>Moves data from one system to another with aETL workflow for discovery purposes</li>
+<li>Focus on metadata: Wants to add a new export format to the existing API.</li>
+</ul>
+<h2 id="authentication-and-authorization">Authentication and authorization</h2>
+<p>The user must be able to register/login using either the internal user database or External AAI service.Currently MSCR is integrated with B2Access Production AAI.Integrating with a well-connected federation ensures that users can easily access the MSCR regardless of their home organisation. </p>
+<h2 id="api-tokens">API tokens</h2>
+<p>API tokens can be created for both users and groups. Group API tokens can be used as a sort of service accounts that can be configured for automated use of the MSCR API. For more information see  (See <a href="../api-usage-guide/">Using MSCR with API</a>)</p>
+<h2 id="supported-schema-description-formats">Supported schema description formats</h2>
+<p>These are the files types that can be uploaded as part of the schema registration process. </p>
+<h5 id="csv">CSV</h5>
+<ul>
+<li>First one because of the simplicity. Basically list of field names. Default and only datatype is string. </li>
+</ul>
+<h5 id="json-schema">JSON Schema</h5>
+<p>Incoming schemas are validated based on their $schema property. </p>
+<ul>
+<li>Only certain JSON Schema version will be supported</li>
+<li>Only a subset of meta schema features might be supported for each JSON Schema version. </li>
+</ul>
+<h5 id="xsd">XSD</h5>
+<ul>
+<li>can be validated</li>
+</ul>
+<h5 id="skos-rdf">SKOS RDF</h5>
+<ul>
+<li>Preferred format for vocabulary schemas imports</li>
+</ul>
+<h5 id="shacl">SHACL</h5>
+<ul>
+<li>Can be used to import schemas</li>
+<li>Validated against the MSCR schema </li>
+</ul>
+<h5 id="owl">OWL</h5>
+<ul>
+<li>For core vocabulary imports</li>
+</ul>
+<h5 id="the-rest">The rest</h5>
+<ul>
+<li>RDFS</li>
+<li>CSV Schema</li>
+</ul>
+<p>A brief summary of MSCR supported formats and media types are given below: </p>
+<table>
+<thead>
+<tr>
+<th>Format</th>
+<th>Media Type</th>
+<th>Mappable</th>
+<th>Sub Type</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>CSV</code></td>
+<td>text/csv</td>
+<td>Yes</td>
+<td>Data Schema</td>
+<td>File must contain only one line with fields separated by comma</td>
+</tr>
+<tr>
+<td><code>XSD</code></td>
+<td>text/xml</td>
+<td>Yes</td>
+<td>Data Schema</td>
+<td>Not all features of XSD supported</td>
+</tr>
+<tr>
+<td><code>JSON Schema</code></td>
+<td>application/json</td>
+<td>Yes</td>
+<td>Data Schema</td>
+<td>Implementation based on draft-04.No support for allOf, oneOf, anyOf or not.</td>
+</tr>
+<tr>
+<td><code>RDFS</code></td>
+<td>text/turtle</td>
+<td>Yes</td>
+<td>Data Schema</td>
+<td>Processed as data schema (see X) so visualization requires the use of rdfs:domain and rdfs:range properties.</td>
+</tr>
+<tr>
+<td><code>SHACL</code></td>
+<td>text/turtle</td>
+<td>Yes</td>
+<td>Data Schema</td>
+<td>Only supported  RDF format is turtle</td>
+</tr>
+<tr>
+<td><code>OWL</code></td>
+<td>text/turtle</td>
+<td>Yes</td>
+<td>Ontology</td>
+<td>Only supported RDF format is turtle</td>
+</tr>
+<tr>
+<td><code>SKOS</code></td>
+<td>text/turtle</td>
+<td>Yes</td>
+<td>Vocabulary</td>
+<td>Only supported RDF format is turtle</td>
+</tr>
+<tr>
+<td><code>ENUM</code></td>
+<td>text/plain</td>
+<td>Yes</td>
+<td>Vocabulary</td>
+<td>One line per term.</td>
+</tr>
+<tr>
+<td><code>PDF</code></td>
+<td>application/pdf</td>
+<td>no</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>All uploaded schemas are processed into a common SHACL based graph and visualized in a unified manner. </p>
+<h2 id="supported-crosswalk-description-formats">Supported crosswalk description formats</h2>
+<p>MSCR supports four formats for registering existing crosswalks: PDF, CSV, XSLT and SSSOM (see Table below). Only one of them, SSSOM, is editable and the others are only available for download. PDF has remained a popular format for describing crosswalks up to this date. For example, DataCite has published crosswalks to Dublin Core (https://doi.org/10.14454/qn00-qx85) and schema.org (http://doi.org/10.5281/zenodo.7661399) in PDF format. The other popular way of describing correspondences is a table or a set of tables. For example, CodeMeta crosswalks (https://codemeta.github.io/crosswalk/) are a good example of simple mappings expressed as CSV files. A generic table format without any additional information does not provide any information about the meaning of columns being used so it is not usable to for automated processing and is therefore not editable in MSCR. XML stylesheets (XSLT) are of also still a common tool when it comes to applying transformations between XML documents. It is a powerful tool with mapping possibility that go far beyond the the mapping model of the MSCR. SSSOM on the other hand has a simple model with restricted and very focused feature set geared towards sharing of semantic mappings. MSCR can convert the registered SSSOM file into its internal mapping representation and therefore the SSSOM crosswalk can be edited and viewed similarly to any crosswalk created from scratch with the crosswalk editor. </p>
+<p>These are files types that can be uploaded as part of the crosswalk registration process.</p>
+<h4 id="txtpdf">TXT/PDF</h4>
+<p>although not technically a structured format, text files that contain  a description of (a set of) mappings will be supported, simple data management can take place on this type of files, but they are not processed as part of the import.</p>
+<h4 id="simple-mapping-table">Simple mapping table</h4>
+<p>Converted into internal format and editable</p>
+<h4 id="sssom-mapping-set">SSSOM Mapping set</h4>
+<p>Converted into internal format and partly editable</p>
+<h4 id="xslt">XSLT</h4>
+<p>XSLT files can be registered, but they are not processed as part of the import. This means that this kind of content can be utilized as part of the transformation service and but cannot be visualized or edited using MSCR. </p>
+<h4 id="rml">RML</h4>
+<p>RML- Could be converted into internal format. Source schema format must be RDF.</p>
+<p>A brief summary of MSCR supported formats and media types are given below: </p>
+<table>
+<thead>
+<tr>
+<th>Format</th>
+<th>Media Type</th>
+<th>Editable</th>
+<th>Sub Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>SSSOM</code></td>
+<td>text/csv</td>
+<td>Yes</td>
+<td>Semantic Mapping</td>
+</tr>
+<tr>
+<td><code>Table</code></td>
+<td>text/csv</td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><code>XSLT</code></td>
+<td>text/xml</td>
+<td>No</td>
+<td></td>
+</tr>
+<tr>
+<td><code>PDF</code></td>
+<td>application/pdf</td>
+<td>No</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="related-content-versions-and-variants">Related content - Versions and variants</h2>
+<h3 id="open-questions">Open questions:</h3>
+<ul>
+<li>What happens if one version changes owner? Should the ownership of all the versions be changed?</li>
+</ul>
+<p>There is no need to keep track of all the changes related to hosted content. It is enough to record manually curated version information. Versions populate a version graph that can be utilized in the schema/crosswalk view to show previous/next versions. User can take other user's registered content as a starting point for a new version. </p>
+<p>MSCR versions both metadata and actual data i.e. each version has its own metadata and file instances. MSCR content available for versioning consists of schemas and crosswalks. </p>
+<p>Usage scenario: Adding Datacite versions 3.1 and 4.0 in XSD schema format</p>
+<ul>
+<li>User creates a new schema</li>
+</ul>
+<p>{</p>
+<div class="language-text highlight"><pre><span></span><code>"Metadata": {
+     "Label": "Datacite",
+        "VersionLabel": 3.1,
+        "Change notes": 
+                "New affiliation attribute for Creator and Contributor,
+                 New relationType pairs IsReviewedBy/Reviews and IsDerivedFrom/IsSourceOf,
+                 New contributorType: DataCurator,
+                 New relatedIdentifier types: arXiv and bibcode",
+        "Files": "Datacite_3.1.xsd"
+        }     
+}
+</code></pre></div>
+<ul>
+<li>User navigates to the Datacite schema and selects "create new version". Schema registration form is shown with metadata prefilled from the previous version. Changes notes metadata field is empty. User adds/changes the following data:</li>
+</ul>
+<p>{</p>
+<div class="language-text highlight"><pre><span></span><code>"Metadata":{
+    "VersionLabel": 4.0
+        "Change notes":
+            "something something",
+    "Files":
+        "Datacite_4.0.xsd"
+}
+</code></pre></div>
+<p>}</p>
+<p>Usage scenario: Creating a new crosswalk based on an existing one</p>
+<ul>
+<li>User navigates to the "Datacite 3 to Dublin core" crosswalk that was created with the crosswalk editor.</li>
+<li>User select "Create MSCR copy". Format (MSCR) and the source and target schema stay the same.</li>
+<li>System copies the crosswalk  metadata and content and sets the state to DRAFT.</li>
+<li>User can edit the metadata and content. </li>
+</ul>
+<p>One piece of content and its revision graph is like a Github repository with a single branch where revisions are similar to Github's releases. Each revision has a state that that goes from e.g. draft to published to deprecated. Changes to data are only allowed when the content is in draft state. Metadata can be edited freely without the need to create a new version. For example, content can be transferred to a new maintainer and typos in the description can be corrected. </p>
+<p>Variants are implicitly related content:</p>
+<ul>
+<li>Schema variants share the same namespace</li>
+<li>Crosswalk variants share the source and target schemas.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/mscr/version_flow.png" data-desc-position="bottom"><img alt="Content Versions" src="../../assets/mscr/version_flow.png"></a></p>
+<p>In addition to adding a descriptive title, the schemas can be described using version label and namespace metadata. </p>
+<ul>
+<li>Namespace is an URI that works as a public "identifier" for the schema.</li>
+<li>In an ideal world, there would be only one registered schema per namespace. In reality, different owners will register schemas with the same namespace for different reasons. </li>
+</ul>
+<p>Relations between content (i.e. schemas and crosswalks)</p>
+<div class="language-text highlight"><pre><span></span><code>:x prov:wasDerivedFrom :y
+    Prerequisites:
+        Owner (=creator) of :x is not the same user as the creator of :y AND the creator :x is not part of the same group as the creator of :y 
+         :x was created using :y as the starting point i.e. the initial content of :x was copied from :y.  
+:x prov:wasRevisionOf :y
+    Creator of :x is the same user or part of the same group as creator of :y
+    :x was created using :y as the starting point i.e. the initial content of :x was copied from :y.  
+    Revisions share the same aggregation key
+y: mscr:hasRevision :x
+    Inverse of prov:wasRevisionOf
+    Supports branching i.e. can have multiple values
+x: mscr:hasVariant :y
+    Schemas:
+        :x and :y share the same namespace AND have different aggregation keys i.e. :x and :y are related but not revisions 
+    Crosswalks:
+        :x and :y share the same source and target schemas AND have different aggregation keys
+</code></pre></div>
+<h2 id="versioning-in-ui">Versioning in UI</h2>
+<p>Versioning related actions are available under "Actions" menu for both schemas and crosswalks.</p>
+<p>There are two versioning related actions available:</p>
+<h3 id="add-a-new-version">Add a new version</h3>
+<p>For example to make a bug fix to a published content. Available for all schema/crosswalk formats and in all the states.</p>
+<ul>
+<li>
+<p>Format cannot be changed and it is copied from the content being versioned. In case of crosswalk, target and source schema must stay the same.</p>
+</li>
+<li>
+<p>If the format of the content being version is other than "MSCR", a file upload/URI is shown in the versioning modal.</p>
+</li>
+<li>
+<p>If the format is "MSCR", content graph is copied.</p>
+</li>
+</ul>
+<h3 id="create-a-mscr-copy">Create a MSCR copy</h3>
+<p>Turn file based content into MSCR only content. MSCR content is the prerequisite for schema editing (e.g. DTR datatype edits)</p>
+<ul>
+<li>
+<p>Available when schema format is something that has been processed to MSCR's internal format</p>
+<div class="language-text highlight"><pre><span></span><code>    Schemas: MSCR, CSV,XSD,JSONSCHEMA,SHACL
+    Crosswalks: MSCR, SSSOM
+</code></pre></div>
+</li>
+<li>
+<p>State of the new copy is always "DRAFT" and format "MSCR".</p>
+</li>
+</ul>
+<p>New version modal should re-use the registration modal with the following changes:</p>
+<ul>
+<li>Format is fixed (schema and crosswalk)</li>
+<li>Source and target schemas are fixed (crosswalk)</li>
+</ul>
+<h2 id="content-status-and-visibility">Content status and visibility</h2>
+<p>New content in DRAFT state can be created with minimal metadata. Visibility of a DRAFT content can be changed from private to public and back. Public draft content can be used by external parties, but it might go away at any moment. Visibility refers to the visibility of the content and metadata is always indexed internally and can retrieved with an id. </p>
+<p>Registering content created within MSCR (e.g. crosswalk) means describing the content with some additional metadata and making it visible to the public. Once content status has been set to PUBLISHED it cannot be hidden any more. Published content can be moved to either INVALID (something went wrong) or DEPRECATED (still valid, but newer version preferred), which are the final statuses for content. </p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/mscr/state-diagram.png" data-desc-position="bottom"><img alt="status state diagram - with deleted " src="../../assets/mscr/state-diagram.png"></a></p>
+<ul>
+<li>
+<p>If users are allowed to delete content, it could be set to REMOVED (or ARCHIVED) state and hidden from all but administrator users. </p>
+</li>
+<li>
+<p>Resolving a PID related to deleted content would result in a tombstone response.</p>
+</li>
+<li>
+<p>Draft content can be deleted without a trace (provenance event is generated).</p>
+</li>
+</ul>
+<h4 id="statusvisibility-in-the-api">Status/visibility in the API</h4>
+<ul>
+<li>New files only be added to DRAFT content</li>
+<li>New content can be create with DRAFT, PUBLISHED and DEPRECATED statuses</li>
+<li>Visibility of DRAFT content can be PRIVATE or PUBLIC. For all the PUBLISHED, DEPRECATED and INVALID the visibility is always PUBLIC. </li>
+<li>Metadata can always be changed without restrictions</li>
+</ul>
+<h4 id="statusvisibility-in-the-ui">Status/visibility in the UI</h4>
+<p>All new content goes to DRAFT status initially with visibility "PRIVATE".</p>
+<h2 id="content-structure">Content structure</h2>
+<h3 id="structural-schema-vs-vocabulary-schema">Structural schema vs. vocabulary schema</h3>
+<p>The main difference is that the latter can be used as a "values from" target of a property. </p>
+<p>Based on the requirements gathered at the beginning of the project, it is clear that there is a need to provide both schema and codelist/vocabulary level mapping as part of the MSCR.  </p>
+<h2 id="schemas">Schemas</h2>
+<div class="language-text highlight"><pre><span></span><code>PID:A
+    {
+    &nbsp;&nbsp;&nbsp;&nbsp;"value": string,
+    &nbsp;&nbsp;&nbsp;&nbsp;"value_generation_method": number
+    }
+PID:B
+    {
+    &nbsp;&nbsp;&nbsp;&nbsp;"value": string,
+    &nbsp;&nbsp;&nbsp;&nbsp;"method": string
+    }
+
+PID:A.list
+    A value generation methods
+    1
+    2
+    3
+
+PID:B.list
+    B value generation methods
+    A
+    B
+    C
+</code></pre></div>
+<h2 id="mappings">Mappings</h2>
+<div class="language-text highlight"><pre><span></span><code>A.value = B.value
+A.value_generation_method = B.method
+A.list.1&nbsp;= B.list.A
+A.list.2&nbsp;= B.list.B
+A.list.3&nbsp;= B.list.C
+</code></pre></div>
+<p>Example of a flat schema. Eg XSD schema can contain e.g. hierarchical structured which will result in a more complex schema/mapping representation.</p>
+<h3 id="implementation-of-the-content-structure">Implementation of the content structure</h3>
+<p>We have decided to implement the simplest content structure, where each schema is described as a resource and those schema resources can be linked together with versioning related properties (such as previousVersion, nextVersion). This would be the structure available in the graph store. For search and browsing purposes it is possible and maybe even preferable to aggregate versions around set of shared metadata. For example organisation/user and namespace of the schema. This would allow for example the search interface to show only one result row per namespace for a single organisation/user instead of showing one result row per schema version.   </p>
+<div class="language-text highlight"><pre><span></span><code>:schema1 a :Schema
+    :namespace &lt;http://example.com/todos&gt; ;
+    :owner :org1 ;
+    :label "My custom schema" ;
+    :aggregationKey "key1" ;
+    :versionLabel "1".
+    :nextVerion :schema2
+
+:schema2 a :Schema
+    :namespace &lt;http://example.com/todos&gt; ;
+    :owner :org1 ;
+    :label "My custom schema" ;     
+    :aggregationKey "key1" ;
+    :versionLabel "2" ;
+    :previousVersion :schema1
+
+"results": [
+    {
+        "namespace": "http://example.com/todos",
+        "label": "My custom schema",
+        "numberOfVersions": 2,
+        "latestVersion": "2"
+    }
+]
+</code></pre></div>
+<h2 id="schema-namespaces">Schema namespaces</h2>
+<p>When a user registers a new schema (i.e. it is not a version of any other registered schema), it must be given a local identifier.  User can input the identifier of namespace by giving it as an URL (e.g. http://www.wikidata.org/prop/) or as a simple string (e.g. "test"). If the identifier is omitted, one will be generated. Simple strings will be concatenated with the MSCR's URI prefix in order to create resolvable URLs (e.g. http://mscr.someorg.fi/schema/test). However, the namespace does not need to be resolvable and even if it is, the content is not used in this context in any way. </p>
+<p>Schema namespace information is used aggregate schema versions together within the owner's scope. The owner can the either a user or a organization. Namespaces can also be used to display variants of the same namespace across owners. For example users X and Z could have registered versions of the namespace. This information can be made available as part of the UI and for example show existing variants as part of the schema registration process. </p>
+<h3 id="mappings-between-different-type-of-schemas">Mappings between different type of schemas</h3>
+<p>Schemas in MSCR can be divided into four groups:</p>
+<ul>
+<li>Unstructured schemas
+E.g. PDF format. These schemas are only stored and no other processing happens at the time of registration</li>
+<li>Tree</li>
+<li>Graph schemas</li>
+<li>Vocabularies</li>
+</ul>
+<h2 id="notifications">Notifications</h2>
+<p>Notifications are essential for keeping crosswalk maintainers and user using the best available versions. Registered users can register for notifications about new versions for any number of schemas and crosswalks. Notifications can be delivered via email or they can trigger a webhook. The latter is targeted towards automated processes.</p>
+<p>Notifications should be implemented in an efficient, asynchronous way that is separated from the actual processes of creating new versions. It would be very easy to check for new versions of a specific schema/crosswalk if the content would be organized in a hierarchy where versions of the same content are all part of the same resource. </p>
+<h2 id="pid-management">PID management</h2>
+<h4 id="hosted-contents">Hosted Contents</h4>
+<p>The system provides a configurable metadata record for every PID.Resolvable PID URLs must support content-negation for both humans and machines.</p>
+<p>MSCR uses handles with part identifier. Content always has only one PID. Part identifiers can be used to access metadata and content individually. </p>
+<h4 id="referenced-content">Referenced content</h4>
+<p>Referenced schema and crosswalk content must provide an existing identifier as part of their metadata. This identifier must be something that can be used to access the actual content directly. No landing pages. The identifier can be for example an URL. </p>
+<h2 id="schema-editing">Schema editing</h2>
+<p>Schema editing is based on original core model/application profile editor that is developed by the DVV. Schema editor is a simplified version of the original editor containing only minimal options (label, datatype, cardinality). Schema editor provides a way to create a new version of a registered schema. The new version can be saved as a revision (strong connection between versions - think of "save" in the Word) or as a new version ("save as" operation). All schemas registered from the schema editor are hosted schemas.</p>
+<p>The benefits of turning a file based CSV, JSON Schema or XML Schema based schema in to an internally editable schemas are:</p>
+<ul>
+<li>Possibility to assign DTR data types to any property.
+    This can be in turn used to show existing mappings as suggestions in the crosswalk editor</li>
+<li>Addition of cardinality information can be used to validate mappings in the crosswalk editor
+        Warn user if the user is adding a mapping from multivalued property to single value property.</li>
+</ul>
+<h2 id="internal-data-model">Internal data model</h2>
+<ul>
+<li>RDF for flexibility.</li>
+<li>SHACL for schema fit.</li>
+<li>Custom extension for physical models</li>
+</ul>
+<p>Crosswalk representation can include:</p>
+<ul>
+<li>Mapping between input and source document structures </li>
+<li>Mapping between vocabulary based property values </li>
+<li>Mapping between properties with DTR data types</li>
+</ul>
+<h2 id="faceted-search">Faceted search</h2>
+<p>MSCR implements a separate search endpoint for faceted search (/mscrSearch), which support both text query and filtering based on facet values. Parameter "query" is used for full-text queries. Additional filters can be by other parameters. Multiple values can be set by adding the same parameter multiple times.  Endpoint returns results from the OpenSearch search index in their original format. </p>
+<p>Only public content is searchable.</p>
+<h3 id="search-parameters">Search Parameters:</h3>
+<div class="language-text highlight"><pre><span></span><code>query
+    full-text query value
+Filters:
+    type= schema|crosswalk
+    state=DRAFT, PUBLISHED, INVALID, DEPRECATED, REMOVED
+    org=&lt;pid&gt;
+    format=CSV|JSONSCHEMA|XSD|PDF|SKOSRDF|XLST|MSCR
+    sourceType=HOSTED|REFERENCED
+        Whether the content is maintained using MSCR (HOSTED) or not (REFERENCED). 
+    sourceSchema=&lt;pid&gt;
+    targetSchema=&lt;pid&gt;
+
+Sorting:
+    sortLang
+Pagination
+    pageSize
+    pageFrom
+Display
+    prefDisplayLang
+    includeFacets= true|false
+        if true, return facet information as part of the result document. All other parameters can be used even if this parameter is missing or set to false.
+</code></pre></div>
+<p>Facets:</p>
+<div class="language-text highlight"><pre><span></span><code>type
+state
+format
+organization
+sourceType
+</code></pre></div>
+<p>It is possible to create combination of params that will not return anything ever. For example crosswalk that has more that one sourceSchemas. Facets values are currently always combined with boolean operator OR.</p>
+<p>Query and facets are always combined with boolean operator AND.</p>
+<p>Examples</p>
+<div class="language-text highlight"><pre><span></span><code>GET /mscrSearch?query=csc&amp;type=crosswalk&amp;sourceSchema=pid1&amp;sourceSchema=pid2
+
+    Returns crosswalks where textual descriptions contains "csc" and have "pid1" OR "pid2" as sourceSchema.
+
+GET /mscrSearch?type=schema&amp;type=crosswalk&amp;org=pid1&amp;org=pid2
+</code></pre></div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "content.code.copy"], "search": "../../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.51d95adb.min.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

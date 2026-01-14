@@ -1,0 +1,1229 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../privacy-guideline/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.6">
+    
+    
+      
+        <title>Interoperability guidelines - MSCR docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.558e4712.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.2505c338.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#mscr-content" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="MSCR docs" class="md-header__button md-logo" aria-label="MSCR docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MSCR docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Interoperability guidelines
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        Metadata schema and crosswalk registry
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../voc-service/getting-started/" class="md-tabs__link">
+        Vocabulary service
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../groups/getting-started/" class="md-tabs__link">
+        Group management
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../developer/develop-guide/" class="md-tabs__link">
+        Developers Guide
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../terms-of-use/" class="md-tabs__link">
+        Service Policy
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  <li class="md-tabs__item">
+    <a href="./" class="md-tabs__link md-tabs__link--active">
+      Interoperability guidelines
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="MSCR docs" class="md-nav__button md-logo" aria-label="MSCR docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+
+    </a>
+    MSCR docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_1" type="checkbox" id="__nav_1">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1" tabindex="0" aria-expanded="false">
+          Metadata schema and crosswalk registry
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Metadata schema and crosswalk registry" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Metadata schema and crosswalk registry
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mscr/ui-guide/" class="md-nav__link">
+        UI Guide
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mscr/mscr-deployment/" class="md-nav__link">
+        Deployment
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mscr/functional-overview/" class="md-nav__link">
+        MSCR Concepts
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mscr/schema-view/" class="md-nav__link">
+        Schema view
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mscr/crosswalk-editor/" class="md-nav__link">
+        Crosswalk editor
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mscr/handle-common-error/" class="md-nav__link">
+        Handling Common Error
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_1_8" type="checkbox" id="__nav_1_8">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1_8" tabindex="0" aria-expanded="false">
+          API
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="API" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_8">
+          <span class="md-nav__icon md-icon"></span>
+          API
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mscr/api-getting-started/" class="md-nav__link">
+        Getting started
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mscr/api-usage-guide/" class="md-nav__link">
+        Usage guide
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mscr/release-notes/" class="md-nav__link">
+        Release notes
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2" type="checkbox" id="__nav_2">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2" tabindex="0" aria-expanded="false">
+          Vocabulary service
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Vocabulary service" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Vocabulary service
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../voc-service/getting-started/" class="md-nav__link">
+        Getting started
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3" type="checkbox" id="__nav_3">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" tabindex="0" aria-expanded="false">
+          Group management
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Group management" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Group management
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../groups/getting-started/" class="md-nav__link">
+        Getting started
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../groups/usage-guide/" class="md-nav__link">
+        Usage guide
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4" type="checkbox" id="__nav_4">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4" tabindex="0" aria-expanded="false">
+          Developers Guide
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Developers Guide" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Developers Guide
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../developer/develop-guide/" class="md-nav__link">
+        Getting started
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_5" type="checkbox" id="__nav_5">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5" tabindex="0" aria-expanded="false">
+          Service Policy
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Service Policy" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Service Policy
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../terms-of-use/" class="md-nav__link">
+        Terms of Use
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../acceptable-use-policy/" class="md-nav__link">
+        Acceptable Use Policy
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../privacy-guideline/" class="md-nav__link">
+        Privacy Policy
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Interoperability guidelines
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Interoperability guidelines
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#mscr-content" class="md-nav__link">
+    MSCR content
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integrations-with-semantic-artefact-services" class="md-nav__link">
+    Integrations with semantic artefact services
+  </a>
+  
+    <nav class="md-nav" aria-label="Integrations with semantic artefact services">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#faircore4eosc-services" class="md-nav__link">
+    FAIRCORE4EOSC services
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#registering-content-from-other-semantic-artefact-registries-for-mapping" class="md-nav__link">
+    Registering content from other semantic artefact registries for mapping
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api-usage" class="md-nav__link">
+    API usage
+  </a>
+  
+    <nav class="md-nav" aria-label="API usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#harvesting-content-metadata" class="md-nav__link">
+    Harvesting content metadata
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#searching-for-crosswalk-based-on-schemas" class="md-nav__link">
+    Searching for crosswalk based on schemas
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#export-vocabulary-mappings-as-skos" class="md-nav__link">
+    Export vocabulary mappings as SKOS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#working-with-sssom" class="md-nav__link">
+    Working with SSSOM
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crosswalk-operationalization" class="md-nav__link">
+    Crosswalk operationalization
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#mscr-content" class="md-nav__link">
+    MSCR content
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integrations-with-semantic-artefact-services" class="md-nav__link">
+    Integrations with semantic artefact services
+  </a>
+  
+    <nav class="md-nav" aria-label="Integrations with semantic artefact services">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#faircore4eosc-services" class="md-nav__link">
+    FAIRCORE4EOSC services
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#registering-content-from-other-semantic-artefact-registries-for-mapping" class="md-nav__link">
+    Registering content from other semantic artefact registries for mapping
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api-usage" class="md-nav__link">
+    API usage
+  </a>
+  
+    <nav class="md-nav" aria-label="API usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#harvesting-content-metadata" class="md-nav__link">
+    Harvesting content metadata
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#searching-for-crosswalk-based-on-schemas" class="md-nav__link">
+    Searching for crosswalk based on schemas
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#export-vocabulary-mappings-as-skos" class="md-nav__link">
+    Export vocabulary mappings as SKOS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#working-with-sssom" class="md-nav__link">
+    Working with SSSOM
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crosswalk-operationalization" class="md-nav__link">
+    Crosswalk operationalization
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Interoperability guidelines</h1>
+
+<p>This document describes MSCR and its features and content through the the lens of maintaining and using semantic artefacts. Corcho et. al [1] define semantic artefacts as a "machine-actionable formalisation (represented using appropriate formats and serialisations, including RDF and non-RDF standards) of a conceptualisation, enabling sharing and reuse by humans and machines", which includes for example different kinds of vocabularies, ontologies and data schemas as well term mappings and schema crosswalks. MSCR is a semantic artefact repository that handles all of the these categories. </p>
+<h2 id="mscr-content">MSCR content</h2>
+<p>The main domain types of MSCR are schemas and crosswalks. Schemas in MSCR cover simple and complex vocabularies, ontologies and well as (meta) data schemas. See table below for a summary of supported types. 
+A crosswalk is defined as a set of mapping in the context of the MSCR. </p>
+<p><strong>Summary of MSCR content types and subtypes</strong></p>
+<table>
+<thead>
+<tr>
+<th>Format</th>
+<th>Type</th>
+<th>Subtype</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CSV</td>
+<td>Schema</td>
+<td>Data schema</td>
+<td>&nbsp;Simplest form of data schema that describes tabular and can only convey the name and order of the string type of columns</td>
+</tr>
+<tr>
+<td>XSD</td>
+<td>Schema</td>
+<td>Data schema</td>
+<td></td>
+</tr>
+<tr>
+<td>JSON schema</td>
+<td>&nbsp;Schema</td>
+<td>&nbsp;Data schema</td>
+<td></td>
+</tr>
+<tr>
+<td>RDFS</td>
+<td>Schema</td>
+<td>Data schema</td>
+<td>Can be used to define the structure of an RDF graph. Visualization of the schema is based on the global <code>rdfs:domain</code> and <code>rdfs:range</code> definitions that must be part of the registered schema</td>
+</tr>
+<tr>
+<td>SHACL</td>
+<td>&nbsp;Schema</td>
+<td>&nbsp;Data schema</td>
+<td>The recommended format for describing RDF graph structure.</td>
+</tr>
+<tr>
+<td>SKOS</td>
+<td>&nbsp;Schema</td>
+<td>&nbsp;Vocabulary</td>
+<td>Visualization support hierarchy related SKOS properties.</td>
+</tr>
+<tr>
+<td>&nbsp;ENUM</td>
+<td>Schema</td>
+<td>Vocabulary</td>
+<td>&nbsp;Simple list of vocabulary terms (one per line)</td>
+</tr>
+<tr>
+<td>OWL</td>
+<td>Schema</td>
+<td>&nbsp;Ontology</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>SSSOM</td>
+<td>&nbsp;Crosswalk</td>
+<td>&nbsp;Semantic mapping</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>MSCR</td>
+<td>&nbsp;Crosswalk</td>
+<td>&nbsp;Semantic mapping / Schema crosswalk</td>
+<td>&nbsp;Native MSCR format produced by the crosswalk editor, which can be used to create mappings between all schemas types supported by the MSCR</td>
+</tr>
+<tr>
+<td>XSLT</td>
+<td>Crosswalk</td>
+<td>Schema crosswalk</td>
+<td>Not editable with the crosswalk editor. Stored as a file with metadata</td>
+</tr>
+<tr>
+<td>PDF</td>
+<td>Schema/Crosswalk</td>
+<td>Unknown</td>
+<td>Not editable with the crosswalk editor. Stored as a file with metadata</td>
+</tr>
+</tbody>
+</table>
+<h2 id="integrations-with-semantic-artefact-services">Integrations with semantic artefact services</h2>
+<h3 id="faircore4eosc-services">FAIRCORE4EOSC services</h3>
+<p>This section has been extracted from FAIRCORE4EOSC Delirable D4.1 [2].</p>
+<p>The services within the WP4 (MSCR, DTR, Vicabulary Service) are dealing with similar and related types of content, and as a result they provide opportunities for integration. For the MSCR there are two main use cases for vocabulary and DTR integration: schema editing and schema mapping. Although MSCR is not a schema editor, it does provide schema editing features that are related to creating crosswalks. </p>
+<p>The MSCR allows users to associate properties of a registered schema with basic data types defined in the DTR. This means that one can, for example, replace a generic "string" datatype in a JSONSchema specification, with a more expressive DTR data type, such as "handle", which can provide additional textual description of the values as well as a regular expression pattern for value validation. This is helpful for mapping especially if the person creating the crosswalk is not that familiar with the actual instance data being mapped. For example, a handle field might contain only the identifier or it could be used to store a full URL (2341/12345 vs. hdl.handle.net/2341/12345). Associating property with a DTR data type reference can make the format explicit and hence inform the user whether a function needs to be applied to remove or append the "hdl.handle.net" prefix.</p>
+<p>In respect to the schema mapping use case, both DTR and the Vocabulary Service are capable of exporting content that can be used as the source for MSCR schema registration. The reason why one might like to register content from these systems can be for example data transformation or semantic mapping. The DTR type API (ref X) can export complex data types as JSON schemas. Although these schemas are more for data transformation purposes, they do contain JSON-LD elements, namely @id and @type, which make them also suitable for other mapping cases. From the MSCR's perspective. vocabularies are "just" another type of schema and therefore content maintained in the Vocabulary Service can be registered with MSCR for semantic mapping purposes. Integration is made possible by the SKOS export feature of the Vocabulary Service. See figure below for an overview of the FC4E service integrations.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../assets/fc4e-cross-integration.png" data-desc-position="bottom"><img alt="FC4E cross integration cases" src="../assets/fc4e-cross-integration.png"></a></p>
+<h3 id="registering-content-from-other-semantic-artefact-registries-for-mapping">Registering content from other semantic artefact registries for mapping</h3>
+<p>URL based schema registration should be preferred over file uploads from the local machine, because the source URL is recorded as part of the registered schema's metadata. </p>
+<p><strong>Vocabulary services</strong></p>
+<p>Requirement for registering SKOS vocabularies for mapping:
+* Use format <code>SKOSRDF</code> and turtle RDF serialization. 
+* Use Turtle RDF serialization for file upload.</p>
+<p>If the service is capable of exporting vocabulary as list of terms (one per line) the vocabulary can be registered using <code>ENUM</code> format.  </p>
+<p>Example: Register vocabulary from SKOSMOS:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>curl -X PUT /datamodel-api/v2/frontend/schemaFull -H 'Authorization: Bearer &lt;token&gt;' -H 'Content-type: multipart/form' -F contentURL=https://finto.fi/rest/v1/cer/data?format=text/turtle -F "metadata={
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    "title": "
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>Clean Energy Research ontology of The Bank of Finnish Terminology in Art and Sciences",
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    "format": "SKOSRDF",
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    "publisher": "National Library of Finland",
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    "license": "
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    http://creativecommons.org/licenses/by/3.0/",
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    "language": "en"
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>}"
+</span></code></pre></div>
+<p><strong>Ontology services</strong></p>
+<p>Example: Register ontology from Agroportal:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>curl -X PUT /datamodel-api/v2/frontend/schemaFull -H 'Authorization: Bearer &lt;token&gt;' -H 'Content-type: multipart/form' -F contentURL=https://data.industryportal.enit.fr/ontologies/MDS/submissions/3/download?apikey=019adb70-1d64-41b7-8f6e-8f7e5eb54942 -F "metadata={
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    "title": "
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>Materials Data Science Ontology",
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    "description": "The Materials Data Science Ontology is a low level ontology that unifies knowlege in Materials and Data Science communities by integrating domain-specific terminologies under the same overarching ontology.",
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    "issued": "2024-08-02",
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    "format": "OWL",
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>    "license": "
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>    http://creativecommons.org/licenses/by/3.0/",
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>    "language": "en"
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>}"
+</span></code></pre></div>
+<p><strong>schema repositories</strong></p>
+<p>Example: Register schemas from CLARIN Component registry</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>curl -X PUT /datamodel-api/v2/frontend/schemaFull -H 'Authorization: Bearer &lt;token&gt;' -H 'Content-type: multipart/form' -F contentURL=https://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/1.1/profiles/clarin.eu:cr1:p_1407745712081/xsd -F "metadata={
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    "title": "
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>LinguisticFieldtrip",
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    "description": " Linguistic field trip (expedition) involving work with native speakers (consultants). Also covers work with native speakers at home institution.",
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    "format": "XSD",
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    "language": "en"
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>}"
+</span></code></pre></div>
+<h2 id="api-usage">API usage</h2>
+<p>All read APIs are usable without an API key. For mutations (create, update, delete) and some contextual read operations (e.g. search personal content) require an API key that is always tied to a user account. There are currently no machine-to-machine accounts available. See page <a href="/mscr/api-getting-started/">"API getting started"</a> for instructions on how to create and regenerate an API key. </p>
+<p>Developer documentation for the API is available at <a href="https://mscr-release.2.rahtiapp.fi/swagger">https://mscr-release.2.rahtiapp.fi/swagger</a>. The API is divided into five sections: Schema, Crosswalk, Subscription, Transformation and Frontend. </p>
+<p>Endpoints under the "Frontend" section are meant to used by the MSCR's own UI application and are not designed to be consumed by other applications. Nothing of course prevents one from using those endpoints as well for external integrations, but the development of the endpoint will always be driven by the internal requirements. </p>
+<h3 id="harvesting-content-metadata">Harvesting content metadata</h3>
+<p>MSCR does not currently provide a conveniet way to harvest all or selected content. </p>
+<h3 id="searching-for-crosswalk-based-on-schemas">Searching for crosswalk based on schemas</h3>
+<p>Searching crosswalk between two crosswalks:
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>/datamodel-api/v2/frontend/mscrSearch?sourceSchemas=&lt;schema internal id / PID&gt;&amp;targetSchemas=&lt;schema internal id / PID&gt;
+</span></code></pre></div><p></p>
+<p><code>sourceSchemas</code> and <code>targetSchemas</code> parameters can be repeated to include more that one schemas as the source and target filters. Multiple input values for source and target schemas as combined with OR operator. </p>
+<h3 id="export-vocabulary-mappings-as-skos">Export vocabulary mappings as SKOS</h3>
+<p>An MSCR crosswalk between two SKOS vocabularies can be exported as SKOS with the <code>exportFormat=SKOS</code> parameter:
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>/datamodel-api/v2/crosswalk/&lt;crosswalk internal id / PID&gt;/mapping?exportFormat=SKOS
+</span></code></pre></div><p></p>
+<p>The request above will return the mappings as SKOS conforming triples. It is also possible to include either the source or target vocabularies to the exported data: 
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>/datamodel-api/v2/crosswalk/&lt;crosswalk internal id / PID&gt;/mapping?exportFormat=SKOS&amp;includeSource=true&amp;includeTarget=true
+</span></code></pre></div><p></p>
+<h3 id="working-with-sssom">Working with SSSOM</h3>
+<p><a href="https://mapping-commons.github.io/sssom/">SSSOM</a> mapping file can be imported to MSCR given that both source and target schemas have been registered to the MSCR. An error will be thrown if SSSOM file contains references to URI/terms as subjects or objects of the mapping that are not part of the source or target schemas. </p>
+<p>After successful registration of a SSSOM file it can edited normally with the MSCR crosswalk editor. Crosswalk between combination of ENUM, SKOS and OWL schemas can be exported as SSSOM by using the <code>SSSOM</code> export format.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>/datamodel-api/v2/crosswalk/&lt;crosswalk internal id / PID&gt;/mapping?exportFormat=SSSOM
+</span></code></pre></div>
+<p>Crosswalks between ENUM, SKOS and OWL can exported as SSSOM mappings files. The mapping file will include a basic SSSOM header information. </p>
+<h3 id="crosswalk-operationalization">Crosswalk operationalization</h3>
+<p>Some of the crosswalks created or registered with MSCR can be exported as configurations that can be run in an external system for transforming instance data. The summary of available exported format per source and target schema pairs is summarized in the table below.</p>
+<p><strong>Summary of operationalisation support</strong></p>
+<table>
+<thead>
+<tr>
+<th>Source schema format</th>
+<th>Target schema format</th>
+<th>Supported export format</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CSV/XSD/JSONSchema</td>
+<td>CSV/XSD/JSONSchema</td>
+<td>XSLT</td>
+</tr>
+<tr>
+<td>CSV/XSD/JSONSchema</td>
+<td>SHACL</td>
+<td>RML</td>
+</tr>
+<tr>
+<td>SHACL</td>
+<td>CSV</td>
+<td>SPARQL</td>
+</tr>
+<tr>
+<td>SKOS</td>
+<td>SKOS</td>
+<td>SKOS</td>
+</tr>
+<tr>
+<td>ENUM/SKOS/OWL</td>
+<td>ENUM/SKOS/OWL</td>
+<td>SSSOM</td>
+</tr>
+</tbody>
+</table>
+<h2 id="references">References</h2>
+<ol>
+<li>
+<p>Corcho, O., Ekaputra, F.J., Heibi, I. et al. A maturity model for catalogues of semantic artefacts. Sci Data 11, 479 (2024). https://doi.org/10.1038/s41597-024-03185-4</p>
+</li>
+<li>
+<p>Suominen, T., Kesäniemi, J., Cannizzaro, G., Snyder, K. P., Quazi, R., Lienhop, H., Tatum, C., Ross, S., Broeder, D., Zamani, T., Wilk, R., &amp; Kołomański, M. (2025). FAIRCORE4EOSC Deliverable D4.1 EOSC Registries for Research Data and Metadata Interoperability and Research Activity Tracking. Zenodo. https://doi.org/10.5281/zenodo.15476608</p>
+</li>
+</ol>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "content.code.copy"], "search": "../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.51d95adb.min.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

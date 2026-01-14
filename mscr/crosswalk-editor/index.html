@@ -1,0 +1,2017 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../schema-view/">
+      
+      
+        <link rel="next" href="../handle-common-error/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.6">
+    
+    
+      
+        <title>Crosswalk editor - MSCR docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.558e4712.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2505c338.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#crosswalk-editor-ui" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="MSCR docs" class="md-header__button md-logo" aria-label="MSCR docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MSCR docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Crosswalk editor
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link md-tabs__link--active">
+        Metadata schema and crosswalk registry
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../voc-service/getting-started/" class="md-tabs__link">
+        Vocabulary service
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../groups/getting-started/" class="md-tabs__link">
+        Group management
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../developer/develop-guide/" class="md-tabs__link">
+        Developers Guide
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../terms-of-use/" class="md-tabs__link">
+        Service Policy
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../interoperability-guidelines/" class="md-tabs__link">
+      Interoperability guidelines
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="MSCR docs" class="md-nav__button md-logo" aria-label="MSCR docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+
+    </a>
+    MSCR docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_1" type="checkbox" id="__nav_1" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1" tabindex="0" aria-expanded="true">
+          Metadata schema and crosswalk registry
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Metadata schema and crosswalk registry" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Metadata schema and crosswalk registry
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ui-guide/" class="md-nav__link">
+        UI Guide
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mscr-deployment/" class="md-nav__link">
+        Deployment
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../functional-overview/" class="md-nav__link">
+        MSCR Concepts
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../schema-view/" class="md-nav__link">
+        Schema view
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Crosswalk editor
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Crosswalk editor
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#crosswalk-editor-ui" class="md-nav__link">
+    Crosswalk Editor UI
+  </a>
+  
+    <nav class="md-nav" aria-label="Crosswalk Editor UI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-new-crosswalk" class="md-nav__link">
+    Creating New Crosswalk
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#crosswalk-actions" class="md-nav__link">
+    Crosswalk Actions
+  </a>
+  
+    <nav class="md-nav" aria-label="Crosswalk Actions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#edit-mappings" class="md-nav__link">
+    Edit Mappings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edit-metadata" class="md-nav__link">
+    Edit Metadata
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#publish-crosswalk" class="md-nav__link">
+    Publish Crosswalk
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-new-revision" class="md-nav__link">
+    Add new revision
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete-draft" class="md-nav__link">
+    Delete Draft
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-of-mapping-creations" class="md-nav__link">
+    Example of mapping creations
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mapping-details" class="md-nav__link">
+    Mapping details
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-mappings" class="md-nav__link">
+    Creating mappings
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating mappings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basics" class="md-nav__link">
+    Basics
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iterators" class="md-nav__link">
+    Iterators
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    Functions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-mapping-cases" class="md-nav__link">
+    General mapping cases
+  </a>
+  
+    <nav class="md-nav" aria-label="General mapping cases">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#semantic-entity-mappings" class="md-nav__link">
+    Semantic entity mappings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mapping-csvxmljson-to-rdf" class="md-nav__link">
+    Mapping CSV/XML/JSON to RDF
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mappings-between-csvxmljson" class="md-nav__link">
+    Mappings between CSV/XML/JSON
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mapping-rdf-to-others" class="md-nav__link">
+    Mapping RDF to others
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    Examples:
+  </a>
+  
+    <nav class="md-nav" aria-label="Examples:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#simple-object-mapping" class="md-nav__link">
+    Simple object mapping
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#splitting-and-concatenating-strings" class="md-nav__link">
+    Splitting and concatenating strings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#splitting-value-into-multiple-elements" class="md-nav__link">
+    Splitting value into multiple elements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-the-filter-function" class="md-nav__link">
+    Using the filter function
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#complex-json-to-rdf-mappings" class="md-nav__link">
+    Complex JSON to RDF mappings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#array-iterators" class="md-nav__link">
+    Array iterators
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-complextemplate-function-to-generate-custom-uris-for-rdf-resources" class="md-nav__link">
+    Using complexTemplate function to generate custom URIs for RDF resources
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#full-example-zbmath" class="md-nav__link">
+    Full example: zbMath
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#full-example-semanticopenalex" class="md-nav__link">
+    Full example: SemanticOpenAlex
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#function-reference" class="md-nav__link">
+    Function reference
+  </a>
+  
+    <nav class="md-nav" aria-label="Function reference">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#template-replace2" class="md-nav__link">
+    template (replace2)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#replaceall-replace" class="md-nav__link">
+    replaceAll (replace)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#complextemplate" class="md-nav__link">
+    complexTemplate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filter" class="md-nav__link">
+    filter
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filtertemplate" class="md-nav__link">
+    filterTemplate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addprefix" class="md-nav__link">
+    addPrefix
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addsuffix" class="md-nav__link">
+    addSuffix
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#concat" class="md-nav__link">
+    concat
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#split" class="md-nav__link">
+    split
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constant" class="md-nav__link">
+    constant
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#string-normalizespacestring" class="md-nav__link">
+    string normalizeSpace(string)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operationalization-of-the-crosswalks" class="md-nav__link">
+    Operationalization of the Crosswalks
+  </a>
+  
+    <nav class="md-nav" aria-label="Operationalization of the Crosswalks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-the-generated-files-tab" class="md-nav__link">
+    Add the generated files tab
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../handle-common-error/" class="md-nav__link">
+        Handling Common Error
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_1_8" type="checkbox" id="__nav_1_8">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1_8" tabindex="0" aria-expanded="false">
+          API
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="API" data-md-level="2">
+        <label class="md-nav__title" for="__nav_1_8">
+          <span class="md-nav__icon md-icon"></span>
+          API
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-getting-started/" class="md-nav__link">
+        Getting started
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-usage-guide/" class="md-nav__link">
+        Usage guide
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../release-notes/" class="md-nav__link">
+        Release notes
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_2" type="checkbox" id="__nav_2">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2" tabindex="0" aria-expanded="false">
+          Vocabulary service
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Vocabulary service" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Vocabulary service
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../voc-service/getting-started/" class="md-nav__link">
+        Getting started
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_3" type="checkbox" id="__nav_3">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" tabindex="0" aria-expanded="false">
+          Group management
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Group management" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Group management
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../groups/getting-started/" class="md-nav__link">
+        Getting started
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../groups/usage-guide/" class="md-nav__link">
+        Usage guide
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4" type="checkbox" id="__nav_4">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4" tabindex="0" aria-expanded="false">
+          Developers Guide
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Developers Guide" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Developers Guide
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../developer/develop-guide/" class="md-nav__link">
+        Getting started
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_5" type="checkbox" id="__nav_5">
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5" tabindex="0" aria-expanded="false">
+          Service Policy
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Service Policy" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Service Policy
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../terms-of-use/" class="md-nav__link">
+        Terms of Use
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../acceptable-use-policy/" class="md-nav__link">
+        Acceptable Use Policy
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../privacy-guideline/" class="md-nav__link">
+        Privacy Policy
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../interoperability-guidelines/" class="md-nav__link">
+        Interoperability guidelines
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#crosswalk-editor-ui" class="md-nav__link">
+    Crosswalk Editor UI
+  </a>
+  
+    <nav class="md-nav" aria-label="Crosswalk Editor UI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-new-crosswalk" class="md-nav__link">
+    Creating New Crosswalk
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#crosswalk-actions" class="md-nav__link">
+    Crosswalk Actions
+  </a>
+  
+    <nav class="md-nav" aria-label="Crosswalk Actions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#edit-mappings" class="md-nav__link">
+    Edit Mappings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edit-metadata" class="md-nav__link">
+    Edit Metadata
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#publish-crosswalk" class="md-nav__link">
+    Publish Crosswalk
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-new-revision" class="md-nav__link">
+    Add new revision
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete-draft" class="md-nav__link">
+    Delete Draft
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-of-mapping-creations" class="md-nav__link">
+    Example of mapping creations
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mapping-details" class="md-nav__link">
+    Mapping details
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-mappings" class="md-nav__link">
+    Creating mappings
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating mappings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basics" class="md-nav__link">
+    Basics
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iterators" class="md-nav__link">
+    Iterators
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    Functions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-mapping-cases" class="md-nav__link">
+    General mapping cases
+  </a>
+  
+    <nav class="md-nav" aria-label="General mapping cases">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#semantic-entity-mappings" class="md-nav__link">
+    Semantic entity mappings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mapping-csvxmljson-to-rdf" class="md-nav__link">
+    Mapping CSV/XML/JSON to RDF
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mappings-between-csvxmljson" class="md-nav__link">
+    Mappings between CSV/XML/JSON
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mapping-rdf-to-others" class="md-nav__link">
+    Mapping RDF to others
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    Examples:
+  </a>
+  
+    <nav class="md-nav" aria-label="Examples:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#simple-object-mapping" class="md-nav__link">
+    Simple object mapping
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#splitting-and-concatenating-strings" class="md-nav__link">
+    Splitting and concatenating strings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#splitting-value-into-multiple-elements" class="md-nav__link">
+    Splitting value into multiple elements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-the-filter-function" class="md-nav__link">
+    Using the filter function
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#complex-json-to-rdf-mappings" class="md-nav__link">
+    Complex JSON to RDF mappings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#array-iterators" class="md-nav__link">
+    Array iterators
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-complextemplate-function-to-generate-custom-uris-for-rdf-resources" class="md-nav__link">
+    Using complexTemplate function to generate custom URIs for RDF resources
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#full-example-zbmath" class="md-nav__link">
+    Full example: zbMath
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#full-example-semanticopenalex" class="md-nav__link">
+    Full example: SemanticOpenAlex
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#function-reference" class="md-nav__link">
+    Function reference
+  </a>
+  
+    <nav class="md-nav" aria-label="Function reference">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#template-replace2" class="md-nav__link">
+    template (replace2)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#replaceall-replace" class="md-nav__link">
+    replaceAll (replace)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#complextemplate" class="md-nav__link">
+    complexTemplate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filter" class="md-nav__link">
+    filter
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filtertemplate" class="md-nav__link">
+    filterTemplate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addprefix" class="md-nav__link">
+    addPrefix
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addsuffix" class="md-nav__link">
+    addSuffix
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#concat" class="md-nav__link">
+    concat
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#split" class="md-nav__link">
+    split
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constant" class="md-nav__link">
+    constant
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#string-normalizespacestring" class="md-nav__link">
+    string normalizeSpace(string)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operationalization-of-the-crosswalks" class="md-nav__link">
+    Operationalization of the Crosswalks
+  </a>
+  
+    <nav class="md-nav" aria-label="Operationalization of the Crosswalks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-the-generated-files-tab" class="md-nav__link">
+    Add the generated files tab
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Crosswalk editor</h1>
+
+<p>The Crosswalk Editor is an integrated tool that allows users to create and edit complex mappings between two registered MSCR schemas. The crosswalk editor supports creation of mappings between any of the following schema formats: CSV, XSD, JSON Schema, RDFS, SHACL, OWL, SKOS, and ENUM. The MSCR allows users to mix-and-match different formats freely and they are all called crosswalks in the UI. Internally, crosswalks are categorised into "crosswalk", "semantic mapping" or "semantic annotation" sub-types based on the format of the source and target schemas. The rules for determining the crosswalk sub type is summarised in table X. Sub-types describe the goal or purpose of the mapping:</p>
+<ul>
+<li>
+<p>Data crosswalks: the purpose of the mappings is to transform an instance document that conforms to the source schema into another instance document that conforms to the target schema with potentially complex processing.</p>
+</li>
+<li>
+<p>Semantic mappings: describes a correspondence with possible ontological commitment between two identified entities, such as vocabulary concepts, classes or properties.</p>
+</li>
+<li>
+<p>Annotations: A set of mappings between "just a strings" i.e. a lexical tokens and identified semantic entities such as SKOS vocabulary concepts or OWL classes is categorised as semantic annotation.</p>
+</li>
+</ul>
+<h2 id="crosswalk-editor-ui">Crosswalk Editor UI</h2>
+<p>In the Crosswalk Editor UI, users can create mappings from the source schema to target schema using the UI Tool and can export the generated mappings in MSCR supported formats. </p>
+<h3 id="creating-new-crosswalk">Creating New Crosswalk</h3>
+<p>To create a new crosswalk between two available schemas in MSCR, the following steps are needed:</p>
+<ul>
+<li>
+<p>Select the source and target schema. Again, schemas should be registered and public in MSCR. When creating a new crosswalk, only schemas that can be rendered as trees are available.</p>
+</li>
+<li>
+<p>Add Name and Description(optional) for the Crosswalk. </p>
+</li>
+<li>
+<p>Click Create Crosswalk button will lead to Crosswalk Editor Page.</p>
+</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/mscr/create_crosswalk-1.png" data-desc-position="bottom"><img alt="Crosswalk creation modal" src="../../assets/mscr/create_crosswalk-1.png"></a></p>
+<p>Crosswalk editor is used to create mappings between schema fields which can be saved as new crosswalk. MSCR Crosswalk Editor offers a treeview of the selected source and target schemas where user can map the attributes between schemas and the mappings will be saved. </p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/mscr/crosswalk%20editor.png" data-desc-position="bottom"><img alt="Crosswalk editor view" src="../../assets/mscr/crosswalk%20editor.png"></a></p>
+<h2 id="crosswalk-actions">Crosswalk Actions</h2>
+<p>After creating a crosswalk, the following actions are available in the action menu for crosswalk: </p>
+<ul>
+<li>Edit mappings </li>
+<li>Edit metadata </li>
+<li>Publish crosswalk (other status related actions)</li>
+<li>Add new revision</li>
+<li>Delete draft</li>
+</ul>
+<h3 id="edit-mappings">Edit Mappings</h3>
+<ul>
+<li>To start creating mappings or editing existing mappings, please click the action menu on the top right corner of the editor window and select edit.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/mscr/edit_crosswalk.png" data-desc-position="bottom"><img alt="Finding Edit button by activating Actions button" src="../../assets/mscr/edit_crosswalk.png"></a></p>
+<ul>
+<li>After that, user can select attributes from two schemas present in left and right tree view and after selecting attributes to map, the mapping button between the two schema trees will be enabled.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/mscr/create_mapping.png" data-desc-position="bottom"><img alt="Button to link selected nodes" src="../../assets/mscr/create_mapping.png"></a></p>
+<ul>
+<li>After clicking the mapping icon, pop up dialog will be opened where user can add some more details about the mapping. When it is done, Save button should be clicked to save the mapping. </li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/mscr/edit_mapping.png" data-desc-position="bottom"><img alt="Modal for editing mapping" src="../../assets/mscr/edit_mapping.png"></a></p>
+<ul>
+<li>After saving, list of mappings will appear in a different tab</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/mscr/mapping_list.png" data-desc-position="bottom"><img alt="List of mappings" src="../../assets/mscr/mapping_list.png"></a></p>
+<h3 id="edit-metadata">Edit Metadata</h3>
+<p>In the crosswalk Metadata tab, the basic metadata related to that crosswalk is visible. Some of the metadata fields are editable and to edit, user need to click "Edit Metadata" menu. This will enable the editable text fields and after editing finishes, user need to click save to save the changes have been made.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/mscr/edit-crosswalk-metadata.png" data-desc-position="bottom"><img alt="Edit Crosswalk Metadata" src="../../assets/mscr/edit-crosswalk-metadata.png"></a></p>
+<h3 id="publish-crosswalk">Publish Crosswalk</h3>
+<p>When a crosswalk is created, it is by default in draft state and not visible to others. If the user is satisfied about the crosswalk created and the mappings, it is possible to publish the crosswalk with the "Publish crosswalk" menu. Publishing a crosswalk will create a resolvable handle for the crosswalk which can be shared with others and will be visible upon searching in MSCR registry. After publishing a content, it cannot be reverted to draft state. If one needs to change something in a published crosswalk, it can be done by creating a revision of that and editing that version of crosswalk.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/mscr/publish-crosswalk.png" data-desc-position="bottom"><img alt="Publishing a Crosswalk" src="../../assets/mscr/publish-crosswalk.png"></a></p>
+<h3 id="add-new-revision">Add new revision</h3>
+<p>To create a new revision of a crosswalk, user need to select the "Add new revision" option from the crosswalks action menu. Clicking the "Add New Revision" button will open a pop up dialogue. The source and target schema cannot be changed while creating a new revision for a crosswalk. Revisions of crosswalks serves the purpose if there is need to create slightly different versions of the same crosswalk.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/crosswalkeditor/revision_of_crosswalk.png" data-desc-position="bottom"><img alt="Adding a new revision of a Crosswalk" src="../../assets/crosswalkeditor/revision_of_crosswalk.png"></a></p>
+<p>You need to add a name and optional description the new revision of the crosswalk. The default format for the revision of a crosswalk is "MSCR". The created revisions can be found in the version history tab.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/crosswalkeditor/version_history_crosswalk.png" data-desc-position="bottom"><img alt="Revisions of a Crosswalk" src="../../assets/crosswalkeditor/version_history_crosswalk.png"></a></p>
+<h3 id="delete-draft">Delete Draft</h3>
+<p>The unpublished crosswalks which are still in draft state, can be deleted by selecting the "Delete draft" option from the action menu. Once the draft is deleted, it will not be visible or searchable anymore. But, published content cannot be deleted once it has been published.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/crosswalkeditor/delete_crosswalk_draft.png" data-desc-position="bottom"><img alt="Deleting a Crosswalk" src="../../assets/crosswalkeditor/delete_crosswalk_draft.png"></a></p>
+<h3 id="example-of-mapping-creations">Example of mapping creations</h3>
+<h2 id="mapping-details">Mapping details</h2>
+<h2 id="creating-mappings">Creating mappings</h2>
+<h3 id="basics">Basics</h3>
+<p>Basics about different type of mappings: semantic mappings, structural mappings</p>
+<h3 id="iterators">Iterators</h3>
+<p><strong>Iterators in JSONSchema/XSD mappings</strong></p>
+<p>When dealing with JSON or XML schemas an iterator mapping is required when the repetable entity is complex, meaning that it is of type "object" (JSON Schema) or of type complexType (XSD). For example, with the following input data: </p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>{
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    "vegetables": [
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>        {
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>            "veggieLike": "true",
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>            "veggieName": "potato"
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>        },
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>        {
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>            "veggieLike": "false",
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>            "veggieName": "broccoli"
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>        }
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    ]
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>}
+</span></code></pre></div>
+<p>and following target schema:</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/crosswalkeditor/iterators-target-schema.png" data-desc-position="bottom"><img alt="" src="../../assets/crosswalkeditor/iterators-target-schema.png"></a></p>
+<p>if the iterator mapping from vegetables to root/vegetable is omitted (see below)</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/crosswalkeditor/iterators1.png" data-desc-position="bottom"><img alt="" src="../../assets/crosswalkeditor/iterators1.png"></a></p>
+<p>the end result would be </p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>&lt;root&gt;
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    &lt;vegetables&gt;
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>        &lt;veggieName&gt;potato broccoli&lt;/veggieName&gt;
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>        &lt;veggieLike&gt;true false&lt;/veggieLike&gt;
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    &lt;/vegetables&gt;
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>&lt;/root&gt;
+</span></code></pre></div>
+<p>Where all the <code>veggieName</code> and <code>veggieLike</code> element values are outputted to a single element.</p>
+<p>By adding an iterator mapping (see below)</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/crosswalkeditor/iterators2.png" data-desc-position="bottom"><img alt="" src="../../assets/crosswalkeditor/iterators2.png"></a></p>
+<p>The values of complex <code>vegetable</code>element properties are grouped together resulting to the following document</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>&lt;root&gt;
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    &lt;vegetables&gt;
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>        &lt;veggieName&gt;potato&lt;/veggieName&gt;
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>        &lt;veggieLike&gt;true&lt;/veggieLike&gt;
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    &lt;/vegetables&gt;
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    &lt;vegetables&gt;
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>        &lt;veggieName&gt;broccoli&lt;/veggieName&gt;
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>        &lt;veggieLike&gt;false&lt;/veggieLike&gt;
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>    &lt;/vegetables&gt;
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>&lt;/root&gt;
+</span></code></pre></div>
+<p>**Iterators in X to SHACL mappings </p>
+<p>Each of the SHACL NodeShape, or more precisely its target class, has an automatically generated "iterator source" property. This property is not part of the SHACL schema, but generated by the MSCR. In order to create resources with any target its iterator property must be mapped. </p>
+<h3 id="functions">Functions</h3>
+<p>Tehre are source, mapping and target functions available in the MSCR. That means that the maximum depth of nested function is tree: </p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>target_function(mapping_function(source_function(value)))
+</span></code></pre></div>
+<p>The available function set varies a little based depending the foramt of source and target schemas. </p>
+<h2 id="general-mapping-cases">General mapping cases</h2>
+<p>The crosswalk editor in MSCR can used to create "mappings" between any registed CSV, XSD, JSONSchema, RDFS, SHACL, OWL, SKOS an ENUM content. That is not to say that there might even be a use case for all of the possible combinations, but it still can be done. The term "mappings" in quotation marks as it is still debatable whether some content combinations should be called mappings or not. </p>
+<h3 id="semantic-entity-mappings">Semantic entity mappings</h3>
+<p>Semantic entity mappings are mappings between identifiable things are are deemed to be significant enough to warrant a description in some partical ocntext. These kinds of things or entities can be found in the context of MSCR in vocabularies and ontologies. Strictly speaking, this would only include SKOS, RDFS and OWL, but since the MSCR generates IRI identifiers for each element of the schema we can extend it to ENUMs as well. </p>
+<p>The basic structure of a semantic entity mappign is a triple: source entity, predicate, target entity. In MSCR the predicate contains mapping properties found in SKOS and OWL vocabularies. </p>
+<p>Available SKOS predicates:</p>
+<ul>
+<li>skos:broadMatch</li>
+<li>skos:closeMatch</li>
+<li>skos:exactMatch</li>
+<li>skos:narrowMatch</li>
+<li>skos:relatedMatch</li>
+</ul>
+<p>Available OWL predicates:</p>
+<ul>
+<li>owl:sameAs</li>
+<li>owl:equivalentClass</li>
+<li>owl:equivalentProperty</li>
+</ul>
+<p>Functions are not available for semantic entity mappings in the MSCR UI.</p>
+<p>Many-to-one type of mappings can be expressed in any combination of one-to-one and many-to-one mappings. The organization of the mappings will not affect the end results since purely semantic mappings do not use functions that could have differnt output depending on the input. The only difference in the end is how the mappings will look in the crosswalk and mappings tabs of the UI. </p>
+<h3 id="mapping-csvxmljson-to-rdf">Mapping CSV/XML/JSON to RDF</h3>
+<p>Basic steps:</p>
+<ul>
+<li>Map iterator source of the classe</li>
+<li>Map subject source of the class</li>
+<li>Map literator properties of the class</li>
+<li>For each object property<ul>
+<li>Map the object property </li>
+<li>Map the subject source of the class that in the the object property's range with the same configuration as in the step above</li>
+</ul>
+</li>
+</ul>
+<p><strong>Every generated target class must have a subject source mapping</strong> </p>
+<p>Class is generated if it its iterator source is mapped and every generated class must have an iterator mapped. This basically means that one cannot generate blank nodes at the moment. </p>
+<p>This is due to the missing implmementation in the generator for generaing RML blank nodes. </p>
+<p><strong>There can be only one iterator and subject source mapping per target class</strong></p>
+<p>The reason for this is that it is currently not possible to distinguish in the which iterator/subject source an individual mapping belongs to due to missing contextual information. </p>
+<p>This is how the mappings structure currently works (simplified example):</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>{
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    "target": [
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>        "subject source"
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    ],
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>    "source": [
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>        "identifier
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>    ]
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>}
+</span></code></pre></div>
+<p>And this is what multiple iterator/subject sources would require:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>// Mapping 1
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>{
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>    "content": "first source"
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    "target": [
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        "subject source"
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    ],
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>    "source": [
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>        "identifier
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>    ]
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>}
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>// Mapping 2
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>{
+</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>    "content": "second source"
+</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>    "target": [
+</span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>        "subject source"
+</span><span id="__span-5-16"><a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>    ],
+</span><span id="__span-5-17"><a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a>    "source": [
+</span><span id="__span-5-18"><a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a>        "identifier
+</span><span id="__span-5-19"><a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a>    ]
+</span><span id="__span-5-20"><a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a>}
+</span></code></pre></div>
+<h3 id="mappings-between-csvxmljson">Mappings between CSV/XML/JSON</h3>
+<p>TODO </p>
+<h3 id="mapping-rdf-to-others">Mapping RDF to others</h3>
+<p>TODO</p>
+<h2 id="examples">Examples:</h2>
+<h3 id="simple-object-mapping">Simple object mapping</h3>
+<details>
+    <summary>Person JSON Schema (source)</summary>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>{
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>  "$id": "https://example.com/person.schema.json",
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>  "$schema": "https://json-schema.org/draft/2020-12/schema",
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>  "title": "Person",
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>  "type": "object",
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>  "required": ["firstName", "lastName", "age"],
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>  "additionalProperties": false,
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>  "properties": {
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>    "firstName": {
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>      "type": "string",
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>      "description": "The person's first name."
+</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>    },
+</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>    "lastName": {
+</span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a>      "type": "string",
+</span><span id="__span-6-15"><a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a>      "description": "The person's last name."
+</span><span id="__span-6-16"><a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a>    },
+</span><span id="__span-6-17"><a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a>    "age": {
+</span><span id="__span-6-18"><a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a>      "description": "Age in years which must be equal to or greater than zero.",
+</span><span id="__span-6-19"><a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a>      "type": "integer",
+</span><span id="__span-6-20"><a id="__codelineno-6-20" name="__codelineno-6-20" href="#__codelineno-6-20"></a>      "minimum": 0
+</span><span id="__span-6-21"><a id="__codelineno-6-21" name="__codelineno-6-21" href="#__codelineno-6-21"></a>    }
+</span><span id="__span-6-22"><a id="__codelineno-6-22" name="__codelineno-6-22" href="#__codelineno-6-22"></a>  }
+</span><span id="__span-6-23"><a id="__codelineno-6-23" name="__codelineno-6-23" href="#__codelineno-6-23"></a>}
+</span></code></pre></div>
+</details>
+
+<details>
+    <summary>Person XML Schema (target)</summary>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>&lt;xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>&lt;xs:element name="root"&gt;
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>  &lt;xs:complexType&gt;
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>    &lt;xs:sequence&gt;
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>      &lt;xs:element name="firstName" type="xs:string"/&gt;
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>      &lt;xs:element name="lastName" type="xs:string"/&gt;
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>      &lt;xs:element name="age" type="xs:positiveInteger"/&gt;
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>    &lt;/xs:sequence&gt;
+</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>  &lt;/xs:complexType&gt;
+</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>  &lt;/xs:element&gt;
+</span><span id="__span-7-12"><a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>&lt;/xs:schema&gt;
+</span></code></pre></div>
+</details>
+
+<p>There is no need to map an iterator because the target schema does not include any repeatable elements. All that is required are three simple mappings. </p>
+<p>Example of a simple mapping:</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/crosswalkeditor/example-data/example-person-mapping.png" data-desc-position="bottom"><img alt="" src="../../assets/crosswalkeditor/example-data/example-person-mapping.png"></a></p>
+<p>Final mappings</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/crosswalkeditor/example-data/example-person-mappings.png" data-desc-position="bottom"><img alt="" src="../../assets/crosswalkeditor/example-data/example-person-mappings.png"></a></p>
+<h3 id="splitting-and-concatenating-strings">Splitting and concatenating strings</h3>
+<details>
+    <summary>Person JSON Schema (source)</summary>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>{
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>  "$id": "https://example.com/person.schema.json",
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>  "$schema": "https://json-schema.org/draft/2020-12/schema",
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>  "title": "Person",
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>  "type": "object",
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>  "required": ["firstName", "lastName", "age"],
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>  "additionalProperties": false,
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>  "properties": {
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>    "firstName": {
+</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>      "type": "string",
+</span><span id="__span-8-11"><a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>      "description": "The person's first name."
+</span><span id="__span-8-12"><a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>    },
+</span><span id="__span-8-13"><a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>    "lastName": {
+</span><span id="__span-8-14"><a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a>      "type": "string",
+</span><span id="__span-8-15"><a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a>      "description": "The person's last name."
+</span><span id="__span-8-16"><a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a>    },
+</span><span id="__span-8-17"><a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a>    "hobbies": {
+</span><span id="__span-8-18"><a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a>      "type": "string",
+</span><span id="__span-8-19"><a id="__codelineno-8-19" name="__codelineno-8-19" href="#__codelineno-8-19"></a>      "description": "The person's hobbies."
+</span><span id="__span-8-20"><a id="__codelineno-8-20" name="__codelineno-8-20" href="#__codelineno-8-20"></a>    },    
+</span><span id="__span-8-21"><a id="__codelineno-8-21" name="__codelineno-8-21" href="#__codelineno-8-21"></a>    "age": {
+</span><span id="__span-8-22"><a id="__codelineno-8-22" name="__codelineno-8-22" href="#__codelineno-8-22"></a>      "description": "Age in years which must be equal to or greater than zero.",
+</span><span id="__span-8-23"><a id="__codelineno-8-23" name="__codelineno-8-23" href="#__codelineno-8-23"></a>      "type": "integer",
+</span><span id="__span-8-24"><a id="__codelineno-8-24" name="__codelineno-8-24" href="#__codelineno-8-24"></a>      "minimum": 0
+</span><span id="__span-8-25"><a id="__codelineno-8-25" name="__codelineno-8-25" href="#__codelineno-8-25"></a>    }
+</span><span id="__span-8-26"><a id="__codelineno-8-26" name="__codelineno-8-26" href="#__codelineno-8-26"></a>  }
+</span><span id="__span-8-27"><a id="__codelineno-8-27" name="__codelineno-8-27" href="#__codelineno-8-27"></a>}
+</span></code></pre></div>
+</details>
+
+<details>
+    <summary>Person XML schema (target)</summary>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>&lt;xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>&lt;xs:element name="root"&gt;
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>  &lt;xs:complexType&gt;
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>    &lt;xs:sequence&gt;
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>      &lt;xs:element name="name" type="xs:string"/&gt;
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>      &lt;xs:element name="age" type="xs:positiveInteger"/&gt;
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>      &lt;xs:element name="hobbies"&gt;
+</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>        &lt;xs:complexType&gt;
+</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>          &lt;xs:element name="hobby" type="xs:string"/&gt;
+</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>        &lt;/xs:complexType&gt;
+</span><span id="__span-9-12"><a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>      &lt;/xs:element&gt;
+</span><span id="__span-9-13"><a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>    &lt;/xs:sequence&gt;
+</span><span id="__span-9-14"><a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>  &lt;/xs:complexType&gt;
+</span><span id="__span-9-15"><a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a>  &lt;/xs:element&gt;
+</span><span id="__span-9-16"><a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a>&lt;/xs:schema&gt;
+</span></code></pre></div>
+</details>
+
+<p>Last name and first name are concatenated with a mapping function. It is important that source propeties are in the correct order (lastName, firstName) and that the mapping function parameter includes a space (', ').</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/crosswalkeditor/example-data/example-person-concat.png" data-desc-position="bottom"><img alt="" src="../../assets/crosswalkeditor/example-data/example-person-concat.png"></a></p>
+<p>Another way producing the same end result would to use just ',' as the parameter of the mapping function and to add 'addPrefix' function to the firstName source property. </p>
+<p>Split function can be used to generate one or more instances of an element. In this example the value of hobbies property  will be split into <code>hobby</code> elements under <code>hobbies</code> container element. </p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/crosswalkeditor/example-data/example-person-split.png" data-desc-position="bottom"><img alt="" src="../../assets/crosswalkeditor/example-data/example-person-split.png"></a></p>
+<p>Final mappings:</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/crosswalkeditor/example-data/example-person-concat-mappings.png" data-desc-position="bottom"><img alt="" src="../../assets/crosswalkeditor/example-data/example-person-concat-mappings.png"></a></p>
+<p>Source document for testing: 
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>{
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>  "firstName": "John",
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>  "lastName": "Doe",
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>  "hobbies": "archery,fencing",
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>  "age": 21
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>}   
+</span></code></pre></div>
+Excepted target document:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>&lt;root&gt;
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>    &lt;name&gt;Doe, John&lt;/name&gt;
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>    &lt;age&gt;21&lt;/age&gt;
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>    &lt;hobbies&gt;
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>        &lt;hobby&gt;archery&lt;/hobby&gt;
+</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>        &lt;hobby&gt;fencing&lt;/hobby&gt;
+</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>    &lt;/hobbies&gt;
+</span><span id="__span-11-9"><a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a>&lt;/root&gt;
+</span></code></pre></div><p></p>
+<h3 id="splitting-value-into-multiple-elements">Splitting value into multiple elements</h3>
+<details>
+    <summary>Person XML schema (source)</summary>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>&lt;xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"&gt;
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>&lt;xs:element name="root"&gt;
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>  &lt;xs:complexType&gt;
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>    &lt;xs:sequence&gt;
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>      &lt;xs:element name="name" type="xs:string"/&gt;
+</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>      &lt;xs:element name="age" type="xs:positiveInteger"/&gt;
+</span><span id="__span-12-8"><a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>      &lt;xs:element name="hobbies"&gt;
+</span><span id="__span-12-9"><a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>        &lt;xs:complexType&gt;
+</span><span id="__span-12-10"><a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a>          &lt;xs:element name="hobby" type="xs:string"/&gt;
+</span><span id="__span-12-11"><a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a>        &lt;/xs:complexType&gt;
+</span><span id="__span-12-12"><a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a>      &lt;/xs:element&gt;
+</span><span id="__span-12-13"><a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a>    &lt;/xs:sequence&gt;
+</span><span id="__span-12-14"><a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a>  &lt;/xs:complexType&gt;
+</span><span id="__span-12-15"><a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a>  &lt;/xs:element&gt;
+</span><span id="__span-12-16"><a id="__codelineno-12-16" name="__codelineno-12-16" href="#__codelineno-12-16"></a>&lt;/xs:schema&gt;
+</span></code></pre></div>
+</details>
+
+<details>
+    <summary>Person JSON schema (target)</summary>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>{
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>  "$id": "https://example.com/person.schema.json",
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>  "$schema": "https://json-schema.org/draft/2020-12/schema",
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>  "title": "Person",
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>  "type": "object",
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>  "required": ["firstName", "lastName", "age"],
+</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>  "additionalProperties": false,
+</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>  "properties": {
+</span><span id="__span-13-9"><a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>    "firstName": {
+</span><span id="__span-13-10"><a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a>      "type": "string",
+</span><span id="__span-13-11"><a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a>      "description": "The person's first name."
+</span><span id="__span-13-12"><a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a>    },
+</span><span id="__span-13-13"><a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a>    "lastName": {
+</span><span id="__span-13-14"><a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a>      "type": "string",
+</span><span id="__span-13-15"><a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a>      "description": "The person's last name."
+</span><span id="__span-13-16"><a id="__codelineno-13-16" name="__codelineno-13-16" href="#__codelineno-13-16"></a>    },
+</span><span id="__span-13-17"><a id="__codelineno-13-17" name="__codelineno-13-17" href="#__codelineno-13-17"></a>    "hobbies": {
+</span><span id="__span-13-18"><a id="__codelineno-13-18" name="__codelineno-13-18" href="#__codelineno-13-18"></a>      "type": "string",
+</span><span id="__span-13-19"><a id="__codelineno-13-19" name="__codelineno-13-19" href="#__codelineno-13-19"></a>      "description": "The person's hobbies."
+</span><span id="__span-13-20"><a id="__codelineno-13-20" name="__codelineno-13-20" href="#__codelineno-13-20"></a>    },    
+</span><span id="__span-13-21"><a id="__codelineno-13-21" name="__codelineno-13-21" href="#__codelineno-13-21"></a>    "age": {
+</span><span id="__span-13-22"><a id="__codelineno-13-22" name="__codelineno-13-22" href="#__codelineno-13-22"></a>      "description": "Age in years which must be equal to or greater than zero.",
+</span><span id="__span-13-23"><a id="__codelineno-13-23" name="__codelineno-13-23" href="#__codelineno-13-23"></a>      "type": "integer",
+</span><span id="__span-13-24"><a id="__codelineno-13-24" name="__codelineno-13-24" href="#__codelineno-13-24"></a>      "minimum": 0
+</span><span id="__span-13-25"><a id="__codelineno-13-25" name="__codelineno-13-25" href="#__codelineno-13-25"></a>    }
+</span><span id="__span-13-26"><a id="__codelineno-13-26" name="__codelineno-13-26" href="#__codelineno-13-26"></a>  }
+</span><span id="__span-13-27"><a id="__codelineno-13-27" name="__codelineno-13-27" href="#__codelineno-13-27"></a>}
+</span></code></pre></div>
+</details>
+
+<p>Tasks:</p>
+<ul>
+<li>Split "name" element from the source document into "firstName" and "lastName" properties and remove any extra whitespace.</li>
+<li>Concatenate all hobbies with "|" to the target document.</li>
+</ul>
+<p>Source document
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>&lt;root&gt;
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>    &lt;name&gt;Doe, John&lt;/name&gt;
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>    &lt;age&gt;21&lt;/age&gt;
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>    &lt;hobbies&gt;
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>        &lt;hobby&gt;archery&lt;/hobby&gt;
+</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>        &lt;hobby&gt;fencing&lt;/hobby&gt;
+</span><span id="__span-14-7"><a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>    &lt;/hobbies&gt;
+</span><span id="__span-14-8"><a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a>&lt;/root&gt; 
+</span></code></pre></div><p></p>
+<p>Hobbies mapping</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/crosswalkeditor/example-data/person-split2-hobbies.png" data-desc-position="bottom"><img alt="" src="../../assets/crosswalkeditor/example-data/person-split2-hobbies.png"></a></p>
+<p>If the value of the "name" element is split using "," the latter element will have an extra white space (" John"). Of course, one way of fixing the problem would the use " ," as the splitting parameter. Another way to address the issue is to to add a processing function "normalizeSpace" to the "firstName" target property.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/crosswalkeditor/example-data/person-split2-names.png" data-desc-position="bottom"><img alt="" src="../../assets/crosswalkeditor/example-data/person-split2-names.png"></a></p>
+<p>Final mappings</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/crosswalkeditor/example-data/person-split2-mappings.png" data-desc-position="bottom"><img alt="" src="../../assets/crosswalkeditor/example-data/person-split2-mappings.png"></a></p>
+<p>Output document</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>{
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>    "firstName": "John",
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>    "lastName": "Doe",
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>    "hobbies": "archery|fencing"
+</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>}
+</span></code></pre></div>
+<h3 id="using-the-filter-function">Using the filter function</h3>
+<p>Climate example </p>
+<h3 id="complex-json-to-rdf-mappings">Complex JSON to RDF mappings</h3>
+<p>Dragan's example</p>
+<h3 id="array-iterators">Array iterators</h3>
+<p>Arrays examples </p>
+<h3 id="using-complextemplate-function-to-generate-custom-uris-for-rdf-resources">Using complexTemplate function to generate custom URIs for RDF resources</h3>
+<p>OpenAlex example </p>
+<h3 id="full-example-zbmath">Full example: zbMath</h3>
+<p>Coming </p>
+<h3 id="full-example-semanticopenalex">Full example: SemanticOpenAlex</h3>
+<h2 id="function-reference">Function reference</h2>
+<h3 id="template-replace2">template (replace2)</h3>
+<p>Replaces all instances of {value_X}, where X is the index of the source property (starting from 0), with the value of the source property. This function can be used for example for create subject URIs and to create object URIs for triples with object properties. </p>
+<p>Example: </p>
+<p>Replace {value_0} with the value from the <code>local_id</code> property. For example: </p>
+<ul>
+<li>mapping: local_id -&gt; uri </li>
+<li>source data: <code>"local_id": 12345</code></li>
+<li>pattern: <code>http://example.com/{value_0}/lifetime</code> </li>
+<li>result: <code>http://example.com/12345/lifetime</code></li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/crosswalkeditor/template-example.png" data-desc-position="bottom"><img alt="Content Versions" src="../../assets/crosswalkeditor/template-example.png"></a></p>
+<h3 id="replaceall-replace">replaceAll (replace)</h3>
+<p>Example: </p>
+<p>Replace all instances of '/' with '-' in  <code>date_of_birth</code> property. For example "11/11/2011" -&gt; "11-11-2011".</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../../assets/crosswalkeditor/replaceAll-example.png" data-desc-position="bottom"><img alt="Content Versions" src="../../assets/crosswalkeditor/replaceAll-example.png"></a></p>
+<h3 id="complextemplate">complexTemplate</h3>
+<p>Support functions are part of the template </p>
+<p>https://semopenalex.org/ontology/hasAuthorship/#{#replace(#var0,'https://openalex.org/','')}/#{#replace(#level2,'https://openalex.org/','')}</p>
+<h3 id="filter">filter</h3>
+<h3 id="filtertemplate">filterTemplate</h3>
+<p>Extends filter by making ti possible to create the filter key using multiple input fields and additional string content. </p>
+<p>Example: 
+Input data
+</p><div class="language-text highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>&lt;records&gt;
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>    &lt;record&gt;
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>        &lt;id&gt;record_2025-01-01&lt;/id&gt;
+</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>        &lt;value&gt;include&lt;/value&gt;
+</span><span id="__span-16-5"><a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>        &lt;date&gt;
+</span><span id="__span-16-6"><a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a>            &lt;day&gt;1&lt;/day&gt;
+</span><span id="__span-16-7"><a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a>            &lt;month&gt;1&lt;/month&gt;
+</span><span id="__span-16-8"><a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a>            &lt;year&gt;1&lt;/year&gt;
+</span><span id="__span-16-9"><a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a>        &lt;/date&gt;
+</span><span id="__span-16-10"><a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a>    &lt;/record&gt;
+</span><span id="__span-16-11"><a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a>    &lt;record&gt;
+</span><span id="__span-16-12"><a id="__codelineno-16-12" name="__codelineno-16-12" href="#__codelineno-16-12"></a>        &lt;id&gt;record_2025-02-01&lt;/id&gt;
+</span><span id="__span-16-13"><a id="__codelineno-16-13" name="__codelineno-16-13" href="#__codelineno-16-13"></a>        &lt;value&gt;include&lt;/value&gt;
+</span><span id="__span-16-14"><a id="__codelineno-16-14" name="__codelineno-16-14" href="#__codelineno-16-14"></a>        &lt;date&gt;
+</span><span id="__span-16-15"><a id="__codelineno-16-15" name="__codelineno-16-15" href="#__codelineno-16-15"></a>            &lt;day&gt;1&lt;/day&gt;
+</span><span id="__span-16-16"><a id="__codelineno-16-16" name="__codelineno-16-16" href="#__codelineno-16-16"></a>            &lt;month&gt;2&lt;/month&gt;
+</span><span id="__span-16-17"><a id="__codelineno-16-17" name="__codelineno-16-17" href="#__codelineno-16-17"></a>            &lt;year&gt;1&lt;/year&gt;
+</span><span id="__span-16-18"><a id="__codelineno-16-18" name="__codelineno-16-18" href="#__codelineno-16-18"></a>        &lt;/date&gt;
+</span><span id="__span-16-19"><a id="__codelineno-16-19" name="__codelineno-16-19" href="#__codelineno-16-19"></a>    &lt;/record&gt;
+</span><span id="__span-16-20"><a id="__codelineno-16-20" name="__codelineno-16-20" href="#__codelineno-16-20"></a>&lt;/records&gt;
+</span></code></pre></div><p></p>
+<p>Filter records where the value of date is {value_0}-{value_1}</p>
+<h3 id="addprefix">addPrefix</h3>
+<p>Adds parameter string value before the data value.</p>
+<h3 id="addsuffix">addSuffix</h3>
+<p>Adds parameter string value after the data value.</p>
+<h3 id="concat">concat</h3>
+<p>Joins all input parameter string together using the delimiter.</p>
+<h3 id="split">split</h3>
+<p>Split input string using the delimiter. </p>
+<h3 id="constant">constant</h3>
+<p>Output a constant value that will override any other processing and values.</p>
+<h3 id="string-normalizespacestring">string normalizeSpace(string)</h3>
+<p>Returns the parameter string with the leading, trailing, and repeating white spaces stripped.</p>
+<h2 id="operationalization-of-the-crosswalks">Operationalization of the Crosswalks</h2>
+<p>MSCR provides different kinds of generated artefacts for data transformation and semantic alignment scenarios. Data transformations are described as data crosswalk between data schemas and are facilitated through generated files (e.g. XSLT) that can be executed by external system to transform schema instance documents.&nbsp; The semantic alignment of vocabularies and ontologies is based on exporting mappings as SKOS and SSSOM files. Generated artefacts are available for download in the UI under "Auto-generated files" list in the crosswalk's "Metadata and files" view.&nbsp;</p>
+<h3 id="add-the-generated-files-tab">Add the generated files tab</h3>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "content.code.copy"], "search": "../../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.51d95adb.min.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
